@@ -74,7 +74,7 @@ function addAppimageCard(i, item) {
            rel="noreferrer">
           <i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">GitHub</span>
         </a>
-        <a href="${applink}" class="card-footer-item" target="_blank"
+        <a href="../${applink}" class="card-footer-item" target="_blank"
            rel="noreferrer">
           <i class="fa fa-wifi ss-i"></i><span class="ss-card-footer-text">Website</span>
         </a>
