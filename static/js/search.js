@@ -39,13 +39,31 @@ function getActivityIndex() {
   return;
 }
 
+function titleCase(str) {
+    // https://www.freecodecamp.org/news/three-ways-to-title-case-a-sentence-in-javascript-676a9175eb27/
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+  }
+  return str.join(' ');
+}
+
 function addAppimageCard(i, item) {
     const image_src = item['image'];
     const appimage_name = item['name'];
     const appimage_maintainer = item['maintainer'];
     const appimage_summary = item['summary'];
     const appimage_categories = item['categories_html'];
-    const appimage_github = item['github'];
+    let appimage_github;
+    let isGitHub;
+    try {
+        appimage_github = item['github'][0]["url"];
+        isGitHub = 'github';
+    } catch (err) {
+        appimage_github = "";
+        isGitHub = '';
+    }
+
     const applink = item['name'].toLowerCase();
     const cardTemplate = `<div class="card appimage-card mb-medium">
       <div class="card-content">
@@ -72,11 +90,11 @@ function addAppimageCard(i, item) {
         <a href="${appimage_github}" class="card-footer-item"
            target="_blank"
            rel="noreferrer">
-          <i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">GitHub</span>
+          <i class="fa fa-${isGitHub} ss-i"></i><span class="ss-card-footer-text">${titleCase(isGitHub)}</span>
         </a>
         <a href="../${applink}" class="card-footer-item" target="_blank"
            rel="noreferrer">
-          <i class="fa fa-wifi ss-i"></i><span class="ss-card-footer-text">Website</span>
+          <i class="fa fa-wifi ss-i"></i><span class="ss-card-footer-text">Info</span>
         </a>
       </footer>
     </div>`;
