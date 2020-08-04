@@ -17,9 +17,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          realpath .
+          echo $(realpath .)
           pip3 install -r requirements.txt
-          python -m generator --generate-app-pages --generate-app-list --copy-theme --noconfirm
+          python -m generator --generate-app-pages --generate-app-list --copy-theme --noconfirm --gh-token=$GH_TOKEN}
 
 
       - name: Deploy 🚀
@@ -27,4 +27,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          OLDER: catalog-compiled  # The folder the action should deploy.
+          FOLDER: catalog-compiled  # The folder the action should deploy.
