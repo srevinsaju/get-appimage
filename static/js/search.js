@@ -60,6 +60,7 @@ function addAppimageCard(i, item) {
         appimage_github = item['github'][0]["url"];
         isGitHub = 'github';
     } catch (err) {
+        console.log(item['github']);
         appimage_github = "";
         isGitHub = '';
     }
@@ -117,7 +118,7 @@ function loadAllAppImageCards() {
         miniSearch = new MiniSearch({
           fields: ['name', 'summary', 'maintainer'],
             // fields to index for full-text search
-          storeFields: ['name', 'summary', 'maintainer', 'categories_html', 'image'],
+          storeFields: ['name', 'summary', 'maintainer', 'categories_html', 'image', 'github'],
             // fields to return with search results
           idField: 'name',
           searchOptions: {
