@@ -19,7 +19,7 @@ jobs:
         run: |
           echo $(realpath .)
           pip3 install -r requirements.txt
-          python -m generator --generate-app-pages --generate-app-list --copy-theme --noconfirm --gh-token=$GH_TOKEN}
+          python -m generator --generate-app-pages --generate-app-list --copy-theme --noconfirm --gh-token=$GH_TOKEN
 
 
       - name: Deploy 🚀
