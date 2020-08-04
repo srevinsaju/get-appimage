@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get AppImage</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Collection of all AppImages in one website">
+    <meta name="keywords" content="AppImage, Linux, Package">
+    <meta name="author" content="Srevin Saju">
+
+    <!-- OG -->
+    <meta property="og:title" content="Get AppImage" />
+    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+    <meta property="og:image" content="./../../img/logo.svg" />
+    <meta property="og:description" content="Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Get AppImage" />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./../../css/main.css">
+    <link rel="stylesheet" href="./../../css/bulma/bulma-switch.min.css">
+    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://appimage.org">
+          <img src="./../../img/logo.svg" width="28" height="28"
+               alt="Get AppImage logo">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
+        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="appimage-navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#main">
+            Home
+          </a>
+          <a class="navbar-item" href="#projects">
+            Projects
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#"  onclick="return false;">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#about">
+                About
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field" style="margin: 0.5em;">
+              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+              <label for="themeSwitch">
+                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero / Featured Header -->
+    <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <img class="appimage-hero-img" src="./../../img/logo.svg"
+               alt="Appimage logo">
+          <h1 class="title">
+            Get AppImage
+          </h1>
+          <h2 class="subtitle">
+            Collection of all AppImages in one website
+          </h2>
+          <form id="appimage-search-container" action="/search/" method="GET">
+            <div class="form-row">
+              <input id="appimage-search-box"
+                class="input appimage-search-input"
+                placeholder="Search for AppImages!"
+                autofocus name="q"
+              />
+              <button class="button is-success" type="submit" style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
+                <i class="fa fa-search"></i>
+              </button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- All the other code comes here! -->
+
+    <!-- Appimages card sections -->
+    <section class="section" style="max-width: 1380px; margin: 0 auto;">
+      <div class="grid">
+        <div class="grid__col-sizer"></div>
+        <div class="grid__gutter-sizer"></div>
+        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Intiface/icons/512x512/intiface-desktop.png" style="position:absolute; top:0; left:0; width:100%;" alt="Intiface logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Intiface</p><p class="subtitle is-6">intiface</p></div></div><div class="content">Desktop Intiface Application<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/intiface/intiface-desktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../intiface" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Invoice-Generator logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Invoice-Generator</p><p class="subtitle is-6">bhavyaagg</p></div></div><div class="content">Invoice Generator in Electron<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/bhavyaagg/Invoice-Generator-Electron" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../invoice-generator" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="iota1k logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">iota1k</p><p class="subtitle is-6">xx10t4</p></div></div><div class="content">IOTA based messenging app<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/xx10t4/iota1k" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../iota1k" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="ipe logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">ipe</p><p class="subtitle is-6"></p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../ipe" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/iPuissance_4D/icons/48x48/ipuissance4d.png" style="position:absolute; top:0; left:0; width:100%;" alt="iPuissance_4D logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">iPuissance_4D</p><p class="subtitle is-6"></p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../ipuissance_4d" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="iQPuzzle logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">iQPuzzle</p><p class="subtitle is-6">ElTh0r0</p></div></div><div class="content">A diverting I.Q. challenging pentomino puzzle<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ElTh0r0/iqpuzzle" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../iqpuzzle" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="irccloud-desktop logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">irccloud-desktop</p><p class="subtitle is-6">irccloud</p></div></div><div class="content">IRCCloud Desktop Client<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/irccloud/irccloud-desktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../irccloud-desktop" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/IrScrutinizer/icons/64x64/irscrutinizer.png" style="position:absolute; top:0; left:0; width:100%;" alt="IrScrutinizer logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">IrScrutinizer</p><p class="subtitle is-6">bengtmartensson</p></div></div><div class="content"><p>IrScrutinizer is a powerful program for capturing, generating, analyzing, importing, and exporting of infrared (IR) signals. For capturing and sending IR signals several different hardware sensors and senders are supported. IR Signals can be imported not only by capturing from one of the supported hardware sensors (among others: IrWidget, Global Caché, and Arduino), but also from a number of different file formats (among others: LIRC, Wave, Pronto Classic and professional, RMDU (partially), and different text based formats; not only from files, but also from the clipboard, from URLs, and from file hierarchies), as well as the Internet IR Databases by Global Caché and by IRDB. Imported signals can be decoded, analyzed, edited, and plotted. A collection of IR signal can thus be assembled and edited, and finally exported in one of the many supported formats. In addition, the program contains the powerful IrpMaster IR-renderer, which means that almost all IR protocols known to the Internet community can be generated.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=AudioVideo">AudioVideo</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/bengtmartensson/harctoolboxbundle" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../irscrutinizer" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/isle-editor/icons/128x128/isle-editor.png" style="position:absolute; top:0; left:0; width:100%;" alt="isle-editor logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">isle-editor</p><p class="subtitle is-6">isle-project</p></div></div><div class="content">Editor for Integrated Statistics Learning Environment (ISLE) lessons.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Education">Education</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/isle-project/isle-editor" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../isle-editor" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Isolate/icons/256x256/isolate.png" style="position:absolute; top:0; left:0; width:100%;" alt="Isolate logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Isolate</p><p class="subtitle is-6">seenaburns</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/seenaburns/isolate" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../isolate" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="jag logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">jag</p><p class="subtitle is-6">seleznevae</p></div></div><div class="content">Jag - program for telemetry veiwing<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/seleznevae/jag" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../jag" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/James/icons/512x512/james.png" style="position:absolute; top:0; left:0; width:100%;" alt="James logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">James</p><p class="subtitle is-6">james-proxy</p></div></div><div class="content">HTTP/HTTPS proxy built in Electron and React<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=WebDevelopment">WebDevelopment</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/james-proxy/james" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../james" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="jaxx logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">jaxx</p><p class="subtitle is-6">Jaxx-io</p></div></div><div class="content">Blockchain Wallet for desktop<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Jaxx-io/Jaxx" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../jaxx" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/jexiftoolgui/icons/48x48/jexiftoolgui-48x48.png" style="position:absolute; top:0; left:0; width:100%;" alt="jexiftoolgui logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">jexiftoolgui</p><p class="subtitle is-6">hvdwolf</p></div></div><div class="content">jExifToolGUI exiftool gui<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/hvdwolf/jExifToolGUI" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../jexiftoolgui" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/jira-timer/icons/128x128/jira-timer.png" style="position:absolute; top:0; left:0; width:100%;" alt="jira-timer logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">jira-timer</p><p class="subtitle is-6">alexcroox</p></div></div><div class="content">Jira Timer<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/alexcroox/jira-timer-menubar" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../jira-timer" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/jitsi-meet/icons/128x128/jitsi-meet.png" style="position:absolute; top:0; left:0; width:100%;" alt="jitsi-meet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">jitsi-meet</p><p class="subtitle is-6">jitsi</p></div></div><div class="content">Jitsi Meet Desktop App<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=VideoConference">VideoConference</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/jitsi/jitsi-meet-electron" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../jitsi-meet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/JKlubTV/icons/128x128/jklubtv.png" style="position:absolute; top:0; left:0; width:100%;" alt="JKlubTV logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">JKlubTV</p><p class="subtitle is-6">mars7105</p></div></div><div class="content"><p>Manage chess round robin
+tournaments with JKlubTV
+This application will capture the round-robin tournament
+belonging data into a SQLite database. It is intended for
+webmasters who want to easily manage a club tournament in
+their own chess club. The HTML tables that are to be
+published for the website will be created easily by the
+application. Automatically calculating the total points
+Sonneborn Berger points of each player, as well as their
+sequence DWZ, and sorts the HTML table by the calculated
+ranking. It is also possible the tables to save as a PDF file.
+The software is free (opensource).</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/mars7105/Chess-Round-Robin-Manager" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../jklubtv" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/JKlubTV-4.0.58-beta-x86_64.AppImage/icons/128x128/jklubtv.png" style="position:absolute; top:0; left:0; width:100%;" alt="JKlubTV-4.0.58-beta-x86_64.AppImage logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">JKlubTV-4.0.58-beta-x86_64.AppImage</p><p class="subtitle is-6"></p></div></div><div class="content">Chess Round Robin Tournament Manager<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../jklubtv-4.0.58-beta-x86_64.appimage" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+      </div>
+
+      
+      <p style="display: none"><a class="pagination__next"
+            href="./../../p/22">Next</a>
+      </p>
+      
+
+      <div class="scroll-status">
+        <div class="infinite-scroll-request">
+          <div class="loader-ellips">
+            <span class="loader-ellips__dot loader-ellips__dot--1"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--2"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--3"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--4"></span>
+          </div>
+        </div>
+        <p class="infinite-scroll-error has-text-centered">No more pages to load</p>
+        <p class="infinite-scroll-last has-text-centered">Last page loaded</p>
+      </div>
+
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="./../../js/utils.js"></script>
+    <script>
+        
+      function darkTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
+        $(":root").get(0).style.setProperty("--background-color", " #121212");
+        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
+        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+        $('#themeSwitch').prop('checked', true);
+        $("#bulma").attr("src","./../../img/made-with-bulma--white.png");
+        $(":root").get(0).style.setProperty("--cth", "0");
+      }
+
+      function lightTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#000");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
+        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
+        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
+        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+        $('#themeSwitch').prop('checked', false);
+        $("#bulma").attr("src","./../../img/made-with-bulma--black.png");
+        $(":root").get(0).style.setProperty("--cth", "255");
+      }
+
+      $(document).ready(function(){
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if ( userPrefersDark ) {
+            darkTheme();
+        }
+
+        $('#themeSwitch').change(function() {
+          if (this.checked) {
+            darkTheme();
+          } else {
+            lightTheme();
+          }
+        });
+
+        var msnry = new Masonry( '.grid', {
+          itemSelector: 'none', // select no images on init
+          columnWidth: '.grid__col-sizer',
+          gutter: '.grid__gutter-sizer',
+          percentPosition: true,
+          stagger: 30,
+          fitWidth: true,
+          visibleStyle: {
+            transform: 'translateY(0)',
+            opacity: 1
+          },
+          hiddenStyle: {
+            transform: 'translateY(100px)',
+            opacity: 0,
+          }
+        });
+
+        imagesLoaded( '.grid', function() {
+          msnry.options.itemSelector = '.grid__item'; // select proper items
+          document.querySelector('.grid').classList.add('are-images-ready');
+          var items = document.querySelectorAll('.grid__item');
+          msnry.appended( items );
+        });
+
+        var infScroll = new InfiniteScroll( '.grid', {
+          path: '.pagination__next',
+          append: '.grid__item',
+          debug: true,
+          outlayer: msnry,
+          status: '.scroll-status',
+          scrollThreshold: 1,
+        });
+
+        window.fadeIn = function(obj) {
+          $(obj).removeClass('appimage-card-image-hidden').hide();
+          $(obj).fadeIn(500);
+        };
+      });
+    </script>
+
+  </body>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy; <strong>Srevin Saju</strong> 2020.
+        <br>
+        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+        </a>
+        <br>
+        <a href="https://bulma.io">
+          <img id="bulma" src="./../../img/made-with-bulma--black.png"
+               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+        </a>
+        <br>
+        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+        <br>
+ 
+      </p>
+      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+         target="_blank" rel="noreferrer"><img
+              src="./../../img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+
+    </div>
+  </footer>
+
+
+</html>

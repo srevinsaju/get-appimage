@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get AppImage</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Collection of all AppImages in one website">
+    <meta name="keywords" content="AppImage, Linux, Package">
+    <meta name="author" content="Srevin Saju">
+
+    <!-- OG -->
+    <meta property="og:title" content="Get AppImage" />
+    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+    <meta property="og:image" content="./../../img/logo.svg" />
+    <meta property="og:description" content="Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Get AppImage" />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./../../css/main.css">
+    <link rel="stylesheet" href="./../../css/bulma/bulma-switch.min.css">
+    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://appimage.org">
+          <img src="./../../img/logo.svg" width="28" height="28"
+               alt="Get AppImage logo">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
+        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="appimage-navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#main">
+            Home
+          </a>
+          <a class="navbar-item" href="#projects">
+            Projects
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#"  onclick="return false;">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#about">
+                About
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field" style="margin: 0.5em;">
+              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+              <label for="themeSwitch">
+                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero / Featured Header -->
+    <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <img class="appimage-hero-img" src="./../../img/logo.svg"
+               alt="Appimage logo">
+          <h1 class="title">
+            Get AppImage
+          </h1>
+          <h2 class="subtitle">
+            Collection of all AppImages in one website
+          </h2>
+          <form id="appimage-search-container" action="/search/" method="GET">
+            <div class="form-row">
+              <input id="appimage-search-box"
+                class="input appimage-search-input"
+                placeholder="Search for AppImages!"
+                autofocus name="q"
+              />
+              <button class="button is-success" type="submit" style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
+                <i class="fa fa-search"></i>
+              </button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- All the other code comes here! -->
+
+    <!-- Appimages card sections -->
+    <section class="section" style="max-width: 1380px; margin: 0 auto;">
+      <div class="grid">
+        <div class="grid__col-sizer"></div>
+        <div class="grid__gutter-sizer"></div>
+        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Linphone/icons/scalable/linphone.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Linphone logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Linphone</p><p class="subtitle is-6"></p></div></div><div class="content">A libre SIP client<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../linphone" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/linux-intel-undervolt-gui/icons/128x128/linux-intel-undervolt-gui.png" style="position:absolute; top:0; left:0; width:100%;" alt="linux-intel-undervolt-gui logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">linux-intel-undervolt-gui</p><p class="subtitle is-6">lukechadwick</p></div></div><div class="content">Undervolting GUI for Intel Linux Systems<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/lukechadwick/linux-intel-undervolt-gui" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../linux-intel-undervolt-gui" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="linuxdeployqt logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">linuxdeployqt</p><p class="subtitle is-6">probonopd</p></div></div><div class="content">Bundle an application as an AppDir and/or AppImage<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/probonopd/linuxdeployqt" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../linuxdeployqt" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/liskish-wallet/icons/128x128/liskish-wallet.png" style="position:absolute; top:0; left:0; width:100%;" alt="liskish-wallet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">liskish-wallet</p><p class="subtitle is-6">hirishh</p></div></div><div class="content">Liskish Wallet<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/hirishh/liskish-wallet" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../liskish-wallet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/LiteIDE/icons/48x48/liteide.png" style="position:absolute; top:0; left:0; width:100%;" alt="LiteIDE logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">LiteIDE</p><p class="subtitle is-6">visualfc</p></div></div><div class="content">LiteIDE is a simple, open source, cross-platform Go IDE.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/visualfc/liteide" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../liteide" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/LiveMe_Pro_Tools/icons/1024x1024/liveme-pro-tools.png" style="position:absolute; top:0; left:0; width:100%;" alt="LiveMe_Pro_Tools logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">LiveMe_Pro_Tools</p><p class="subtitle is-6">thecoder75</p></div></div><div class="content">Browse, search and manage accounts, replays and more without the need of an actual account on Live.me.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/thecoder75/liveme-pro-tools" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../liveme_pro_tools" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="LMMS logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">LMMS</p><p class="subtitle is-6">LMMS</p></div></div><div class="content">Music sequencer and synthesizer<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/LMMS/lmms" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../lmms" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Local_Browser/icons/128x128/local-browser.png" style="position:absolute; top:0; left:0; width:100%;" alt="Local_Browser logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Local_Browser</p><p class="subtitle is-6">Chhekur</p></div></div><div class="content">Share your localhost in a unique way<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Chhekur/local-browser" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../local_browser" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Loginized/icons/256x256/loginized.png" style="position:absolute; top:0; left:0; width:100%;" alt="Loginized logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Loginized</p><p class="subtitle is-6">juhaku</p></div></div><div class="content">Loginized Gnome GDM Login Theme Manager<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=GTK">GTK</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/juhaku/loginized" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../loginized" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/LosslessCut/icons/512x512/losslesscut.png" style="position:absolute; top:0; left:0; width:100%;" alt="LosslessCut logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">LosslessCut</p><p class="subtitle is-6">mifi</p></div></div><div class="content">The swiss army knife of lossless video/audio editing<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/mifi/lossless-cut" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../losslesscut" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Lotun/icons/128x128/lotun-app.png" style="position:absolute; top:0; left:0; width:100%;" alt="Lotun logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Lotun</p><p class="subtitle is-6">lotun-io</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/lotun-io/lotun" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../lotun" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/LOVE/icons/scalable/love.svg" style="position:absolute; top:0; left:0; width:100%;" alt="LOVE logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">LOVE</p><p class="subtitle is-6"></p></div></div><div class="content">The unquestionably awesome 2D game engine<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../love" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="luminance-hdr logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">luminance-hdr</p><p class="subtitle is-6">aferrero2707</p></div></div><div class="content">Create and tonemap HDR images<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/aferrero2707/lhdr-appimage" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../luminance-hdr" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="luna logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">luna</p><p class="subtitle is-6">rvpanoz</p></div></div><div class="content">Manage your NPM packages.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/rvpanoz/luna" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../luna" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Lunar_Client/icons/128x128/lunarclient.png" style="position:absolute; top:0; left:0; width:100%;" alt="Lunar_Client logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Lunar_Client</p><p class="subtitle is-6"></p></div></div><div class="content">Lunar Client<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../lunar_client" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Lunyr logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Lunyr</p><p class="subtitle is-6"></p></div></div><div class="content">Ethereum-based Encyclopedia<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../lunyr" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/M/icons/128x128/m-textual.png" style="position:absolute; top:0; left:0; width:100%;" alt="M logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">M</p><p class="subtitle is-6">martin-azpillaga</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/martin-azpillaga/M" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../m" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/MagicFountain/icons/48x48/magicfountain.png" style="position:absolute; top:0; left:0; width:100%;" alt="MagicFountain logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">MagicFountain</p><p class="subtitle is-6">Aztorius</p></div></div><div class="content">Screenwriter<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Office">Office</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Aztorius/magicfountain" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../magicfountain" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+      </div>
+
+      
+      <p style="display: none"><a class="pagination__next"
+            href="./../../p/27">Next</a>
+      </p>
+      
+
+      <div class="scroll-status">
+        <div class="infinite-scroll-request">
+          <div class="loader-ellips">
+            <span class="loader-ellips__dot loader-ellips__dot--1"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--2"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--3"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--4"></span>
+          </div>
+        </div>
+        <p class="infinite-scroll-error has-text-centered">No more pages to load</p>
+        <p class="infinite-scroll-last has-text-centered">Last page loaded</p>
+      </div>
+
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="./../../js/utils.js"></script>
+    <script>
+        
+      function darkTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
+        $(":root").get(0).style.setProperty("--background-color", " #121212");
+        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
+        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+        $('#themeSwitch').prop('checked', true);
+        $("#bulma").attr("src","./../../img/made-with-bulma--white.png");
+        $(":root").get(0).style.setProperty("--cth", "0");
+      }
+
+      function lightTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#000");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
+        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
+        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
+        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+        $('#themeSwitch').prop('checked', false);
+        $("#bulma").attr("src","./../../img/made-with-bulma--black.png");
+        $(":root").get(0).style.setProperty("--cth", "255");
+      }
+
+      $(document).ready(function(){
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if ( userPrefersDark ) {
+            darkTheme();
+        }
+
+        $('#themeSwitch').change(function() {
+          if (this.checked) {
+            darkTheme();
+          } else {
+            lightTheme();
+          }
+        });
+
+        var msnry = new Masonry( '.grid', {
+          itemSelector: 'none', // select no images on init
+          columnWidth: '.grid__col-sizer',
+          gutter: '.grid__gutter-sizer',
+          percentPosition: true,
+          stagger: 30,
+          fitWidth: true,
+          visibleStyle: {
+            transform: 'translateY(0)',
+            opacity: 1
+          },
+          hiddenStyle: {
+            transform: 'translateY(100px)',
+            opacity: 0,
+          }
+        });
+
+        imagesLoaded( '.grid', function() {
+          msnry.options.itemSelector = '.grid__item'; // select proper items
+          document.querySelector('.grid').classList.add('are-images-ready');
+          var items = document.querySelectorAll('.grid__item');
+          msnry.appended( items );
+        });
+
+        var infScroll = new InfiniteScroll( '.grid', {
+          path: '.pagination__next',
+          append: '.grid__item',
+          debug: true,
+          outlayer: msnry,
+          status: '.scroll-status',
+          scrollThreshold: 1,
+        });
+
+        window.fadeIn = function(obj) {
+          $(obj).removeClass('appimage-card-image-hidden').hide();
+          $(obj).fadeIn(500);
+        };
+      });
+    </script>
+
+  </body>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy; <strong>Srevin Saju</strong> 2020.
+        <br>
+        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+        </a>
+        <br>
+        <a href="https://bulma.io">
+          <img id="bulma" src="./../../img/made-with-bulma--black.png"
+               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+        </a>
+        <br>
+        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+        <br>
+ 
+      </p>
+      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+         target="_blank" rel="noreferrer"><img
+              src="./../../img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+
+    </div>
+  </footer>
+
+
+</html>

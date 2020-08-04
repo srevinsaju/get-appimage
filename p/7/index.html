@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get AppImage</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Collection of all AppImages in one website">
+    <meta name="keywords" content="AppImage, Linux, Package">
+    <meta name="author" content="Srevin Saju">
+
+    <!-- OG -->
+    <meta property="og:title" content="Get AppImage" />
+    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+    <meta property="og:image" content="./../../img/logo.svg" />
+    <meta property="og:description" content="Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Get AppImage" />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./../../css/main.css">
+    <link rel="stylesheet" href="./../../css/bulma/bulma-switch.min.css">
+    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://appimage.org">
+          <img src="./../../img/logo.svg" width="28" height="28"
+               alt="Get AppImage logo">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
+        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="appimage-navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#main">
+            Home
+          </a>
+          <a class="navbar-item" href="#projects">
+            Projects
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#"  onclick="return false;">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#about">
+                About
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field" style="margin: 0.5em;">
+              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+              <label for="themeSwitch">
+                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero / Featured Header -->
+    <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <img class="appimage-hero-img" src="./../../img/logo.svg"
+               alt="Appimage logo">
+          <h1 class="title">
+            Get AppImage
+          </h1>
+          <h2 class="subtitle">
+            Collection of all AppImages in one website
+          </h2>
+          <form id="appimage-search-container" action="/search/" method="GET">
+            <div class="form-row">
+              <input id="appimage-search-box"
+                class="input appimage-search-input"
+                placeholder="Search for AppImages!"
+                autofocus name="q"
+              />
+              <button class="button is-success" type="submit" style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
+                <i class="fa fa-search"></i>
+              </button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- All the other code comes here! -->
+
+    <!-- Appimages card sections -->
+    <section class="section" style="max-width: 1380px; margin: 0 auto;">
+      <div class="grid">
+        <div class="grid__col-sizer"></div>
+        <div class="grid__gutter-sizer"></div>
+        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Code_OSS/icons/scalable/code-oss.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Code_OSS logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Code_OSS</p><p class="subtitle is-6">zilti</p></div></div><div class="content">Visual Studio Code OSS Edition<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/zilti/code-oss.AppImage" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../code_oss" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CodePilot.ai/icons/256x256/codepilot-ai.png" style="position:absolute; top:0; left:0; width:100%;" alt="CodePilot.ai logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CodePilot.ai</p><p class="subtitle is-6"></p></div></div><div class="content">Quickly find code you can reuse or learn from<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../codepilot.ai" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Colobot/icons/scalable/colobot.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Colobot logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Colobot</p><p class="subtitle is-6"></p></div></div><div class="content"><p>Colobot (Colonize with Bots) is an educational game aiming to teach programming through entertainment. You are playing as an astronaut on a journey with robot helpers to find a planet for colonization. It features 3D real-time graphics and a C++ and Java-like, object-oriented language, CBOT, which can be used to program the robots available in the game.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Education">Education</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../colobot" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Colon/icons/128x128/colon.png" style="position:absolute; top:0; left:0; width:100%;" alt="Colon logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Colon</p><p class="subtitle is-6">Chhekur</p></div></div><div class="content">A flexible text editor<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Chhekur/colon-ide" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../colon" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/ColorGenerator/icons/512x512/icon.png" style="position:absolute; top:0; left:0; width:100%;" alt="ColorGenerator logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">ColorGenerator</p><p class="subtitle is-6">YaShock</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/YaShock/color-generator" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../colorgenerator" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Colorpicker/icons/256x256/colorpicker.png" style="position:absolute; top:0; left:0; width:100%;" alt="Colorpicker logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Colorpicker</p><p class="subtitle is-6">Toinane</p></div></div><div class="content">Colorpicker is a little Electron app that can show colors with hex/rgb code, and generate shading for your color.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Toinane/colorpicker" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../colorpicker" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Comic-Reader/icons/128x128/comic-reader.png" style="position:absolute; top:0; left:0; width:100%;" alt="Comic-Reader logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Comic-Reader</p><p class="subtitle is-6">Pong420</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Pong420/Comic-Reader" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../comic-reader" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/ConsoleWorkbench/icons/128x128/console-workbench.png" style="position:absolute; top:0; left:0; width:100%;" alt="ConsoleWorkbench logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">ConsoleWorkbench</p><p class="subtitle is-6">easyops-cn</p></div></div><div class="content">Console workbench<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/easyops-cn/console-workbench" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../consoleworkbench" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Cool_Retro_Term/icons/128x128/cool-retro-term.png" style="position:absolute; top:0; left:0; width:100%;" alt="Cool_Retro_Term logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Cool_Retro_Term</p><p class="subtitle is-6">Swordfish90</p></div></div><div class="content"><p>cool-retro-term is a terminal emulator which tries to mimic the look and feel of the old cathode tube screens. It has been designed to be eye-candy, customizable, and reasonably lightweight.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=System">System</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Swordfish90/cool-retro-term" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../cool_retro_term" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/cordlauncher/icons/512x512/cordlauncher.png" style="position:absolute; top:0; left:0; width:100%;" alt="cordlauncher logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">cordlauncher</p><p class="subtitle is-6">ProtocolONE</p></div></div><div class="content">Cord launcher based on Electron and Wep Application<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ProtocolONE/cord.launcher" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../cordlauncher" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CoreAction/icons/scalable/coreaction.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CoreAction logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CoreAction</p><p class="subtitle is-6"></p></div></div><div class="content">A side bar for showing widgets for CuboCore Application Suite<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../coreaction" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CoreArchiver/icons/scalable/corearchiver.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CoreArchiver logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CoreArchiver</p><p class="subtitle is-6"></p></div></div><div class="content">Archive manager for CuboCore Application Suite.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../corearchiver" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CoreGarage/icons/scalable/coregarage.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CoreGarage logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CoreGarage</p><p class="subtitle is-6"></p></div></div><div class="content">A setting manager for CuboCore Application Suite.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../coregarage" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CoreHunt/icons/scalable/corehunt.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CoreHunt logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CoreHunt</p><p class="subtitle is-6"></p></div></div><div class="content">A file search utility for CuboCore Application Suite.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../corehunt" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CoreImage/icons/scalable/coreimage.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CoreImage logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CoreImage</p><p class="subtitle is-6"></p></div></div><div class="content">An image viewer for CuboCore Application Suite.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../coreimage" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CoreInfo/icons/scalable/coreinfo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CoreInfo logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CoreInfo</p><p class="subtitle is-6"></p></div></div><div class="content">A file information viewer for CuboCore Application Suite.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../coreinfo" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CorePad/icons/scalable/corepad.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CorePad logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CorePad</p><p class="subtitle is-6"></p></div></div><div class="content">A document editor for CuboCore Application Suite.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../corepad" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CorePaint/icons/500x500/corepaint.png" style="position:absolute; top:0; left:0; width:100%;" alt="CorePaint logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CorePaint</p><p class="subtitle is-6"></p></div></div><div class="content">A paint app for CuboCore Application Suite.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../corepaint" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+      </div>
+
+      
+      <p style="display: none"><a class="pagination__next"
+            href="./../../p/8">Next</a>
+      </p>
+      
+
+      <div class="scroll-status">
+        <div class="infinite-scroll-request">
+          <div class="loader-ellips">
+            <span class="loader-ellips__dot loader-ellips__dot--1"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--2"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--3"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--4"></span>
+          </div>
+        </div>
+        <p class="infinite-scroll-error has-text-centered">No more pages to load</p>
+        <p class="infinite-scroll-last has-text-centered">Last page loaded</p>
+      </div>
+
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="./../../js/utils.js"></script>
+    <script>
+        
+      function darkTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
+        $(":root").get(0).style.setProperty("--background-color", " #121212");
+        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
+        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+        $('#themeSwitch').prop('checked', true);
+        $("#bulma").attr("src","./../../img/made-with-bulma--white.png");
+        $(":root").get(0).style.setProperty("--cth", "0");
+      }
+
+      function lightTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#000");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
+        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
+        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
+        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+        $('#themeSwitch').prop('checked', false);
+        $("#bulma").attr("src","./../../img/made-with-bulma--black.png");
+        $(":root").get(0).style.setProperty("--cth", "255");
+      }
+
+      $(document).ready(function(){
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if ( userPrefersDark ) {
+            darkTheme();
+        }
+
+        $('#themeSwitch').change(function() {
+          if (this.checked) {
+            darkTheme();
+          } else {
+            lightTheme();
+          }
+        });
+
+        var msnry = new Masonry( '.grid', {
+          itemSelector: 'none', // select no images on init
+          columnWidth: '.grid__col-sizer',
+          gutter: '.grid__gutter-sizer',
+          percentPosition: true,
+          stagger: 30,
+          fitWidth: true,
+          visibleStyle: {
+            transform: 'translateY(0)',
+            opacity: 1
+          },
+          hiddenStyle: {
+            transform: 'translateY(100px)',
+            opacity: 0,
+          }
+        });
+
+        imagesLoaded( '.grid', function() {
+          msnry.options.itemSelector = '.grid__item'; // select proper items
+          document.querySelector('.grid').classList.add('are-images-ready');
+          var items = document.querySelectorAll('.grid__item');
+          msnry.appended( items );
+        });
+
+        var infScroll = new InfiniteScroll( '.grid', {
+          path: '.pagination__next',
+          append: '.grid__item',
+          debug: true,
+          outlayer: msnry,
+          status: '.scroll-status',
+          scrollThreshold: 1,
+        });
+
+        window.fadeIn = function(obj) {
+          $(obj).removeClass('appimage-card-image-hidden').hide();
+          $(obj).fadeIn(500);
+        };
+      });
+    </script>
+
+  </body>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy; <strong>Srevin Saju</strong> 2020.
+        <br>
+        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+        </a>
+        <br>
+        <a href="https://bulma.io">
+          <img id="bulma" src="./../../img/made-with-bulma--black.png"
+               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+        </a>
+        <br>
+        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+        <br>
+ 
+      </p>
+      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+         target="_blank" rel="noreferrer"><img
+              src="./../../img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+
+    </div>
+  </footer>
+
+
+</html>

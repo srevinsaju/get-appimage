@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NimiTV | AppImage</title>
+
+    <!-- SEO -->
+    <meta name="description"
+          content="Watch your favorite Albanian TV channels through your PC | Collection of all AppImages in one website">
+    <meta name="keywords"
+          content=", AppImage, Linux, Packaging">
+    <meta name="author" content="">
+
+    <!-- OG -->
+    <meta property="og:title" content="NimiTV | Get Appimage" />
+    <meta property="og:url" content="https://appimages.srevinsaju.me" />
+    <meta property="og:image" content="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/NimiTV/icons/128x128/nimitv.png" />
+    <meta property="og:description"
+          content="Watch your favorite Albanian TV channels through your PC | Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Appimage" />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bulma/bulma-switch.min.css">
+    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://appimage.org">
+          <img src="../img/logo.svg" width="28" height="28"
+               alt="Appimage logo">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
+        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="appimage-navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">
+            Home
+          </a>
+          <a class="navbar-item" href="#projects">
+            Projects
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#"  onclick="return false;">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#about">
+                About
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://github.com/srevinsaju/appimage2.github.io/">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field" style="margin: 0.5em;">
+              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+              <label for="themeSwitch">
+                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+   
+
+    <!-- Hero / Featured Header -->
+    <section style="margin-top: 3.25em;" class="hero is-medium is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-desktop">
+              <div class="column is-one-third-desktop has-text-centered has-text-right-desktop">
+                <img class="appimage-hero-img " src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/NimiTV/icons/128x128/nimitv.png"
+                     alt="NimiTV logo">
+              </div>
+              <div class="column has-text-centered has-text-left-desktop">                          
+                <h1 class="title">
+                    
+                </h1>
+                <h2 class="subtitle">
+                   
+                </h2>
+                <h3>
+                    Watch your favorite Albanian TV channels through your PC
+                </h3>
+                <div class="field is-grouped is-grouped-multiline appimage-tags-group">
+                  <div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=AudioVideo">AudioVideo</a><span class="tag is-dark">#</span></div></div></div>
+                </div>
+                <div class="field is-grouped is-grouped-multiline appimage-tags-group">
+                  
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- All the other code comes here! -->
+    <!-- AppImage information -->
+    <section class="section">
+      <div class="container">
+        <h1>Get NimiTV now!</h1>
+        <h2>Usage</h2>
+        <p>NimiTV is available as an AppImage which means "one
+          app = one file", which you can download and run on your Linux system
+          while you don't need a package manager and nothing gets changed in
+          your system. Awesome! </p>
+        <br>
+        <p>
+          AppImages are single-file applications that run on most
+          Linux distributions. Download an application, make it executable,
+          and run! No need to install. No system libraries or system
+          preferences are altered. Most AppImages run on recent versions of
+          Arch Linux, CentOS, Debian, Fedora, openSUSE, Red Hat, Ubuntu, and
+          other common desktop distributions.
+        </p>
+        <br>
+
+        <h3>Running NimiTV on Linux without installation</h3>
+        <p>Unlike other applications, AppImages do not need to be installed
+          before they can be used. However, they need to be marked as
+          executable before they can be run. This is a Linux
+          security feature.</p>
+        <br>
+
+        <p>Behold! AppImages are usually not verified by others.
+          Follow these instructions only if you trust the developer
+          of the software. Use at your own risk!</p>
+        <br>
+
+        <p>Download the NimiTV AppImage and make it
+          executable using your file manager or by entering the
+          following commands in a terminal:
+
+          Then double-click the AppImage in the file manager to open it.
+        </p>
+        <br>
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash">chmod +x ./*.AppImage</code></pre>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/utils.js"></script>
+    <script>
+        
+      function darkTheme() {
+
+        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
+        $(":root").get(0).style.setProperty("--background-color", " #121212");
+        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
+        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+        $('#themeSwitch').prop('checked', true);
+        $("#bulma").attr("src","/img/made-with-bulma--white.png");
+        $(":root").get(0).style.setProperty("--cth", "0");
+      }
+
+      function lightTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#000");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
+        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
+        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
+        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+        $('#themeSwitch').prop('checked', false);
+        $("#bulma").attr("src","/img/made-with-bulma--black.png");
+        $(":root").get(0).style.setProperty("--cth", "255");
+      }
+
+      $(document).ready(function(){
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if ( userPrefersDark ) {
+            darkTheme();
+        }
+
+        $('#themeSwitch').change(function() {
+          if (this.checked) {
+            darkTheme();
+          } else {
+            lightTheme();
+          }
+        });
+
+      });
+    </script>
+
+  </body>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        &copy; <strong>Srevin Saju</strong> 2020.
+        <br>
+        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+        </a>
+        <br>
+        <a href="https://bulma.io">
+          <img id="bulma" src="../img/made-with-bulma--black.png"
+               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+        </a>
+        <br>
+        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+        <br>
+ 
+      </p>
+      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer"><img src="../img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+
+    </div>
+  </footer>
+
+
+</html>
