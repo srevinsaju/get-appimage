@@ -209,7 +209,11 @@ class AppImage:
                 github_api_data = r.read()
             json_data = json.loads(github_api_data)
             if isinstance(json_data, list):
-                return json_data[0]
+                try:
+                    return json_data[0]
+                except IndexError:
+                    print(json_data)
+                    return False
             elif isinstance(json_data, dict):
                 return json_data
 
@@ -248,7 +252,11 @@ class AppImage:
         # load the data
         json_data = json.loads(github_api_data)
         if isinstance(json_data, list):
-            return json_data[0]
+            try:
+                return json_data[0]
+            except IndexError:
+                print(json_data)
+                return False
         elif isinstance(json_data, dict):
             return json_data
 
