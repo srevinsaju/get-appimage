@@ -88,6 +88,9 @@ class LibraryBuilder:
         :return:
         :rtype:
         """
+        if not os.path.exists(self.output_directory):
+            self.create_root_directory(self.output_directory)
+
         if not force_refresh and os.path.exists(os.path.join(
                 self.output_directory, 'feed.json')):
             print("[UPSTREAM] Cached feed.json found <=>. ")
