@@ -85,6 +85,11 @@ class AppImage:
         return self._title
 
     @property
+    def title_formatted(self):
+        return self._title.replace('_', ' ').replace('-', ' ')
+
+
+    @property
     def categories(self):
         return self._categories
 
