@@ -108,6 +108,8 @@
 
             </div>
           </form>
+
+
         </div>
       </div>
     </section>
@@ -115,7 +117,8 @@
     <!-- All the other code comes here! -->
 
     <!-- Appimages card sections -->
-    <section class="section" style="max-width: 1380px; margin: 0 auto;">
+    <section id="apps" class="section" style="max-width: 1380px; margin: 0
+    auto;">
       <div class="grid">
         <div class="grid__col-sizer"></div>
         <div class="grid__gutter-sizer"></div>
@@ -222,10 +225,8 @@
           scrollThreshold: 1,
         });
 
-        window.fadeIn = function(obj) {
-          $(obj).removeClass('appimage-card-image-hidden').hide();
-          $(obj).fadeIn(500);
-        };
+
+        infScroll.loadNextPage();
       });
     </script>
 
