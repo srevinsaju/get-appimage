@@ -18,7 +18,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip3 install -r requirements.txt
-          python -m generator --generate-app-pages --generate-app-list --copy-theme --gh-token=acad28e1253e7952b32b6e9e1b3925ac486bfc50
+          python -m generator --generate-app-pages --generate-app-list --copy-theme --noconfirm
 
 
       - name: Deploy 🚀
