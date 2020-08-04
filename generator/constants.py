@@ -55,15 +55,15 @@ CARD_TEMPLATE = \
     '</div>' \
     '</div>' \
     '<footer class="card-footer appimage-card-footer">' \
-    '<a href="{appimage_github}" class="card-footer-item"' \
+    '<a href="https://github.com/{appimage_github}" class="card-footer-item"' \
     'target="_blank rel="noreferrer">' \
-    '<i class="fa fa-github ss-i"></i>' \
-    '<span class="ss-card-footer-text">GitHub</span>' \
+    '<i class="fa fa-{is_github} ss-i"></i>' \
+    '<span class="ss-card-footer-text">{left_card_description}</span>' \
     '</a>' \
     '<a href="../{applink}" class="card-footer-item" target="_blank" ' \
     'rel="noreferrer">' \
-    '<i class="fa fa-wifi ss-i"></i>' \
-    '<span class="ss-card-footer-text">Website</span>' \
+    '<i class="fa fa-external-link-alt ss-i"></i>' \
+    '<span class="ss-card-footer-text">Info</span>' \
     '</a></footer></div></div>'
 
 DOWNLOAD_BUTTON_HTML = \

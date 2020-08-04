@@ -240,6 +240,14 @@ class LibraryBuilder:
             column_data = []
 
             for j, app in enumerate(sorted_json[i:i + 18]):
+                if app['github'] is not None:
+                    appimage_github = app['github'][0].get('url')
+                    is_github = 'github'
+                    left_card_description = 'Github'
+                else:
+                    appimage_github = ''  # FIXME:
+                    is_github = ''  # FIXME
+                    left_card_description = ''
                 column_data.append(
                     CARD_TEMPLATE.format(
                         appimage_name=app['name'],
@@ -248,7 +256,9 @@ class LibraryBuilder:
                         appimage_summary=app['summary'],
                         appimage_categories=app['categories_html'],
                         applink=app['name'].lower(),
-                        appimage_github=app['github'],
+                        appimage_github=appimage_github,
+                        is_github=is_github,
+                        left_card_description=left_card_description
                     )
                 )
 
