@@ -223,6 +223,85 @@ class LibraryBuilder:
         # write json file
         self.write_json_index()
 
+    def generate_categories_pages(self):
+        print("Generating Categories list")
+        categories_list_directory_path = \
+            os.path.join(self.output_directory, 'categories')
+
+        print("[STATIC] Reading index.html template")
+        index_html_path = os.path.abspath(
+            os.path.join('static', 'index.html'))
+        with open(index_html_path, 'r') as index_html_buffer:
+            index_html_template = \
+                Environment(loader=self.file_system_loader)\
+                .from_string(index_html_buffer.read())
+
+        # filter apps by category
+        apps_by_category = dict(((x, []) for x in CATEGORIES))
+        for app in self.json:
+            # https://specifications.freedesktop.org/menu-spec/latest/apa.html
+            for category in app['categories']:
+                if category not in CATEGORIES:
+                    # this category is not a valid desktop file category
+                    # as per freedesktop specifications
+                    print(Fore.YELLOW +
+                          '[STATIC][CATEGORY][W] {} is not a valid desktop '
+                          'category ({})'.format(category, app['name']),
+                          Fore.RESET)
+                    continue
+
+                apps_by_category[category].append(app)
+
+        for category in CATEGORIES:
+            # get the path to the categories
+            category_directory_path = \
+                os.path.join(categories_list_directory_path, category.lower())
+            if not os.path.exists(category_directory_path):
+                os.makedirs(category_directory_path)
+
+            # create the pages directory
+            pages_directory_path = \
+                os.path.join(category_directory_path, 'p')
+            if os.path.exists(pages_directory_path):
+                ask_to_remove(pages_directory_path)
+            os.makedirs(pages_directory_path)
+
+            self._create_p_directories(
+                json_file=apps_by_category[category],
+                pages_directory_path=pages_directory_path,
+                index_html_template=index_html_template
+            )
+
+            index_html_template_path = \
+                os.path.abspath(os.path.join('static', 'all', 'index.html'))
+            index_html_parsed_output_path = \
+                os.path.abspath(
+                    os.path.join(category_directory_path, 'index.html'))
+
+            read_parse_and_write_template(
+                self.file_system_loader,
+                index_html_template_path,
+                index_html_parsed_output_path,
+                catalog=Catalog(),
+                path_prefix="../..",
+                next_page_link="/categories/{}/p/0".format(category.lower())
+            )
+
+        index_html_template_path = \
+            os.path.abspath(os.path.join('static', 'categories', 'index.html'))
+        index_html_parsed_output_path = \
+            os.path.abspath(
+                os.path.join(categories_list_directory_path, 'index.html'))
+
+        read_parse_and_write_template(
+            self.file_system_loader,
+            index_html_template_path,
+            index_html_parsed_output_path,
+            catalog=Catalog(),
+            path_prefix="..",
+            next_page_link="/p/0"
+        )
+
     def generate_app_list(self):
         print("Generating App List")
         all_app_list_directory_path = os.path.join(self.output_directory,
