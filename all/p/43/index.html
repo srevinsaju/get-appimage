@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Get AppImage</title>
+    <title>Categories | Get AppImage</title>
 
     <!-- SEO -->
     <meta name="description" content="Collection of all AppImages in one website">
@@ -13,7 +13,7 @@
     <!-- OG -->
     <meta property="og:title" content="Get AppImage" />
     <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
-    <meta property="og:image" content="./../../../img/logo.svg" />
+    <meta property="og:image" content="/get-appimage/img/logo.svg" />
     <meta property="og:description" content="Collection of all AppImages in one website" />
     <meta property="og:site_name" content="Get AppImage" />
 
@@ -22,69 +22,72 @@
     <link rel="stylesheet" href="./../../../css/main.css">
     <link rel="stylesheet" href="./../../../css/bulma/bulma-switch.min.css">
     <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
-  </head>
+</head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/get-appimage">
-          <img src="./../../../img/logo.svg" width="28" height="28"
-               alt="Get AppImage logo">
-        </a>
-    
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
-        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/get-appimage">
+      <img src="./../../../img/logo.svg" width="28" height="28"
+           alt="Get AppImage logo">
+    </a>
 
-      <div id="appimage-navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="/get-appimage/">
-            Home
-          </a>
-          <a class="navbar-item" href="/get-appimage/all/">
-            All AppImages
-          </a>
-          <a class="navbar-item" href="/get-appimage/search/">
-            Search
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#"  onclick="return false;">
-              More
-            </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#about">
-                About
-              </a>
-              <a class="navbar-item" href="#contact">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="field" style="margin: 0.5em;">
-              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
-              <label for="themeSwitch">
-                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
-              </label>
-            </div>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop"
+    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
 
-          </div>
+  <div id="appimage-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/get-appimage/">
+        Home
+      </a>
+      <a class="navbar-item" href="/get-appimage/all/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/categories/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/search/">
+        Search
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#"  onclick="return false;">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#about">
+            About
+          </a>
+          <a class="navbar-item" href="mailto:srevinsaju@sugarlabs.org">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+            Report an issue
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field" style="margin: 0.5em;">
+          <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+          <label for="themeSwitch">
+            <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
 
     <!-- Hero / Featured Header -->
     <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
@@ -125,22 +128,22 @@
       <div class="grid">
         <div class="grid__col-sizer"></div>
         <div class="grid__gutter-sizer"></div>
-        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Running-Dinner-Tool/icons/512x512/running-dinner-tool.png" style="position:absolute; top:0; left:0; width:100%;" alt="Running-Dinner-Tool logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Running-Dinner-Tool</p><p class="subtitle is-6">john-kloss</p></div></div><div class="content">Running Dinner Tool<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/john-kloss/Running-Dinner-Tool" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../running-dinner-tool" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/RyoWallet/icons/512x512/ryo-wallet-atom.png" style="position:absolute; top:0; left:0; width:100%;" alt="RyoWallet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">RyoWallet</p><p class="subtitle is-6">ryo-currency</p></div></div><div class="content">Modern GUI interface for Ryo Currency<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Finance">Finance</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ryo-currency/ryo-wallet" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../ryowallet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Sabaki logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Sabaki</p><p class="subtitle is-6">yishn</p></div></div><div class="content">An elegant Go/Baduk/Weiqi board and SGF editor for a more civilized age.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/yishn/Sabaki" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../sabaki" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="sabaki logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">sabaki</p><p class="subtitle is-6">SabakiHQ</p></div></div><div class="content">An elegant Go/Baduk/Weiqi board and SGF editor for a more civilized age.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/SabakiHQ/Sabaki" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../sabaki" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Safe_Multisig/icons/256x256/safe-react.png" style="position:absolute; top:0; left:0; width:100%;" alt="Safe_Multisig logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Safe_Multisig</p><p class="subtitle is-6">gnosis</p></div></div><div class="content">Allowing crypto users manage funds in a safer way<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/gnosis/safe-react" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../safe_multisig" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/SafeSurfer-Desktop/icons/128x128/ss-logo.png" style="position:absolute; top:0; left:0; width:100%;" alt="SafeSurfer-Desktop logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">SafeSurfer-Desktop</p><p class="subtitle is-6">Safe-Surfer</p></div></div><div class="content"><p>Safe Surfer Desktop is an Electron based app, which sets the Safe Surfer DNS settings for you (on a device, not network).</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Safe-Surfer/SafeSurfer-Desktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../safesurfer-desktop" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/saphyr/icons/256x256/logo.png" style="position:absolute; top:0; left:0; width:100%;" alt="saphyr logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">saphyr</p><p class="subtitle is-6">jdm64</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/jdm64/saphyr" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../saphyr" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/SavvyCAN/icons/256x256/SavvyCAN.png" style="position:absolute; top:0; left:0; width:100%;" alt="SavvyCAN logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">SavvyCAN</p><p class="subtitle is-6">collin80</p></div></div><div class="content">Facilitates reverse engineering of canbus captures<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/collin80/SavvyCAN" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../savvycan" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/SBLauncher/icons/512x512/samboylauncher.png" style="position:absolute; top:0; left:0; width:100%;" alt="SBLauncher logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">SBLauncher</p><p class="subtitle is-6">SamboyCoding</p></div></div><div class="content">Minecraft Launcher - see https://launcher.samboycoding.me<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/SamboyCoding/SamboyLauncher-JS" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../sblauncher" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Scatter/icons/256x256/scatter.png" style="position:absolute; top:0; left:0; width:100%;" alt="Scatter logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Scatter</p><p class="subtitle is-6">GetScatter</p></div></div><div class="content">Scatter desktop signature server.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/GetScatter/ScatterDesktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../scatter" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/scavengers/icons/512x512/icon.png" style="position:absolute; top:0; left:0; width:100%;" alt="scavengers logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">scavengers</p><p class="subtitle is-6">RomainL972</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/RomainL972/Scavengers" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../scavengers" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/school-sections/icons/128x128/school-sections.png" style="position:absolute; top:0; left:0; width:100%;" alt="school-sections logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">school-sections</p><p class="subtitle is-6">ArtBelll</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ArtBelll/school-sections" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../school-sections" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="ScienceFair logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">ScienceFair</p><p class="subtitle is-6">codeforscience</p></div></div><div class="content">ScienceFair desktop science reading app for Linux<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=GNOME">GNOME</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/codeforscience/sciencefair" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../sciencefair" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Scilab/icons/256x256/scilab.png" style="position:absolute; top:0; left:0; width:100%;" alt="Scilab logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Scilab</p><p class="subtitle is-6">davidcl</p></div></div><div class="content">Scientific software package for numerical computations<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Science">Science</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/davidcl/Scilab.AppDir" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../scilab" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/SciQLOP/icons/scalable/sciqlopLOGO.svg" style="position:absolute; top:0; left:0; width:100%;" alt="SciQLOP logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">SciQLOP</p><p class="subtitle is-6">LaboratoryOfPlasmaPhysics</p></div></div><div class="content"><p>Efficient and Ergonomic application to explore spacecraft in situ plasma data and create catalogs of events.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/LaboratoryOfPlasmaPhysics/SciQLOP" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../sciqlop" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Scraper/icons/128x128/scraper.png" style="position:absolute; top:0; left:0; width:100%;" alt="Scraper logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Scraper</p><p class="subtitle is-6">cedoor</p></div></div><div class="content">Simple desktop scraper app.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/cedoor/scraper" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../scraper" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Running-Dinner-Tool/icons/512x512/running-dinner-tool.png" style="position:absolute; top:0; left:0; width:100%;" alt="Running-Dinner-Tool logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Running-Dinner-Tool</p><p class="subtitle is-6">john-kloss</p></div></div><div class="content">Running Dinner Tool<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/john-kloss/Running-Dinner-Tool" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/running-dinner-tool" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/RyoWallet/icons/512x512/ryo-wallet-atom.png" style="position:absolute; top:0; left:0; width:100%;" alt="RyoWallet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">RyoWallet</p><p class="subtitle is-6">ryo-currency</p></div></div><div class="content">Modern GUI interface for Ryo Currency<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Finance">Finance</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ryo-currency/ryo-wallet" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/ryowallet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Sabaki logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Sabaki</p><p class="subtitle is-6">yishn</p></div></div><div class="content">An elegant Go/Baduk/Weiqi board and SGF editor for a more civilized age.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/yishn/Sabaki" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/sabaki" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="sabaki logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">sabaki</p><p class="subtitle is-6">SabakiHQ</p></div></div><div class="content">An elegant Go/Baduk/Weiqi board and SGF editor for a more civilized age.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/SabakiHQ/Sabaki" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/sabaki" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Safe_Multisig/icons/256x256/safe-react.png" style="position:absolute; top:0; left:0; width:100%;" alt="Safe_Multisig logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Safe_Multisig</p><p class="subtitle is-6">gnosis</p></div></div><div class="content">Allowing crypto users manage funds in a safer way<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/gnosis/safe-react" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/safe_multisig" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/SafeSurfer-Desktop/icons/128x128/ss-logo.png" style="position:absolute; top:0; left:0; width:100%;" alt="SafeSurfer-Desktop logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">SafeSurfer-Desktop</p><p class="subtitle is-6">Safe-Surfer</p></div></div><div class="content"><p>Safe Surfer Desktop is an Electron based app, which sets the Safe Surfer DNS settings for you (on a device, not network).</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Safe-Surfer/SafeSurfer-Desktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/safesurfer-desktop" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/saphyr/icons/256x256/logo.png" style="position:absolute; top:0; left:0; width:100%;" alt="saphyr logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">saphyr</p><p class="subtitle is-6">jdm64</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/jdm64/saphyr" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/saphyr" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/SavvyCAN/icons/256x256/SavvyCAN.png" style="position:absolute; top:0; left:0; width:100%;" alt="SavvyCAN logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">SavvyCAN</p><p class="subtitle is-6">collin80</p></div></div><div class="content">Facilitates reverse engineering of canbus captures<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/collin80/SavvyCAN" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/savvycan" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/SBLauncher/icons/512x512/samboylauncher.png" style="position:absolute; top:0; left:0; width:100%;" alt="SBLauncher logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">SBLauncher</p><p class="subtitle is-6">SamboyCoding</p></div></div><div class="content">Minecraft Launcher - see https://launcher.samboycoding.me<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/SamboyCoding/SamboyLauncher-JS" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/sblauncher" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Scatter/icons/256x256/scatter.png" style="position:absolute; top:0; left:0; width:100%;" alt="Scatter logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Scatter</p><p class="subtitle is-6">GetScatter</p></div></div><div class="content">Scatter desktop signature server.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/GetScatter/ScatterDesktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/scatter" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/scavengers/icons/512x512/icon.png" style="position:absolute; top:0; left:0; width:100%;" alt="scavengers logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">scavengers</p><p class="subtitle is-6">RomainL972</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/RomainL972/Scavengers" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/scavengers" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/school-sections/icons/128x128/school-sections.png" style="position:absolute; top:0; left:0; width:100%;" alt="school-sections logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">school-sections</p><p class="subtitle is-6">ArtBelll</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ArtBelll/school-sections" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/school-sections" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="ScienceFair logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">ScienceFair</p><p class="subtitle is-6">codeforscience</p></div></div><div class="content">ScienceFair desktop science reading app for Linux<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=GNOME">GNOME</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/codeforscience/sciencefair" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/sciencefair" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Scilab/icons/256x256/scilab.png" style="position:absolute; top:0; left:0; width:100%;" alt="Scilab logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Scilab</p><p class="subtitle is-6">davidcl</p></div></div><div class="content">Scientific software package for numerical computations<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Science">Science</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/davidcl/Scilab.AppDir" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/scilab" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/SciQLOP/icons/scalable/sciqlopLOGO.svg" style="position:absolute; top:0; left:0; width:100%;" alt="SciQLOP logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">SciQLOP</p><p class="subtitle is-6">LaboratoryOfPlasmaPhysics</p></div></div><div class="content"><p>Efficient and Ergonomic application to explore spacecraft in situ plasma data and create catalogs of events.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/LaboratoryOfPlasmaPhysics/SciQLOP" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/sciqlop" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Scraper/icons/128x128/scraper.png" style="position:absolute; top:0; left:0; width:100%;" alt="Scraper logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Scraper</p><p class="subtitle is-6">cedoor</p></div></div><div class="content">Simple desktop scraper app.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/cedoor/scraper" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/scraper" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
 <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/ScreenCloud/icons/scalable/screencloud.svg" style="position:absolute; top:0; left:0; width:100%;" alt="ScreenCloud logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">ScreenCloud</p><p class="subtitle is-6">olav-st</p></div></div><div class="content"><p>Take a screenshot using one of the 3 hotkeys or simply click the ScreenCloud tray icon. You can choose where you want to save your screenshot. Several cloud services as well as local storage is supported. A built-in screenshot editor lets you annotate your screenshots to highlight the important parts!</p>
 <p>Features:</p>
 <ul>
@@ -148,15 +151,15 @@
   <li>Fast and easy: Snap a photo, paste the link, done!</li>
   <li>Plugin support, save to Dropbox, Imgur, etc</li>
   <li>Built in screenshot editor</li>
-</ul><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/olav-st/screencloud" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../screencloud" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Scribus logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Scribus</p><p class="subtitle is-6"></p></div></div><div class="content"><p>Scribus is a open source page layout program which
+</ul><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/olav-st/screencloud" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/screencloud" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Scribus logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Scribus</p><p class="subtitle is-6"></p></div></div><div class="content"><p>Scribus is a open source page layout program which
 produces commercial grade output in PDF and Postscript, primarily,
 though not exclusively, for Linux.</p>
 <p>While the goals of the program are ease of use and simple
 easy-to-understand tools, Scribus support for professional
 publishing features, such as CMYK and spot colors, easy PDF creation,
 Encapsulated Postscript import and export and creation of color
-separations.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../scribus" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+separations.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Qt">Qt</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/scribus" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
       </div>
 
       
@@ -188,43 +191,49 @@ separations.</p><br><div class="field is-grouped is-grouped-multiline appimage-t
     <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
     <script src="./../../../js/utils.js"></script>
     <script>
-        
-      function darkTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
-        $(":root").get(0).style.setProperty("--background-color", " #121212");
-        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
-        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
-        $('#themeSwitch').prop('checked', true);
-        $("#bulma").attr("src","./../../../img/made-with-bulma--white.png");
-        $(":root").get(0).style.setProperty("--cth", "0");
-      }
+  function darkTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#ffffff");
+    rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
+    rootSelector.style.setProperty("--background-color", " #121212");
+    rootSelector.style.setProperty("--background-color-2", " #000000");
+    $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+    $('#themeSwitch').prop('checked', true);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--white.png");
+    rootSelector.style.setProperty("--cth", "0");
+  }
+  function lightTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#000");
+    rootSelector.style.setProperty("--foreground-color-2", "#121212");
+    rootSelector.style.setProperty("--background-color", " #fafafa");
+    rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--cth", "255");
+    $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+    $('#themeSwitch').prop('checked', false);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--black.png");
 
-      function lightTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#000");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
-        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
-        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
-        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
-        $('#themeSwitch').prop('checked', false);
-        $("#bulma").attr("src","./../../../img/made-with-bulma--black.png");
-        $(":root").get(0).style.setProperty("--cth", "255");
-      }
+  }
 
+  $(document).ready(function() {
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (userPrefersDark) {
+      darkTheme();
+    }
+
+    $('#themeSwitch').change(function () {
+      if (this.checked) {
+        darkTheme();
+      } else {
+        lightTheme();
+      }
+    });
+  });
+</script>
+
+    <script>
       $(document).ready(function(){
-        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if ( userPrefersDark ) {
-            darkTheme();
-        }
-
-        $('#themeSwitch').change(function() {
-          if (this.checked) {
-            darkTheme();
-          } else {
-            lightTheme();
-          }
-        });
 
         var msnry = new Masonry( '.grid', {
           itemSelector: 'none', // select no images on init
@@ -255,29 +264,31 @@ separations.</p><br><div class="field is-grouped is-grouped-multiline appimage-t
 
   </body>
   <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        &copy; <strong>Srevin Saju</strong> 2020.
-        <br>
-        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
-          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-        </a>
-        <br>
-        <a href="https://bulma.io">
-          <img id="bulma" src="./../../../img/made-with-bulma--black.png"
-               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
-        </a>
-        <br>
-        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
-        <br>
- 
-      </p>
-      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
-         target="_blank" rel="noreferrer"><img
-              src="./../../../img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  <div class="content has-text-centered">
+  <p>
+    &copy; <a href="https://srevinsaju.github.io"
+              target="_blank"><strong>Srevin Saju</strong></a> and
+      <a href="https://appimage.org"
+         target="_blank"><strong>AppImage.org</strong></a> 2020.
+    <br>
+    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    </a>
+    <br>
+    <a href="https://bulma.io">
+      <img id="bulma"
+           src="/get-appimage/img/made-with-bulma--black.png"
+           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+    </a>
+    <br>
+    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+    <br>
 
-    </div>
-  </footer>
-
+  </p>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+     target="_blank" rel="noreferrer"><img
+          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  </div>
+</footer>
 
 </html>

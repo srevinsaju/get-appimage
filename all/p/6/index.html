@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Get AppImage</title>
+    <title>Categories | Get AppImage</title>
 
     <!-- SEO -->
     <meta name="description" content="Collection of all AppImages in one website">
@@ -13,7 +13,7 @@
     <!-- OG -->
     <meta property="og:title" content="Get AppImage" />
     <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
-    <meta property="og:image" content="./../../../img/logo.svg" />
+    <meta property="og:image" content="/get-appimage/img/logo.svg" />
     <meta property="og:description" content="Collection of all AppImages in one website" />
     <meta property="og:site_name" content="Get AppImage" />
 
@@ -22,69 +22,72 @@
     <link rel="stylesheet" href="./../../../css/main.css">
     <link rel="stylesheet" href="./../../../css/bulma/bulma-switch.min.css">
     <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
-  </head>
+</head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/get-appimage">
-          <img src="./../../../img/logo.svg" width="28" height="28"
-               alt="Get AppImage logo">
-        </a>
-    
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
-        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/get-appimage">
+      <img src="./../../../img/logo.svg" width="28" height="28"
+           alt="Get AppImage logo">
+    </a>
 
-      <div id="appimage-navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="/get-appimage/">
-            Home
-          </a>
-          <a class="navbar-item" href="/get-appimage/all/">
-            All AppImages
-          </a>
-          <a class="navbar-item" href="/get-appimage/search/">
-            Search
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#"  onclick="return false;">
-              More
-            </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#about">
-                About
-              </a>
-              <a class="navbar-item" href="#contact">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="field" style="margin: 0.5em;">
-              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
-              <label for="themeSwitch">
-                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
-              </label>
-            </div>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop"
+    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
 
-          </div>
+  <div id="appimage-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/get-appimage/">
+        Home
+      </a>
+      <a class="navbar-item" href="/get-appimage/all/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/categories/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/search/">
+        Search
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#"  onclick="return false;">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#about">
+            About
+          </a>
+          <a class="navbar-item" href="mailto:srevinsaju@sugarlabs.org">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+            Report an issue
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field" style="margin: 0.5em;">
+          <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+          <label for="themeSwitch">
+            <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
 
     <!-- Hero / Featured Header -->
     <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
@@ -125,16 +128,16 @@
       <div class="grid">
         <div class="grid__col-sizer"></div>
         <div class="grid__gutter-sizer"></div>
-        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Chiaki/icons/512x512/chiaki.png" style="position:absolute; top:0; left:0; width:100%;" alt="Chiaki logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Chiaki</p><p class="subtitle is-6">thestr4ng3r</p></div></div><div class="content">PlayStation 4 Remote Play Client<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/thestr4ng3r/chiaki" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../chiaki" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Chobby/icons/512x512/chobby.png" style="position:absolute; top:0; left:0; width:100%;" alt="Chobby logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Chobby</p><p class="subtitle is-6"></p></div></div><div class="content">Electron-based SpringRTS Launcher app<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../chobby" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CIAA_Suite logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CIAA_Suite</p><p class="subtitle is-6">martinribelotta</p></div></div><div class="content">Makefile based IDE for embedded systems<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/martinribelotta/embedded-ide-builder" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../ciaa_suite" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Circle-Z/icons/128x128/circle-z.png" style="position:absolute; top:0; left:0; width:100%;" alt="Circle-Z logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Circle-Z</p><p class="subtitle is-6">rossprogram</p></div></div><div class="content">A chat client for online math courses<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Education">Education</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/rossprogram/circle-z" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../circle-z" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CircuitBlocks/icons/128x128/circuitblocks.png" style="position:absolute; top:0; left:0; width:100%;" alt="CircuitBlocks logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CircuitBlocks</p><p class="subtitle is-6">CircuitMess</p></div></div><div class="content">A graphical programming interface that helps newbies get into embedded programming.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/CircuitMess/CircuitBlocks" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../circuitblocks" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Citron/icons/256x256/citron.png" style="position:absolute; top:0; left:0; width:100%;" alt="Citron logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Citron</p><p class="subtitle is-6">alimpfard</p></div></div><div class="content">Citron Interp<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/alimpfard/citron" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../citron" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/City_Hub/icons/128x128/cityhub.png" style="position:absolute; top:0; left:0; width:100%;" alt="City_Hub logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">City_Hub</p><p class="subtitle is-6">CityChainFoundation</p></div></div><div class="content">City Hub is your hub into everything on City Chain and the Smart City Platform.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/CityChainFoundation/city-hub" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../city_hub" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Cleaver/icons/128x128/cleaver.png" style="position:absolute; top:0; left:0; width:100%;" alt="Cleaver logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Cleaver</p><p class="subtitle is-6"></p></div></div><div class="content">Server provisioning and deployments made easy for you<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../cleaver" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CleepDesktop logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CleepDesktop</p><p class="subtitle is-6">tangb</p></div></div><div class="content">Desktop application to manage your Cleep devices<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/tangb/CleepDesktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../cleepdesktop" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/climaxima/icons/135x135/maxima.png" style="position:absolute; top:0; left:0; width:100%;" alt="climaxima logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">climaxima</p><p class="subtitle is-6"></p></div></div><div class="content">CLIM-based interface to Maxima<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../climaxima" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Chiaki/icons/512x512/chiaki.png" style="position:absolute; top:0; left:0; width:100%;" alt="Chiaki logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Chiaki</p><p class="subtitle is-6">thestr4ng3r</p></div></div><div class="content">PlayStation 4 Remote Play Client<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/thestr4ng3r/chiaki" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/chiaki" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Chobby/icons/512x512/chobby.png" style="position:absolute; top:0; left:0; width:100%;" alt="Chobby logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Chobby</p><p class="subtitle is-6"></p></div></div><div class="content">Electron-based SpringRTS Launcher app<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Game">Game</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/chobby" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CIAA_Suite logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CIAA_Suite</p><p class="subtitle is-6">martinribelotta</p></div></div><div class="content">Makefile based IDE for embedded systems<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/martinribelotta/embedded-ide-builder" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/ciaa_suite" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Circle-Z/icons/128x128/circle-z.png" style="position:absolute; top:0; left:0; width:100%;" alt="Circle-Z logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Circle-Z</p><p class="subtitle is-6">rossprogram</p></div></div><div class="content">A chat client for online math courses<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Education">Education</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/rossprogram/circle-z" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/circle-z" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/CircuitBlocks/icons/128x128/circuitblocks.png" style="position:absolute; top:0; left:0; width:100%;" alt="CircuitBlocks logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CircuitBlocks</p><p class="subtitle is-6">CircuitMess</p></div></div><div class="content">A graphical programming interface that helps newbies get into embedded programming.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/CircuitMess/CircuitBlocks" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/circuitblocks" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Citron/icons/256x256/citron.png" style="position:absolute; top:0; left:0; width:100%;" alt="Citron logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Citron</p><p class="subtitle is-6">alimpfard</p></div></div><div class="content">Citron Interp<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/alimpfard/citron" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/citron" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/City_Hub/icons/128x128/cityhub.png" style="position:absolute; top:0; left:0; width:100%;" alt="City_Hub logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">City_Hub</p><p class="subtitle is-6">CityChainFoundation</p></div></div><div class="content">City Hub is your hub into everything on City Chain and the Smart City Platform.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/CityChainFoundation/city-hub" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/city_hub" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Cleaver/icons/128x128/cleaver.png" style="position:absolute; top:0; left:0; width:100%;" alt="Cleaver logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Cleaver</p><p class="subtitle is-6"></p></div></div><div class="content">Server provisioning and deployments made easy for you<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/cleaver" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CleepDesktop logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CleepDesktop</p><p class="subtitle is-6">tangb</p></div></div><div class="content">Desktop application to manage your Cleep devices<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/tangb/CleepDesktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/cleepdesktop" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/climaxima/icons/135x135/maxima.png" style="position:absolute; top:0; left:0; width:100%;" alt="climaxima logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">climaxima</p><p class="subtitle is-6"></p></div></div><div class="content">CLIM-based interface to Maxima<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/climaxima" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
 <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Cliniface/icons/256x256/cliniface.png" style="position:absolute; top:0; left:0; width:100%;" alt="Cliniface logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Cliniface</p><p class="subtitle is-6">frontiersi</p></div></div><div class="content"><p>Cliniface undertakes the visualisation, measurement, analysis, identification, and reporting of
             phenotypic traits from 3D facial images. These traits, known as Human Phenotype Ontology terms
             (or HPO terms), can then be used in concert with other phenotypic traits about a subject
@@ -148,14 +151,14 @@
 <p>Cliniface accepts 3D files in a variety of standard formats, and its analysis is saved into the
             3DF file format which embeds metadata and analytic results as structured plain text alongside
             the original model data saved in Wavefront OBJ format. Analysis data can also be exported
-            in XML and JSON formats to allow users to undertake further analysis outside of Cliniface.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/frontiersi/Cliniface" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../cliniface" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Clipboard_to_QR-Code/icons/128x128/clipboard-to-qrcode.png" style="position:absolute; top:0; left:0; width:100%;" alt="Clipboard_to_QR-Code logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Clipboard_to_QR-Code</p><p class="subtitle is-6">ramonreschke</p></div></div><div class="content">This is a simple app which generates a QR-Code from the Clipboard.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ramonreschke/clipboard-to-qrcode" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../clipboard_to_qr-code" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/ClipGrab/icons/80x80/clipgrab.png" style="position:absolute; top:0; left:0; width:100%;" alt="ClipGrab logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">ClipGrab</p><p class="subtitle is-6"></p></div></div><div class="content">Download and Convert Online Videos<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=AudioVideo">AudioVideo</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../clipgrab" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/clippy/icons/512x512/clippy.png" style="position:absolute; top:0; left:0; width:100%;" alt="clippy logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">clippy</p><p class="subtitle is-6">ikouchiha47</p></div></div><div class="content">Clipboard History<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ikouchiha47/clippy" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../clippy" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/clipr/icons/128x128/clipr.png" style="position:absolute; top:0; left:0; width:100%;" alt="clipr logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">clipr</p><p class="subtitle is-6">clipr</p></div></div><div class="content">The clipboard that syncs!<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/clipr/clipr" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../clipr" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Cloud_Browser/icons/128x128/cloudbrowser.png" style="position:absolute; top:0; left:0; width:100%;" alt="Cloud_Browser logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Cloud_Browser</p><p class="subtitle is-6">lemourin</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/lemourin/libcloudstorage" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../cloud_browser" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/cncjs/icons/128x128/cncjs-app.png" style="position:absolute; top:0; left:0; width:100%;" alt="cncjs logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">cncjs</p><p class="subtitle is-6">cncjs</p></div></div><div class="content">CNC Milling Controller<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/cncjs/cncjs" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="../cncjs" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
-<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="../img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CoCoMusic logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CoCoMusic</p><p class="subtitle is-6"></p></div></div><div class="content">CocoMusic<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="../cocomusic" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+            in XML and JSON formats to allow users to undertake further analysis outside of Cliniface.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/frontiersi/Cliniface" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/cliniface" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Clipboard_to_QR-Code/icons/128x128/clipboard-to-qrcode.png" style="position:absolute; top:0; left:0; width:100%;" alt="Clipboard_to_QR-Code logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Clipboard_to_QR-Code</p><p class="subtitle is-6">ramonreschke</p></div></div><div class="content">This is a simple app which generates a QR-Code from the Clipboard.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ramonreschke/clipboard-to-qrcode" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/clipboard_to_qr-code" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/ClipGrab/icons/80x80/clipgrab.png" style="position:absolute; top:0; left:0; width:100%;" alt="ClipGrab logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">ClipGrab</p><p class="subtitle is-6"></p></div></div><div class="content">Download and Convert Online Videos<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=AudioVideo">AudioVideo</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/clipgrab" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/clippy/icons/512x512/clippy.png" style="position:absolute; top:0; left:0; width:100%;" alt="clippy logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">clippy</p><p class="subtitle is-6">ikouchiha47</p></div></div><div class="content">Clipboard History<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Development">Development</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ikouchiha47/clippy" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/clippy" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/clipr/icons/128x128/clipr.png" style="position:absolute; top:0; left:0; width:100%;" alt="clipr logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">clipr</p><p class="subtitle is-6">clipr</p></div></div><div class="content">The clipboard that syncs!<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/clipr/clipr" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/clipr" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Cloud_Browser/icons/128x128/cloudbrowser.png" style="position:absolute; top:0; left:0; width:100%;" alt="Cloud_Browser logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Cloud_Browser</p><p class="subtitle is-6">lemourin</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/lemourin/libcloudstorage" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/cloud_browser" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/cncjs/icons/128x128/cncjs-app.png" style="position:absolute; top:0; left:0; width:100%;" alt="cncjs logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">cncjs</p><p class="subtitle is-6">cncjs</p></div></div><div class="content">CNC Milling Controller<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/cncjs/cncjs" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/cncjs" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="CoCoMusic logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">CoCoMusic</p><p class="subtitle is-6"></p></div></div><div class="content">CocoMusic<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/cocomusic" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
       </div>
 
       
@@ -187,43 +190,49 @@
     <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
     <script src="./../../../js/utils.js"></script>
     <script>
-        
-      function darkTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
-        $(":root").get(0).style.setProperty("--background-color", " #121212");
-        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
-        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
-        $('#themeSwitch').prop('checked', true);
-        $("#bulma").attr("src","./../../../img/made-with-bulma--white.png");
-        $(":root").get(0).style.setProperty("--cth", "0");
-      }
+  function darkTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#ffffff");
+    rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
+    rootSelector.style.setProperty("--background-color", " #121212");
+    rootSelector.style.setProperty("--background-color-2", " #000000");
+    $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+    $('#themeSwitch').prop('checked', true);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--white.png");
+    rootSelector.style.setProperty("--cth", "0");
+  }
+  function lightTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#000");
+    rootSelector.style.setProperty("--foreground-color-2", "#121212");
+    rootSelector.style.setProperty("--background-color", " #fafafa");
+    rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--cth", "255");
+    $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+    $('#themeSwitch').prop('checked', false);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--black.png");
 
-      function lightTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#000");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
-        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
-        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
-        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
-        $('#themeSwitch').prop('checked', false);
-        $("#bulma").attr("src","./../../../img/made-with-bulma--black.png");
-        $(":root").get(0).style.setProperty("--cth", "255");
-      }
+  }
 
+  $(document).ready(function() {
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (userPrefersDark) {
+      darkTheme();
+    }
+
+    $('#themeSwitch').change(function () {
+      if (this.checked) {
+        darkTheme();
+      } else {
+        lightTheme();
+      }
+    });
+  });
+</script>
+
+    <script>
       $(document).ready(function(){
-        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if ( userPrefersDark ) {
-            darkTheme();
-        }
-
-        $('#themeSwitch').change(function() {
-          if (this.checked) {
-            darkTheme();
-          } else {
-            lightTheme();
-          }
-        });
 
         var msnry = new Masonry( '.grid', {
           itemSelector: 'none', // select no images on init
@@ -254,29 +263,31 @@
 
   </body>
   <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        &copy; <strong>Srevin Saju</strong> 2020.
-        <br>
-        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
-          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-        </a>
-        <br>
-        <a href="https://bulma.io">
-          <img id="bulma" src="./../../../img/made-with-bulma--black.png"
-               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
-        </a>
-        <br>
-        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
-        <br>
- 
-      </p>
-      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
-         target="_blank" rel="noreferrer"><img
-              src="./../../../img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  <div class="content has-text-centered">
+  <p>
+    &copy; <a href="https://srevinsaju.github.io"
+              target="_blank"><strong>Srevin Saju</strong></a> and
+      <a href="https://appimage.org"
+         target="_blank"><strong>AppImage.org</strong></a> 2020.
+    <br>
+    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    </a>
+    <br>
+    <a href="https://bulma.io">
+      <img id="bulma"
+           src="/get-appimage/img/made-with-bulma--black.png"
+           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+    </a>
+    <br>
+    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+    <br>
 
-    </div>
-  </footer>
-
+  </p>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+     target="_blank" rel="noreferrer"><img
+          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  </div>
+</footer>
 
 </html>

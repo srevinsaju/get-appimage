@@ -3,135 +3,91 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>qpdf | AppImage</title>
+    <title>Categories | Get AppImage</title>
 
     <!-- SEO -->
-    <meta name="description"
-          content="<p>QPDF is a command-line program that does structural, content-preserving transformations on PDF files.
-			It could have been called something like pdf-to-pdf.
-			It also provides many useful capabilities to developers of PDF-producing software or for people
-			who just want to look at the innards of a PDF file to learn more about how they work.</p>
-<p>QPDF is capable of creating linearized (also known as web-optimized) files and encrypted files.
-			It is also capable of converting PDF files with object streams (also known as compressed objects)
-			to files with no compressed objects or to generate object streams from files that don&apos;t have them
-			(or even those that already do). QPDF also supports a special mode designed to allow you to edit
-			the content of PDF files in a text editor. For more details, please see the documentation links
-			below.</p>
-<p>QPDF includes support for merging and splitting PDFs through the ability to copy objects from one PDF
-			file into another and to manipulate the list of pages in a PDF file. The QPDF library also makes
-			it possible for you to create PDF files from scratch. In this mode, you are responsible for
-			supplying all the contents of the file, while the QPDF library takes care off all the syntactical
-			representation of the objects, creation of cross references tables and, if you use them, object
-			streams, encryption, linearization, and other syntactic details.</p>
-<p>QPDF is not a PDF content creation library, a PDF viewer, or a program capable of converting PDF into
-			other formats. In particular, QPDF knows nothing about the semantics of PDF content streams.
-			If you are looking for something that can do that, you should look elsewhere.
-			However, once you have a valid PDF file, QPDF can be used to transform that file in ways perhaps
-			your original PDF creation can&apos;t handle. For example, programs generate simple PDF files but
-			can&apos;t password-protect them, web-optimize them, or perform other transformations of that type.</p> | Collection of all AppImages in one website">
-    <meta name="keywords"
-          content=", AppImage, Linux, Packaging">
-    <meta name="author" content="">
+    <meta name="description" content="Collection of all AppImages in one website">
+    <meta name="keywords" content="AppImage, Linux, Package">
+    <meta name="author" content="Srevin Saju">
 
     <!-- OG -->
-    <meta property="og:title" content="qpdf | Get Appimage" />
-    <meta property="og:url" content="https://appimages.srevinsaju.me" />
-    <meta property="og:image" content="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/qpdf/icons/128x128/qpdf.png" />
-    <meta property="og:description"
-          content="<p>QPDF is a command-line program that does structural, content-preserving transformations on PDF files.
-			It could have been called something like pdf-to-pdf.
-			It also provides many useful capabilities to developers of PDF-producing software or for people
-			who just want to look at the innards of a PDF file to learn more about how they work.</p>
-<p>QPDF is capable of creating linearized (also known as web-optimized) files and encrypted files.
-			It is also capable of converting PDF files with object streams (also known as compressed objects)
-			to files with no compressed objects or to generate object streams from files that don&apos;t have them
-			(or even those that already do). QPDF also supports a special mode designed to allow you to edit
-			the content of PDF files in a text editor. For more details, please see the documentation links
-			below.</p>
-<p>QPDF includes support for merging and splitting PDFs through the ability to copy objects from one PDF
-			file into another and to manipulate the list of pages in a PDF file. The QPDF library also makes
-			it possible for you to create PDF files from scratch. In this mode, you are responsible for
-			supplying all the contents of the file, while the QPDF library takes care off all the syntactical
-			representation of the objects, creation of cross references tables and, if you use them, object
-			streams, encryption, linearization, and other syntactic details.</p>
-<p>QPDF is not a PDF content creation library, a PDF viewer, or a program capable of converting PDF into
-			other formats. In particular, QPDF knows nothing about the semantics of PDF content streams.
-			If you are looking for something that can do that, you should look elsewhere.
-			However, once you have a valid PDF file, QPDF can be used to transform that file in ways perhaps
-			your original PDF creation can&apos;t handle. For example, programs generate simple PDF files but
-			can&apos;t password-protect them, web-optimize them, or perform other transformations of that type.</p> | Collection of all AppImages in one website" />
-    <meta property="og:site_name" content="Appimage" />
+    <meta property="og:title" content="Get AppImage" />
+    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+    <meta property="og:image" content="/get-appimage/img/logo.svg" />
+    <meta property="og:description" content="Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Get AppImage" />
 
     <!-- Scripts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/bulma/bulma-switch.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/bulma/bulma-switch.min.css">
     <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
-  </head>
+</head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://appimage.org">
-          <img src="../img/logo.svg" width="28" height="28"
-               alt="Appimage logo">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/get-appimage">
+      <img src="/img/logo.svg" width="28" height="28"
+           alt="Get AppImage logo">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop"
+    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="appimage-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/get-appimage/">
+        Home
+      </a>
+      <a class="navbar-item" href="/get-appimage/all/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/categories/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/search/">
+        Search
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#"  onclick="return false;">
+          More
         </a>
-    
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
-        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
 
-      <div id="appimage-navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="/get-appimage/">
-            Home
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#about">
+            About
           </a>
-          <a class="navbar-item" href="/get-appimage/all/">
-            All AppImages
+          <a class="navbar-item" href="mailto:srevinsaju@sugarlabs.org">
+            Contact
           </a>
-          <a class="navbar-item" href="/get-appimage/search/">
-            Search
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+            Report an issue
           </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#"  onclick="return false;">
-              More
-            </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#about">
-                About
-              </a>
-              <a class="navbar-item" href="#contact">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="field" style="margin: 0.5em;">
-              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
-              <label for="themeSwitch">
-                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
-              </label>
-            </div>
-
-          </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-   
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field" style="margin: 0.5em;">
+          <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+          <label for="themeSwitch">
+            <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
 
     <!-- Hero / Featured Header -->
     <section style="margin-top: 3.25em;" class="hero is-medium is-bold">
@@ -179,7 +135,7 @@
                 <div class="field is-grouped is-grouped-multiline appimage-tags-group"><a href="https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.0.1/qpdf-10.0.1-x86_64.AppImage" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-download"></i></span><span>Download</span></button></a>
 <a href="https://github.com/qpdf/qpdf/releases/latest" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-upload"></i></span><span>Releases</span></button></a></div><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><span class="tag is-dark">Latest</span><span class="tag is-info">release-qpdf-10.0.1</span></div></div>
 <div class="control"><div class="tags has-addons"><span class="tag is-dark"><i class='fab fa-github'></i> Github</span><span class="tag is-info">https://github.com/qpdf/qpdf</span></div></div>
-<div class="control"><div class="tags has-addons"><span class="tag is-dark">Downloads</span><span class="tag is-info">563</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark">Downloads</span><span class="tag is-info">566</span></div></div>
 <div class="control"><div class="tags has-addons"><span class="tag is-dark">Size</span><span class="tag is-info">4.97 MB</span></div></div></div>
 
               </div>
@@ -240,73 +196,77 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="../js/utils.js"></script>
+    <script src="/get-appimage/js/utils.js"></script>
     <script>
-        
-      function darkTheme() {
+  function darkTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#ffffff");
+    rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
+    rootSelector.style.setProperty("--background-color", " #121212");
+    rootSelector.style.setProperty("--background-color-2", " #000000");
+    $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+    $('#themeSwitch').prop('checked', true);
+    $("#bulma").attr("src","/img/made-with-bulma--white.png");
+    rootSelector.style.setProperty("--cth", "0");
+  }
+  function lightTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#000");
+    rootSelector.style.setProperty("--foreground-color-2", "#121212");
+    rootSelector.style.setProperty("--background-color", " #fafafa");
+    rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--cth", "255");
+    $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+    $('#themeSwitch').prop('checked', false);
+    $("#bulma").attr("src","/img/made-with-bulma--black.png");
 
-        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
-        $(":root").get(0).style.setProperty("--background-color", " #121212");
-        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
-        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
-        $('#themeSwitch').prop('checked', true);
-        $("#bulma").attr("src","/img/made-with-bulma--white.png");
-        $(":root").get(0).style.setProperty("--cth", "0");
+  }
+
+  $(document).ready(function() {
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (userPrefersDark) {
+      darkTheme();
+    }
+
+    $('#themeSwitch').change(function () {
+      if (this.checked) {
+        darkTheme();
+      } else {
+        lightTheme();
       }
-
-      function lightTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#000");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
-        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
-        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
-        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
-        $('#themeSwitch').prop('checked', false);
-        $("#bulma").attr("src","/img/made-with-bulma--black.png");
-        $(":root").get(0).style.setProperty("--cth", "255");
-      }
-
-      $(document).ready(function(){
-        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if ( userPrefersDark ) {
-            darkTheme();
-        }
-
-        $('#themeSwitch').change(function() {
-          if (this.checked) {
-            darkTheme();
-          } else {
-            lightTheme();
-          }
-        });
-
-      });
-    </script>
+    });
+  });
+</script>
 
   </body>
   <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        &copy; <strong>Srevin Saju</strong> 2020.
-        <br>
-        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
-          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-        </a>
-        <br>
-        <a href="https://bulma.io">
-          <img id="bulma" src="../img/made-with-bulma--black.png"
-               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
-        </a>
-        <br>
-        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
-        <br>
- 
-      </p>
-      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer"><img src="../img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  <div class="content has-text-centered">
+  <p>
+    &copy; <a href="https://srevinsaju.github.io"
+              target="_blank"><strong>Srevin Saju</strong></a> and
+      <a href="https://appimage.org"
+         target="_blank"><strong>AppImage.org</strong></a> 2020.
+    <br>
+    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    </a>
+    <br>
+    <a href="https://bulma.io">
+      <img id="bulma"
+           src="/get-appimage/img/made-with-bulma--black.png"
+           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+    </a>
+    <br>
+    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+    <br>
 
-    </div>
-  </footer>
+  </p>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+     target="_blank" rel="noreferrer"><img
+          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  </div>
+</footer>
 
 
 </html>

@@ -3,139 +3,91 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>qBittorrent_Enhanced_Edition | AppImage</title>
+    <title>Categories | Get AppImage</title>
 
     <!-- SEO -->
-    <meta name="description"
-          content="<p>The qBittorrent project aims to provide an open-source software alternative to µTorrent.
-      Additionally, qBittorrent runs and provides the same features on all major platforms (FreeBSD, Linux, macOS, OS/2,
-Windows).
-      qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.</p>
-<ul>
-  <li>Polished µTorrent-like User Interface</li>
-  <li>Well-integrated and extensible Search Engine
-        Simultaneous search in many Torrent search sitesCategory-specific search requests (e.g. Books, Music, Software)</li>
-  <li>RSS feed support with advanced download filters (incl. regex)</li>
-  <li>Many Bittorrent extensions supported:
-        Magnet linksDistributed hash table (DHT), peer exchange protocol (PEX), local peer discovery (LSD)Private torrentsEncrypted
-connectionsand many more...</li>
-  <li>Remote control through Web user interface, written with AJAX</li>
-  <li>Sequential downloading (Download in order)</li>
-  <li>Advanced control over torrents, trackers and peers
-        Torrents queueing and prioritizingTorrent content selection and prioritizing</li>
-  <li>Bandwidth scheduler</li>
-  <li>Torrent creation tool</li>
-  <li>IP Filtering (eMule &amp; PeerGuardian format compatible)</li>
-  <li>IPv6 compliant</li>
-  <li>UPnP / NAT-PMP port forwarding support</li>
-  <li>Available on all platforms: Windows, Linux, macOS, FreeBSD, OS/2</li>
-  <li>Available in ~70 languages</li>
-</ul> | Collection of all AppImages in one website">
-    <meta name="keywords"
-          content=", AppImage, Linux, Packaging">
-    <meta name="author" content="">
+    <meta name="description" content="Collection of all AppImages in one website">
+    <meta name="keywords" content="AppImage, Linux, Package">
+    <meta name="author" content="Srevin Saju">
 
     <!-- OG -->
-    <meta property="og:title" content="qBittorrent_Enhanced_Edition | Get Appimage" />
-    <meta property="og:url" content="https://appimages.srevinsaju.me" />
-    <meta property="og:image" content="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/qBittorrent_Enhanced_Edition/icons/128x128/qbittorrent.png" />
-    <meta property="og:description"
-          content="<p>The qBittorrent project aims to provide an open-source software alternative to µTorrent.
-      Additionally, qBittorrent runs and provides the same features on all major platforms (FreeBSD, Linux, macOS, OS/2,
-Windows).
-      qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.</p>
-<ul>
-  <li>Polished µTorrent-like User Interface</li>
-  <li>Well-integrated and extensible Search Engine
-        Simultaneous search in many Torrent search sitesCategory-specific search requests (e.g. Books, Music, Software)</li>
-  <li>RSS feed support with advanced download filters (incl. regex)</li>
-  <li>Many Bittorrent extensions supported:
-        Magnet linksDistributed hash table (DHT), peer exchange protocol (PEX), local peer discovery (LSD)Private torrentsEncrypted
-connectionsand many more...</li>
-  <li>Remote control through Web user interface, written with AJAX</li>
-  <li>Sequential downloading (Download in order)</li>
-  <li>Advanced control over torrents, trackers and peers
-        Torrents queueing and prioritizingTorrent content selection and prioritizing</li>
-  <li>Bandwidth scheduler</li>
-  <li>Torrent creation tool</li>
-  <li>IP Filtering (eMule &amp; PeerGuardian format compatible)</li>
-  <li>IPv6 compliant</li>
-  <li>UPnP / NAT-PMP port forwarding support</li>
-  <li>Available on all platforms: Windows, Linux, macOS, FreeBSD, OS/2</li>
-  <li>Available in ~70 languages</li>
-</ul> | Collection of all AppImages in one website" />
-    <meta property="og:site_name" content="Appimage" />
+    <meta property="og:title" content="Get AppImage" />
+    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+    <meta property="og:image" content="/get-appimage/img/logo.svg" />
+    <meta property="og:description" content="Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Get AppImage" />
 
     <!-- Scripts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/bulma/bulma-switch.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/bulma/bulma-switch.min.css">
     <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
-  </head>
+</head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://appimage.org">
-          <img src="../img/logo.svg" width="28" height="28"
-               alt="Appimage logo">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/get-appimage">
+      <img src="/img/logo.svg" width="28" height="28"
+           alt="Get AppImage logo">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop"
+    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="appimage-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/get-appimage/">
+        Home
+      </a>
+      <a class="navbar-item" href="/get-appimage/all/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/categories/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/search/">
+        Search
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#"  onclick="return false;">
+          More
         </a>
-    
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
-        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
 
-      <div id="appimage-navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="/get-appimage/">
-            Home
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#about">
+            About
           </a>
-          <a class="navbar-item" href="/get-appimage/all/">
-            All AppImages
+          <a class="navbar-item" href="mailto:srevinsaju@sugarlabs.org">
+            Contact
           </a>
-          <a class="navbar-item" href="/get-appimage/search/">
-            Search
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+            Report an issue
           </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#"  onclick="return false;">
-              More
-            </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#about">
-                About
-              </a>
-              <a class="navbar-item" href="#contact">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="field" style="margin: 0.5em;">
-              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
-              <label for="themeSwitch">
-                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
-              </label>
-            </div>
-
-          </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-   
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field" style="margin: 0.5em;">
+          <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+          <label for="themeSwitch">
+            <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
 
     <!-- Hero / Featured Header -->
     <section style="margin-top: 3.25em;" class="hero is-medium is-bold">
@@ -185,7 +137,7 @@ connectionsand many more...</li>
                 <div class="field is-grouped is-grouped-multiline appimage-tags-group"><a href="https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.2.5.13-2/qBittorrent-Enhanced-Edition.AppImage" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-download"></i></span><span>Download</span></button></a>
 <a href="https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/latest" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-upload"></i></span><span>Releases</span></button></a></div><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><span class="tag is-dark">Latest</span><span class="tag is-info">release-4.2.5.13-2</span></div></div>
 <div class="control"><div class="tags has-addons"><span class="tag is-dark"><i class='fab fa-github'></i> Github</span><span class="tag is-info">https://github.com/c0re100/qBittorrent-Enhanced-Edition</span></div></div>
-<div class="control"><div class="tags has-addons"><span class="tag is-dark">Downloads</span><span class="tag is-info">589</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark">Downloads</span><span class="tag is-info">810</span></div></div>
 <div class="control"><div class="tags has-addons"><span class="tag is-dark">Size</span><span class="tag is-info">36.42 MB</span></div></div></div>
 
               </div>
@@ -246,73 +198,77 @@ connectionsand many more...</li>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="../js/utils.js"></script>
+    <script src="/get-appimage/js/utils.js"></script>
     <script>
-        
-      function darkTheme() {
+  function darkTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#ffffff");
+    rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
+    rootSelector.style.setProperty("--background-color", " #121212");
+    rootSelector.style.setProperty("--background-color-2", " #000000");
+    $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+    $('#themeSwitch').prop('checked', true);
+    $("#bulma").attr("src","/img/made-with-bulma--white.png");
+    rootSelector.style.setProperty("--cth", "0");
+  }
+  function lightTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#000");
+    rootSelector.style.setProperty("--foreground-color-2", "#121212");
+    rootSelector.style.setProperty("--background-color", " #fafafa");
+    rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--cth", "255");
+    $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+    $('#themeSwitch').prop('checked', false);
+    $("#bulma").attr("src","/img/made-with-bulma--black.png");
 
-        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
-        $(":root").get(0).style.setProperty("--background-color", " #121212");
-        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
-        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
-        $('#themeSwitch').prop('checked', true);
-        $("#bulma").attr("src","/img/made-with-bulma--white.png");
-        $(":root").get(0).style.setProperty("--cth", "0");
+  }
+
+  $(document).ready(function() {
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (userPrefersDark) {
+      darkTheme();
+    }
+
+    $('#themeSwitch').change(function () {
+      if (this.checked) {
+        darkTheme();
+      } else {
+        lightTheme();
       }
-
-      function lightTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#000");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
-        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
-        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
-        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
-        $('#themeSwitch').prop('checked', false);
-        $("#bulma").attr("src","/img/made-with-bulma--black.png");
-        $(":root").get(0).style.setProperty("--cth", "255");
-      }
-
-      $(document).ready(function(){
-        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if ( userPrefersDark ) {
-            darkTheme();
-        }
-
-        $('#themeSwitch').change(function() {
-          if (this.checked) {
-            darkTheme();
-          } else {
-            lightTheme();
-          }
-        });
-
-      });
-    </script>
+    });
+  });
+</script>
 
   </body>
   <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        &copy; <strong>Srevin Saju</strong> 2020.
-        <br>
-        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
-          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-        </a>
-        <br>
-        <a href="https://bulma.io">
-          <img id="bulma" src="../img/made-with-bulma--black.png"
-               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
-        </a>
-        <br>
-        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
-        <br>
- 
-      </p>
-      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer"><img src="../img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  <div class="content has-text-centered">
+  <p>
+    &copy; <a href="https://srevinsaju.github.io"
+              target="_blank"><strong>Srevin Saju</strong></a> and
+      <a href="https://appimage.org"
+         target="_blank"><strong>AppImage.org</strong></a> 2020.
+    <br>
+    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    </a>
+    <br>
+    <a href="https://bulma.io">
+      <img id="bulma"
+           src="/get-appimage/img/made-with-bulma--black.png"
+           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+    </a>
+    <br>
+    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+    <br>
 
-    </div>
-  </footer>
+  </p>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+     target="_blank" rel="noreferrer"><img
+          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  </div>
+</footer>
 
 
 </html>

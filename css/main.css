@@ -30,12 +30,12 @@ This file is part of AppImage Catalog Generator
   --foreground-color: black;
   --foreground-color-2: #121212;
   --background-color: #fafafa;
-  --background-color-2: #ffffff; 
+  --background-color-2: #ffffff;
   --accent: #008cff;
   --accent-dark: #0051ff;
   --accent-secondary: #00158b;
   --cth: 255;
-  
+
 }
 
 html {
@@ -78,7 +78,7 @@ strong {
   color: var(--foreground-color-2);
 }
 
-/* 
+/*
 =============================
 Utilities
 =============================
@@ -122,7 +122,7 @@ Utilities
 
 
 
-/* 
+/*
 =============================
  hero section
 */
@@ -135,17 +135,17 @@ Utilities
 }
 
 .appimage-search-input {
-  color: var(--foreground-color); 
+  color: var(--foreground-color);
   background-color: var(--background-color);
-  border-radius:50px; 
-  max-width:calc(600px - 75px); 
+  border-radius:50px;
+  max-width:calc(600px - 75px);
   min-height: 48px;
   transition: background-color ease-in 0.2s;
 }
 
-/* 
+/*
 =============================
- Navbar section 
+ Navbar section
 =============================
 */
 
@@ -194,9 +194,9 @@ Utilities
   background-color: var(--background-color);
 }
 
-/* 
+/*
 =============================
- Projects section 
+ Projects section
 =============================
 */
 
@@ -269,9 +269,9 @@ pre {
   visibility: hidden;
 }
 
-/* 
+/*
 =============================
- Footer section 
+ Footer section
 =============================
 */
 
@@ -280,14 +280,15 @@ pre {
 }
 
 
-
 .ss-skill-img {
   background: linear-gradient(270deg, var(--accent-secondary), var(--accent-dark));
   border-radius: 50%;
   color: #FFF;
-  font-size: 2em;
-  min-width: 1.5em;
-  min-height: 1.5em;
+  font-size: 3em;
+  padding: 0.5em;
+  margin-right: 0.25em;
+  min-width: 2.25em;
+  min-height: 2.25em;
   display:flex;
   justify-content: center;
   align-items:center;
@@ -299,9 +300,9 @@ pre {
 
 
 
-/* 
+/*
 =============================
- Contacts section 
+ Contacts section
 =============================
 */
 .ss-contacts {
@@ -354,7 +355,7 @@ pre {
 /* media queries and animations */
 
 @media (max-width: 400px) {
-  
+
   .ss-highlight {
     font-size: 4em;
   }
@@ -373,7 +374,7 @@ pre {
   .ss-about-hey {
     font-size: 1em;
   }
-  
+
   .ss-about-h1 {
     font-size: 2em;
   }
@@ -387,7 +388,7 @@ pre {
 
 
 @media (max-width: 315px) {
-  
+
   .ss-highlight {
     font-size: 3em;
   }
@@ -413,7 +414,7 @@ pre {
     justify-content: center !important;
     margin-top: 1em;
   }
-  
+
 
 }
 
