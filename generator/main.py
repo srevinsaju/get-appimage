@@ -37,7 +37,7 @@ from colorama import Fore
 from progressbar import progressbar
 
 from .cli import parse_args, version
-from .constants import CARD_TEMPLATE, APPTEMPLATE, FEED_URL_JSON
+from .constants import CARD_TEMPLATE, APPTEMPLATE, FEED_URL_JSON, CATEGORIES
 from .utils import ask_to_remove, copytree, read_parse_and_write_template, \
     get_github_token
 from .appimage import AppImage
