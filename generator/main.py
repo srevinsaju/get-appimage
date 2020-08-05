@@ -32,6 +32,7 @@ import urllib.request
 import json
 from copy import copy
 from jinja2 import Template
+from jinja2 import Environment, FileSystemLoader
 from colorama import init as colorama_init
 from colorama import Fore
 from progressbar import progressbar
@@ -60,6 +61,9 @@ class LibraryBuilder:
         self.apps = dict()
         self.json = list()
         self.output_directory = output_directory
+        self.file_system_loader = \
+            FileSystemLoader(os.path.join(input_directory,
+                                          'static', "templates"))
 
     def write_json_index(self):
         """
