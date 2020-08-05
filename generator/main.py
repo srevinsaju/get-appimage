@@ -186,7 +186,10 @@ class LibraryBuilder:
     def generate_app_pages(self):
         # create all directories
         self.create_root_directory(self.output_directory)
+        appimage_template = Environment(
+            loader=self.file_system_loader).from_string(APPTEMPLATE)
 
+        # iterate and generate app pages
         for app in progressbar(self.apps, redirect_stdout=True):
             appimage = AppImage(app, token=get_github_token(args))
             path_to_appfolder = \
@@ -206,7 +209,7 @@ class LibraryBuilder:
             ) + Fore.RESET)
             with open(os.path.join(path_to_appfolder, 'index.html'), 'w') as w:
                 w.write(
-                    APPTEMPLATE.render(
+                    appimage_template.render(
                         appimage=appimage,
                         library_issue_tracker="https://github.com/srevinsaju"
                                               "/appimage2.github.io/",
