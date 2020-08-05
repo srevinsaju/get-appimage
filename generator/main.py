@@ -31,7 +31,6 @@ import os
 import urllib.request
 import json
 from copy import copy
-from jinja2 import Template
 from jinja2 import Environment, FileSystemLoader
 from colorama import init as colorama_init
 from colorama import Fore
@@ -128,8 +127,7 @@ class LibraryBuilder:
         ask_to_remove(output_directory, noconfirm=args.noconfirm)
         os.makedirs(output_directory)
 
-    @staticmethod
-    def create_static_directories(output_directory):
+    def create_static_directories(self, output_directory):
         """
         Creates the 'css', 'img' and 'js' directories, copies the files
         recursively to the destination directory
@@ -303,9 +301,16 @@ class LibraryBuilder:
         )
 
     def generate_app_list(self):
+        """
+        Generate app list directories in ./all/ directory
+        They are distributed directories in the all directory which containes
+        ./all/p/*/index.html with cards corresponding to apps.
+        :return:
+        :rtype:
+        """
         print("Generating App List")
-        all_app_list_directory_path = os.path.join(self.output_directory,
-                                                   'all')
+        all_app_list_directory_path = \
+            os.path.join(self.output_directory, 'all')
         pages_directory_path = os.path.join(all_app_list_directory_path, 'p')
         if not os.path.exists(pages_directory_path):
             os.makedirs(pages_directory_path)
@@ -314,15 +319,52 @@ class LibraryBuilder:
         index_html_path = os.path.abspath(
             os.path.join('static', 'index.html'))
         with open(index_html_path, 'r') as index_html_buffer:
-            index_html_template = Template(index_html_buffer.read())
+            index_html_template = \
+                Environment(loader=self.file_system_loader)\
+                .from_string(index_html_buffer.read())
 
         # sort json
         sorted_json = copy(self.json)
         sorted_json.sort(key=lambda x: x['name'].lower())
 
         # parse
+        self._create_p_directories(
+            json_file=sorted_json,
+            pages_directory_path=pages_directory_path,
+            index_html_template=index_html_template
+        )
+
+        index_html_template_path = \
+            os.path.abspath(os.path.join('static', 'all', 'index.html'))
+        index_html_parsed_output_path = \
+            os.path.abspath(
+                os.path.join(all_app_list_directory_path, 'index.html'))
+
+        read_parse_and_write_template(
+            self.file_system_loader,
+            index_html_template_path,
+            index_html_parsed_output_path,
+            catalog=Catalog(),
+            path_prefix="..",
+            next_page_link="/all/p/0"
+        )
+
+    @staticmethod
+    def _create_p_directories(json_file, pages_directory_path,
+                              index_html_template):
+        """
+        Internal helper function to create ./p/* directories and files in them
+        :param json_file:
+        :type json_file:
+        :param pages_directory_path:
+        :type pages_directory_path:
+        :param index_html_template:
+        :type index_html_template:
+        :return:
+        :rtype:
+        """
         last_page = True
-        for i in range(0, len(sorted_json), 18)[::-1]:
+        for i in range(0, len(json_file), 18)[::-1]:
 
             directory = os.path.join(pages_directory_path, str(i // 18))
             ask_to_remove(directory, noconfirm=args.noconfirm)
@@ -333,8 +375,8 @@ class LibraryBuilder:
                 os.path.join(directory, 'index.html'))
 
             column_data = []
-
-            for j, app in enumerate(sorted_json[i:i + 18]):
+            catalog = Catalog()
+            for j, app in enumerate(json_file[i:i + 18]):
                 if app['github'] is not None:
                     appimage_github = app['github'][0].get('url')
                     is_github = 'github'
@@ -353,7 +395,8 @@ class LibraryBuilder:
                         applink=app['name'].lower(),
                         appimage_github=appimage_github,
                         is_github=is_github,
-                        left_card_description=left_card_description
+                        left_card_description=left_card_description,
+                        base_url=catalog.base_url
                     )
                 )
 
@@ -369,20 +412,6 @@ class LibraryBuilder:
                     path_prefix="./../../..",
                     next_page_link=next_page_link
                 ))
-
-        index_html_template_path = \
-            os.path.abspath(os.path.join('static', 'all', 'index.html'))
-        index_html_parsed_output_path = \
-            os.path.abspath(
-                os.path.join(all_app_list_directory_path, 'index.html'))
-
-        read_parse_and_write_template(
-            index_html_template_path,
-            index_html_parsed_output_path,
-            catalog=Catalog(),
-            path_prefix="..",
-            next_page_link="/p/0"
-        )
 
 
 def main():
