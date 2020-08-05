@@ -31,6 +31,10 @@ with open('static/app/app.html', 'r') as r:
 
 FEED_URL_JSON = "https://appimage.github.io/feed.json"
 
+CATEGORIES = ['Audio', 'Office', 'AudioVideo', 'Science', 'Development',
+              'Settings', 'Education', 'System', 'Game', 'Utility',
+              'Graphics', 'Video', 'Network']
+
 CARD_TEMPLATE = \
     '<div class="grid__item"><div class="card appimage-card mb-medium">' \
     '<div class="card-content">' \
