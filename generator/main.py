@@ -410,6 +410,9 @@ def main():
     if args.generate_app_list:
         lb.generate_app_list()
 
+    if args.generate_categories_pages:
+        lb.generate_categories_pages()
+
 
 if __name__ == "__main__":
     main()
