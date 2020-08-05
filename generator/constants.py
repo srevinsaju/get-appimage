@@ -26,10 +26,8 @@ SOFTWARE.
 This file is part of AppImage Catalog Generator
 """
 
-from jinja2 import Template
-
 with open('static/app/app.html', 'r') as r:
-    APPTEMPLATE = Template(r.read())
+    APPTEMPLATE = r.read()
 
 FEED_URL_JSON = "https://appimage.github.io/feed.json"
 
