@@ -336,6 +336,23 @@ pre {
   display: inline-block;
 }
 
+
+
+/*  All list */
+
+.appimage-tags-group-all {
+  margin-top: 1em;
+}
+
+.appimage-screenshot-image {
+  max-width: 75%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 1em;
+}
+
+/* media queries and animations */
+
 @media (max-width: 400px) {
   
   .ss-highlight {
@@ -367,6 +384,8 @@ pre {
 
 }
 
+
+
 @media (max-width: 315px) {
   
   .ss-highlight {
@@ -392,6 +411,7 @@ pre {
 
   .appimage-tags-group {
     justify-content: center !important;
+    margin-top: 1em;
   }
   
 
@@ -421,6 +441,8 @@ pre {
     opacity:1;
   }
 }
+
+
 
 
 /* loader-ellips
