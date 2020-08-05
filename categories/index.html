@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Categories | Get AppImage</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Collection of all AppImages in one website">
+    <meta name="keywords" content="AppImage, Linux, Package">
+    <meta name="author" content="Srevin Saju">
+
+    <!-- OG -->
+    <meta property="og:title" content="Get AppImage" />
+    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+    <meta property="og:image" content="/get-appimage/img/logo.svg" />
+    <meta property="og:description" content="Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Get AppImage" />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bulma/bulma-switch.min.css">
+    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+</head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/get-appimage">
+          <img src="../img/logo.svg" width="28" height="28"
+               alt="Get AppImage logo">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
+        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="appimage-navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/get-appimage/">
+            Home
+          </a>
+          <a class="navbar-item" href="/get-appimage/all/">
+            All AppImages
+          </a>
+          <a class="navbar-item" href="/get-appimage/search/">
+            Search
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#"  onclick="return false;">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#about">
+                About
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field" style="margin: 0.5em;">
+              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+              <label for="themeSwitch">
+                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search Results - indicator -->
+    <section style="margin-top: 3.25em;" class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title" style="margin-bottom: 0.5em;">
+            AppImages by Categories
+          </h1>
+          <h2 class="subtitle">
+            AppImages classified under FreeDesktop's specifications.
+            Or do a <a href="/search/">Search</a>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- All the other code comes here! -->
+
+    <!-- Appimages card sections -->
+    <section id="apps" class="section" style="max-width: 1380px; margin: 0
+    auto;">
+       <div class="columns is-multiline is-desktop" style="margin: 1em 0;">
+
+          <div class="column ss-project-column">
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-music"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Audio</p>
+
+                    <a href="./audio/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-video"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Video</p>
+
+                    <a href="./video/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-palette"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Graphics</p>
+                    <a href="./graphics/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-code"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Development</p>
+                    <a href="./development/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-tools"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Utilities</p>
+                    <a href="./utility/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="column ss-project-column">
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-university"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Education</p>
+
+                    <a href="./education/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-microscope"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Science</p>
+                    <a href="./science/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-cogs"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Settings</p>
+                    <a href="./settings/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-photo-video"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Multimedia</p>
+                    <a href="./audiovideo/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="column ss-project-column">
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-network-wired"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Network</p>
+                    <a href="./network/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-photo-video"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Multimedia</p>
+                    <a href="./audiovideo/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-file-word"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Office</p>
+                    <a href="./office/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-file-word"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Office</p>
+                    <a href="./office/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+       </div>
+
+
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/utils.js"></script>
+    <script>
+        
+      function darkTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
+        $(":root").get(0).style.setProperty("--background-color", " #121212");
+        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
+        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+        $('#themeSwitch').prop('checked', true);
+        $("#bulma").attr("src","../img/made-with-bulma--white.png");
+        $(":root").get(0).style.setProperty("--cth", "0");
+      }
+
+      function lightTheme() {
+        $(":root").get(0).style.setProperty("--foreground-color", "#000");
+        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
+        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
+        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
+        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+        $('#themeSwitch').prop('checked', false);
+        $("#bulma").attr("src","../img/made-with-bulma--black.png");
+        $(":root").get(0).style.setProperty("--cth", "255");
+      }
+
+      $(document).ready(function(){
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if ( userPrefersDark ) {
+            darkTheme();
+        }
+
+        $('#themeSwitch').change(function() {
+          if (this.checked) {
+            darkTheme();
+          } else {
+            lightTheme();
+          }
+        });
+
+      });
+    </script>
+
+  </body>
+  <footer class="footer">
+  <div class="content has-text-centered">
+  <p>
+    &copy; <a href="https://srevinsaju.github.io"
+              target="_blank"><strong>Srevin Saju</strong></a> and
+      <a href="https://appimage.org"
+         target="_blank"><strong>AppImage.org</strong></a> 2020.
+    <br>
+    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    </a>
+    <br>
+    <a href="https://bulma.io">
+      <img id="bulma"
+           src="/get-appimage/img/made-with-bulma--black.png"
+           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+    </a>
+    <br>
+    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+    <br>
+
+  </p>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+     target="_blank" rel="noreferrer"><img
+          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  </div>
+</footer>
+
+
+</html>

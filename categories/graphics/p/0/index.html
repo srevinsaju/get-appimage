@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Categories | Get AppImage</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Collection of all AppImages in one website">
+    <meta name="keywords" content="AppImage, Linux, Package">
+    <meta name="author" content="Srevin Saju">
+
+    <!-- OG -->
+    <meta property="og:title" content="Get AppImage" />
+    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+    <meta property="og:image" content="/get-appimage/img/logo.svg" />
+    <meta property="og:description" content="Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Get AppImage" />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./../../../css/main.css">
+    <link rel="stylesheet" href="./../../../css/bulma/bulma-switch.min.css">
+    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+</head>
+
+  <body>
+    <!-- Navbar -->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/get-appimage">
+      <img src="./../../../img/logo.svg" width="28" height="28"
+           alt="Get AppImage logo">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop"
+    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="appimage-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/get-appimage/">
+        Home
+      </a>
+      <a class="navbar-item" href="/get-appimage/all/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/categories/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/search/">
+        Search
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#"  onclick="return false;">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#about">
+            About
+          </a>
+          <a class="navbar-item" href="mailto:srevinsaju@sugarlabs.org">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field" style="margin: 0.5em;">
+          <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+          <label for="themeSwitch">
+            <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero / Featured Header -->
+    <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <img class="appimage-hero-img" src="./../../../img/logo.svg"
+               alt="Appimage logo">
+          <h1 class="title">
+            Get AppImage
+          </h1>
+          <h2 class="subtitle">
+            Collection of all AppImages in one website
+          </h2>
+          <form id="appimage-search-container" action="./search/" method="GET">
+            <div class="form-row">
+              <input id="appimage-search-box"
+                class="input appimage-search-input"
+                placeholder="Search for AppImages!"
+                autofocus name="q"
+              />
+              <button class="button is-success" type="submit" style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
+                <i class="fa fa-search"></i>
+              </button>
+
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- All the other code comes here! -->
+
+    <!-- Appimages card sections -->
+    <section id="apps" class="section" style="max-width: 1380px; margin: 0
+    auto;">
+      <div class="grid">
+        <div class="grid__col-sizer"></div>
+        <div class="grid__gutter-sizer"></div>
+        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/AnimaShooter/icons/1582x1582/pioneer_install_icon.png" style="position:absolute; top:0; left:0; width:100%;" alt="AnimaShooter logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">AnimaShooter</p><p class="subtitle is-6"></p></div></div><div class="content">User-friendly Stop-Motion Animation Software<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/animashooter" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="AtCore logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">AtCore</p><p class="subtitle is-6"></p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/atcore" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/AzPainter/icons/scalable/azpainter.svg" style="position:absolute; top:0; left:0; width:100%;" alt="AzPainter logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">AzPainter</p><p class="subtitle is-6">Symbian9</p></div></div><div class="content">A full color painting software for illustration drawing<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Symbian9/azpainter" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/azpainter" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="BaijiMangaViewer logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">BaijiMangaViewer</p><p class="subtitle is-6">shizkun</p></div></div><div class="content">A modern manga viewer inspired by Quivi that uses Material Design<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/shizkun/manga-viewer" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/baijimangaviewer" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/BlenSor/icons/scalable/blender.svg" style="position:absolute; top:0; left:0; width:100%;" alt="BlenSor logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">BlenSor</p><p class="subtitle is-6"></p></div></div><div class="content">3D modeling, animation, rendering and post-production<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/blensor" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Blender_Config_Manager/icons/128x128/blender-config-manager.png" style="position:absolute; top:0; left:0; width:100%;" alt="Blender_Config_Manager logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Blender_Config_Manager</p><p class="subtitle is-6">3DEsprit</p></div></div><div class="content">Blender Configuration Manager<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/3DEsprit/blender-config-manager" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/blender_config_manager" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Blensor/icons/scalable/blender.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Blensor logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Blensor</p><p class="subtitle is-6"></p></div></div><div class="content">3D modeling, animation, rendering and post-production<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/blensor" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Bridge/icons/128x128/megascans-bridge.png" style="position:absolute; top:0; left:0; width:100%;" alt="Bridge logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Bridge</p><p class="subtitle is-6"></p></div></div><div class="content">The perfect Bridge between Megascans and your favorite tools.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/bridge" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Cliniface/icons/256x256/cliniface.png" style="position:absolute; top:0; left:0; width:100%;" alt="Cliniface logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Cliniface</p><p class="subtitle is-6">frontiersi</p></div></div><div class="content"><p>Cliniface undertakes the visualisation, measurement, analysis, identification, and reporting of
+            phenotypic traits from 3D facial images. These traits, known as Human Phenotype Ontology terms
+            (or HPO terms), can then be used in concert with other phenotypic traits about a subject
+            (e.g., behavoural or cognitive traits) to assist in diagnosing rare and genetic diseases.</p>
+<p>Cliniface works by fitting facial landmarks to the 3D model of a face and then taking spatial
+            measurements using the landmarks to demarcate regions of interest. The extracted measurements
+            are then compared to existing statistics from the research literature describing how these
+            measurements are expected to change with age for different demographic cohorts. If measurements
+            are found to fall outside of the expected range, this may indicate the presence of certain
+            facial traits of clinical significance.</p>
+<p>Cliniface accepts 3D files in a variety of standard formats, and its analysis is saved into the
+            3DF file format which embeds metadata and analytic results as structured plain text alongside
+            the original model data saved in Wavefront OBJ format. Analysis data can also be exported
+            in XML and JSON formats to allow users to undertake further analysis outside of Cliniface.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/frontiersi/Cliniface" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/cliniface" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Colorpicker/icons/256x256/colorpicker.png" style="position:absolute; top:0; left:0; width:100%;" alt="Colorpicker logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Colorpicker</p><p class="subtitle is-6">Toinane</p></div></div><div class="content">Colorpicker is a little Electron app that can show colors with hex/rgb code, and generate shading for your color.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Toinane/colorpicker" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/colorpicker" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Comic-Reader/icons/128x128/comic-reader.png" style="position:absolute; top:0; left:0; width:100%;" alt="Comic-Reader logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Comic-Reader</p><p class="subtitle is-6">Pong420</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Pong420/Comic-Reader" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/comic-reader" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Cura/icons/128x128/cura-icon.png" style="position:absolute; top:0; left:0; width:100%;" alt="Cura logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Cura</p><p class="subtitle is-6">Ultimaker</p></div></div><div class="content"><p>Ultimaker Cura is a slicer, an application that prepares your model for 3D printing. Optimized, expert-tested profiles for 3D printers and materials mean you can start printing reliably in no time. And with industry-standard software integration, you can streamline your workflow for maximum efficiency.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Ultimaker/Cura" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/cura" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/DeadGame-2048/icons/225x225/DeadGame-2048.png" style="position:absolute; top:0; left:0; width:100%;" alt="DeadGame-2048 logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">DeadGame-2048</p><p class="subtitle is-6">TKNgu</p></div></div><div class="content">An open-source GUI prototyping tool that is available for ALL platforms.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/TKNgu/DeadGame-2048" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/deadgame-2048" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Drawpile/icons/scalable/drawpile.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Drawpile logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Drawpile</p><p class="subtitle is-6"></p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/drawpile" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Dust3D/icons/250x250/icon.png" style="position:absolute; top:0; left:0; width:100%;" alt="Dust3D logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Dust3D</p><p class="subtitle is-6">huxingyi</p></div></div><div class="content"><p>​      Dust3D is a brand new 3D modeling software. It helps you create a 3D watertight base model in seconds. Use it to speed up your character modeling in game making, 3D printing, and so on.
+​</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/huxingyi/dust3d" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/dust3d" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Figma/icons/256x256/figma-linux.png" style="position:absolute; top:0; left:0; width:100%;" alt="Figma logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Figma</p><p class="subtitle is-6">Figma-Linux</p></div></div><div class="content">Unofficial desktop application for linux<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Figma-Linux/figma-linux" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/figma" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Filmulator logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Filmulator</p><p class="subtitle is-6">CarVac</p></div></div><div class="content">Streamlined photo editor<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/CarVac/filmulator-gui" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/filmulator" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/FontBase/icons/128x128/fontbase.png" style="position:absolute; top:0; left:0; width:100%;" alt="FontBase logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">FontBase</p><p class="subtitle is-6"></p></div></div><div class="content">A lightning fast, beautiful and free font manager for designers.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/fontbase" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+      </div>
+
+      
+      <p style="display: none"><a class="pagination__next"
+            href="./../../../p/1">Next</a>
+      </p>
+      
+
+      <div class="scroll-status">
+        <div class="infinite-scroll-request">
+          <div class="loader-ellips">
+            <span class="loader-ellips__dot loader-ellips__dot--1"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--2"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--3"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--4"></span>
+          </div>
+        </div>
+        <p class="infinite-scroll-error has-text-centered">No more pages to load</p>
+        <p class="infinite-scroll-last has-text-centered">Last page loaded</p>
+      </div>
+
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="./../../../js/utils.js"></script>
+    <script>
+  function darkTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#ffffff");
+    rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
+    rootSelector.style.setProperty("--background-color", " #121212");
+    rootSelector.style.setProperty("--background-color-2", " #000000");
+    $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+    $('#themeSwitch').prop('checked', true);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--white.png");
+    rootSelector.style.setProperty("--cth", "0");
+  }
+  function lightTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#000");
+    rootSelector.style.setProperty("--foreground-color-2", "#121212");
+    rootSelector.style.setProperty("--background-color", " #fafafa");
+    rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--cth", "255");
+    $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+    $('#themeSwitch').prop('checked', false);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--black.png");
+
+  }
+
+  $(document).ready(function() {
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (userPrefersDark) {
+      darkTheme();
+    }
+
+    $('#themeSwitch').change(function () {
+      if (this.checked) {
+        darkTheme();
+      } else {
+        lightTheme();
+      }
+    });
+  });
+</script>
+
+    <script>
+      $(document).ready(function(){
+
+        var msnry = new Masonry( '.grid', {
+          itemSelector: 'none', // select no images on init
+          columnWidth: '.grid__col-sizer',
+          gutter: '.grid__gutter-sizer',
+          percentPosition: true,
+          stagger: 30,
+          fitWidth: true,
+          visibleStyle: {
+            transform: 'translateY(0)',
+            opacity: 1
+          },
+          hiddenStyle: {
+            transform: 'translateY(100px)',
+            opacity: 0,
+          }
+        });
+
+        imagesLoaded( '.grid', function() {
+          msnry.options.itemSelector = '.grid__item'; // select proper items
+          document.querySelector('.grid').classList.add('are-images-ready');
+          var items = document.querySelectorAll('.grid__item');
+          msnry.appended( items );
+        });
+
+      });
+    </script>
+
+  </body>
+  <footer class="footer">
+  <div class="content has-text-centered">
+  <p>
+    &copy; <a href="https://srevinsaju.github.io"
+              target="_blank"><strong>Srevin Saju</strong></a> and
+      <a href="https://appimage.org"
+         target="_blank"><strong>AppImage.org</strong></a> 2020.
+    <br>
+    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    </a>
+    <br>
+    <a href="https://bulma.io">
+      <img id="bulma"
+           src="/get-appimage/img/made-with-bulma--black.png"
+           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+    </a>
+    <br>
+    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+    <br>
+
+  </p>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+     target="_blank" rel="noreferrer"><img
+          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  </div>
+</footer>
+
+</html>

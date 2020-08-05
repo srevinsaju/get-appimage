@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Categories | Get AppImage</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Collection of all AppImages in one website">
+    <meta name="keywords" content="AppImage, Linux, Package">
+    <meta name="author" content="Srevin Saju">
+
+    <!-- OG -->
+    <meta property="og:title" content="Get AppImage" />
+    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+    <meta property="og:image" content="/get-appimage/img/logo.svg" />
+    <meta property="og:description" content="Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Get AppImage" />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./../../../css/main.css">
+    <link rel="stylesheet" href="./../../../css/bulma/bulma-switch.min.css">
+    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+</head>
+
+  <body>
+    <!-- Navbar -->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/get-appimage">
+      <img src="./../../../img/logo.svg" width="28" height="28"
+           alt="Get AppImage logo">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop"
+    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="appimage-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/get-appimage/">
+        Home
+      </a>
+      <a class="navbar-item" href="/get-appimage/all/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/categories/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/search/">
+        Search
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#"  onclick="return false;">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#about">
+            About
+          </a>
+          <a class="navbar-item" href="mailto:srevinsaju@sugarlabs.org">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field" style="margin: 0.5em;">
+          <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+          <label for="themeSwitch">
+            <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero / Featured Header -->
+    <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <img class="appimage-hero-img" src="./../../../img/logo.svg"
+               alt="Appimage logo">
+          <h1 class="title">
+            Get AppImage
+          </h1>
+          <h2 class="subtitle">
+            Collection of all AppImages in one website
+          </h2>
+          <form id="appimage-search-container" action="./search/" method="GET">
+            <div class="form-row">
+              <input id="appimage-search-box"
+                class="input appimage-search-input"
+                placeholder="Search for AppImages!"
+                autofocus name="q"
+              />
+              <button class="button is-success" type="submit" style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
+                <i class="fa fa-search"></i>
+              </button>
+
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- All the other code comes here! -->
+
+    <!-- Appimages card sections -->
+    <section id="apps" class="section" style="max-width: 1380px; margin: 0
+    auto;">
+      <div class="grid">
+        <div class="grid__col-sizer"></div>
+        <div class="grid__gutter-sizer"></div>
+        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/ANT_Downloader/icons/989x652/ant-downloader.png" style="position:absolute; top:0; left:0; width:100%;" alt="ANT_Downloader logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">ANT_Downloader</p><p class="subtitle is-6">anatasluo</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/anatasluo/ant" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/ant_downloader" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/APK_Editor_Studio/icons/128x128/apk-editor-studio.png" style="position:absolute; top:0; left:0; width:100%;" alt="APK_Editor_Studio logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">APK_Editor_Studio</p><p class="subtitle is-6">kefir500</p></div></div><div class="content">Edit APK resources<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/kefir500/apk-editor-studio" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/apk_editor_studio" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Agora/icons/512x512/agora.png" style="position:absolute; top:0; left:0; width:100%;" alt="Agora logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Agora</p><p class="subtitle is-6"></p></div></div><div class="content">Simple File Conversion Application<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/agora" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Airspaces/icons/512x512/airspaces-electron.png" style="position:absolute; top:0; left:0; width:100%;" alt="Airspaces logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Airspaces</p><p class="subtitle is-6">foucdeg</p></div></div><div class="content">An online map for your X-Plane flight sessions<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/foucdeg/x-plane-map-electron" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/airspaces" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Alduin/icons/514x512/alduin.png" style="position:absolute; top:0; left:0; width:100%;" alt="Alduin logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Alduin</p><p class="subtitle is-6">Xstoudi</p></div></div><div class="content">An Atom and RSS feed aggregator<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Xstoudi/alduin" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/alduin" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Altitude/icons/128x128/altitude.png" style="position:absolute; top:0; left:0; width:100%;" alt="Altitude logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Altitude</p><p class="subtitle is-6">TheLindaProjectInc</p></div></div><div class="content">The Altitude wallet by Linda Project Inc.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/TheLindaProjectInc/Altitude" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/altitude" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Another_Redis_Desktop_Manager/icons/512x512/another-redis-manager.png" style="position:absolute; top:0; left:0; width:100%;" alt="Another_Redis_Desktop_Manager logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Another_Redis_Desktop_Manager</p><p class="subtitle is-6">qishibo</p></div></div><div class="content">A faster, better and more stable redis desktop manager.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/qishibo/AnotherRedisDesktopManager" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/another_redis_desktop_manager" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Aphelion_Wallet/icons/256x256/aphelion-desktop-wallet.png" style="position:absolute; top:0; left:0; width:100%;" alt="Aphelion_Wallet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Aphelion_Wallet</p><p class="subtitle is-6">aphtoken</p></div></div><div class="content">Aphelion Desktop Wallet<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/aphtoken/aph-wallet-gui" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/aphelion_wallet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Apla/icons/256x256/apla-front.png" style="position:absolute; top:0; left:0; width:100%;" alt="Apla logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Apla</p><p class="subtitle is-6">AplaProject</p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/AplaProject/apla-front" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/apla" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/AppImageUpdate/icons/scalable/AppImage.svg" style="position:absolute; top:0; left:0; width:100%;" alt="AppImageUpdate logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">AppImageUpdate</p><p class="subtitle is-6">AppImage</p></div></div><div class="content"><p>AppImageUpdate updates AppImages based on the update information embedded in AppImages.</p><br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/AppImage/AppImageUpdate" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/appimageupdate" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/App_Outlet/icons/256x256/app-outlet.png" style="position:absolute; top:0; left:0; width:100%;" alt="App_Outlet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">App_Outlet</p><p class="subtitle is-6">app-outlet</p></div></div><div class="content">An Universal linux app store<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/app-outlet/app-outlet" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/app_outlet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Archipel/icons/128x128/@archipelelectron.png" style="position:absolute; top:0; left:0; width:100%;" alt="Archipel logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Archipel</p><p class="subtitle is-6">arso-project</p></div></div><div class="content">Archipel Desktop App<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/arso-project/archipel" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/archipel" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Ark.Desktop.Wallet/icons/128x128/ark-desktop-wallet.png" style="position:absolute; top:0; left:0; width:100%;" alt="Ark.Desktop.Wallet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Ark.Desktop.Wallet</p><p class="subtitle is-6">ArkEcosystem</p></div></div><div class="content">Ark Ecosystem Desktop Wallet<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/ArkEcosystem/desktop-wallet" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/ark.desktop.wallet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/AsarUI/icons/256x256/asarui.png" style="position:absolute; top:0; left:0; width:100%;" alt="AsarUI logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">AsarUI</p><p class="subtitle is-6">myazarc</p></div></div><div class="content">UI for Asar<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/myazarc/AsarUI" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/asarui" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Atomicwallet/icons/250x250/atomic.png" style="position:absolute; top:0; left:0; width:100%;" alt="Atomicwallet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Atomicwallet</p><p class="subtitle is-6"></p></div></div><div class="content">atomic vue-electron<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/atomicwallet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/AudioMoth/icons/1024x1024/audiomoth.png" style="position:absolute; top:0; left:0; width:100%;" alt="AudioMoth logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">AudioMoth</p><p class="subtitle is-6">OpenAcousticDevices</p></div></div><div class="content">The configuration app for the AudioMoth acoustic monitoring device.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/OpenAcousticDevices/AudioMoth-Configuration-App" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/audiomoth" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Avocado/icons/512x512/avocado.png" style="position:absolute; top:0; left:0; width:100%;" alt="Avocado logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Avocado</p><p class="subtitle is-6"></p></div></div><div class="content">None<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/avocado" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/BLOCK-DX/icons/128x128/block-dx.png" style="position:absolute; top:0; left:0; width:100%;" alt="BLOCK-DX logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">BLOCK-DX</p><p class="subtitle is-6">BlocknetDX</p></div></div><div class="content">Copyright © 2018 Blocknet<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/BlocknetDX/blockdx-ui" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/block-dx" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+      </div>
+
+      
+      <p style="display: none"><a class="pagination__next"
+            href="./../../../p/1">Next</a>
+      </p>
+      
+
+      <div class="scroll-status">
+        <div class="infinite-scroll-request">
+          <div class="loader-ellips">
+            <span class="loader-ellips__dot loader-ellips__dot--1"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--2"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--3"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--4"></span>
+          </div>
+        </div>
+        <p class="infinite-scroll-error has-text-centered">No more pages to load</p>
+        <p class="infinite-scroll-last has-text-centered">Last page loaded</p>
+      </div>
+
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="./../../../js/utils.js"></script>
+    <script>
+  function darkTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#ffffff");
+    rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
+    rootSelector.style.setProperty("--background-color", " #121212");
+    rootSelector.style.setProperty("--background-color-2", " #000000");
+    $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+    $('#themeSwitch').prop('checked', true);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--white.png");
+    rootSelector.style.setProperty("--cth", "0");
+  }
+  function lightTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#000");
+    rootSelector.style.setProperty("--foreground-color-2", "#121212");
+    rootSelector.style.setProperty("--background-color", " #fafafa");
+    rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--cth", "255");
+    $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+    $('#themeSwitch').prop('checked', false);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--black.png");
+
+  }
+
+  $(document).ready(function() {
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (userPrefersDark) {
+      darkTheme();
+    }
+
+    $('#themeSwitch').change(function () {
+      if (this.checked) {
+        darkTheme();
+      } else {
+        lightTheme();
+      }
+    });
+  });
+</script>
+
+    <script>
+      $(document).ready(function(){
+
+        var msnry = new Masonry( '.grid', {
+          itemSelector: 'none', // select no images on init
+          columnWidth: '.grid__col-sizer',
+          gutter: '.grid__gutter-sizer',
+          percentPosition: true,
+          stagger: 30,
+          fitWidth: true,
+          visibleStyle: {
+            transform: 'translateY(0)',
+            opacity: 1
+          },
+          hiddenStyle: {
+            transform: 'translateY(100px)',
+            opacity: 0,
+          }
+        });
+
+        imagesLoaded( '.grid', function() {
+          msnry.options.itemSelector = '.grid__item'; // select proper items
+          document.querySelector('.grid').classList.add('are-images-ready');
+          var items = document.querySelectorAll('.grid__item');
+          msnry.appended( items );
+        });
+
+      });
+    </script>
+
+  </body>
+  <footer class="footer">
+  <div class="content has-text-centered">
+  <p>
+    &copy; <a href="https://srevinsaju.github.io"
+              target="_blank"><strong>Srevin Saju</strong></a> and
+      <a href="https://appimage.org"
+         target="_blank"><strong>AppImage.org</strong></a> 2020.
+    <br>
+    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    </a>
+    <br>
+    <a href="https://bulma.io">
+      <img id="bulma"
+           src="/get-appimage/img/made-with-bulma--black.png"
+           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+    </a>
+    <br>
+    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+    <br>
+
+  </p>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+     target="_blank" rel="noreferrer"><img
+          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  </div>
+</footer>
+
+</html>

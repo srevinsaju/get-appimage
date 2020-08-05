@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Categories | Get AppImage</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Collection of all AppImages in one website">
+    <meta name="keywords" content="AppImage, Linux, Package">
+    <meta name="author" content="Srevin Saju">
+
+    <!-- OG -->
+    <meta property="og:title" content="Get AppImage" />
+    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+    <meta property="og:image" content="/get-appimage/img/logo.svg" />
+    <meta property="og:description" content="Collection of all AppImages in one website" />
+    <meta property="og:site_name" content="Get AppImage" />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./../../../css/main.css">
+    <link rel="stylesheet" href="./../../../css/bulma/bulma-switch.min.css">
+    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+</head>
+
+  <body>
+    <!-- Navbar -->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/get-appimage">
+      <img src="./../../../img/logo.svg" width="28" height="28"
+           alt="Get AppImage logo">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop"
+    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="appimage-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/get-appimage/">
+        Home
+      </a>
+      <a class="navbar-item" href="/get-appimage/all/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/categories/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/search/">
+        Search
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#"  onclick="return false;">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#about">
+            About
+          </a>
+          <a class="navbar-item" href="mailto:srevinsaju@sugarlabs.org">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://github.com/srevinsaju/appimage2/issues">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field" style="margin: 0.5em;">
+          <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+          <label for="themeSwitch">
+            <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero / Featured Header -->
+    <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <img class="appimage-hero-img" src="./../../../img/logo.svg"
+               alt="Appimage logo">
+          <h1 class="title">
+            Get AppImage
+          </h1>
+          <h2 class="subtitle">
+            Collection of all AppImages in one website
+          </h2>
+          <form id="appimage-search-container" action="./search/" method="GET">
+            <div class="form-row">
+              <input id="appimage-search-box"
+                class="input appimage-search-input"
+                placeholder="Search for AppImages!"
+                autofocus name="q"
+              />
+              <button class="button is-success" type="submit" style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
+                <i class="fa fa-search"></i>
+              </button>
+
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- All the other code comes here! -->
+
+    <!-- Appimages card sections -->
+    <section id="apps" class="section" style="max-width: 1380px; margin: 0
+    auto;">
+      <div class="grid">
+        <div class="grid__col-sizer"></div>
+        <div class="grid__gutter-sizer"></div>
+        <div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Vieb/icons/128x128/vieb.png" style="position:absolute; top:0; left:0; width:100%;" alt="Vieb logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Vieb</p><p class="subtitle is-6">Jelmerro</p></div></div><div class="content">Vim Inspired Electron Browser<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/Jelmerro/Vieb" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/vieb" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Viper_Browser/icons/64x64/viper-browser.png" style="position:absolute; top:0; left:0; width:100%;" alt="Viper_Browser logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Viper_Browser</p><p class="subtitle is-6">LeFroid</p></div></div><div class="content">Fast and lightweight Qt web browser<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/LeFroid/Viper-Browser" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/viper_browser" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Waterfox_Classic/icons/128x128/waterfox-classic.png" style="position:absolute; top:0; left:0; width:100%;" alt="Waterfox_Classic logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Waterfox_Classic</p><p class="subtitle is-6">hawkeye116477</p></div></div><div class="content">Browse the World Wide Web<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/https://download.opensuse.org/repositories/home:/hawkeye116477:/waterfox/AppImage/waterfox-classic-latest-x86_64.AppImage.mirrorlist" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/waterfox_classic" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Waterfox_Current/icons/128x128/default128.png" style="position:absolute; top:0; left:0; width:100%;" alt="Waterfox_Current logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Waterfox_Current</p><p class="subtitle is-6">hawkeye116477</p></div></div><div class="content">Browse the World Wide Web<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/https://download.opensuse.org/repositories/home:/hawkeye116477:/waterfox/AppImage/waterfox-current-latest-x86_64.AppImage.mirrorlist" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/waterfox_current" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Wexond/icons/128x128/wexond.png" style="position:absolute; top:0; left:0; width:100%;" alt="Wexond logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Wexond</p><p class="subtitle is-6">wexond</p></div></div><div class="content">Extensible, fast and innovative web browser with material UI.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/wexond/wexond" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/wexond" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Whalebird/icons/256x256/whalebird.png" style="position:absolute; top:0; left:0; width:100%;" alt="Whalebird logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Whalebird</p><p class="subtitle is-6">h3poteto</p></div></div><div class="content">An Electron based Mastodon client for Windows, Mac and Linux<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/h3poteto/whalebird-desktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/whalebird" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Wire/icons/256x256/wire-desktop.png" style="position:absolute; top:0; left:0; width:100%;" alt="Wire logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Wire</p><p class="subtitle is-6">wireapp</p></div></div><div class="content">The most secure collaboration platform.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/wireapp/wire-desktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/wire" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="Woke logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">Woke</p><p class="subtitle is-6">tmstieff</p></div></div><div class="content">A REST client with grand ambitions and limited scope.<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/tmstieff/Woke" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/woke" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="XChat logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">XChat</p><p class="subtitle is-6">probonopd</p></div></div><div class="content">Chat with other people using Internet Relay Chat<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/probonopd/XChat" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/xchat" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/cabal-desktop/icons/512x512/cabal-desktop.png" style="position:absolute; top:0; left:0; width:100%;" alt="cabal-desktop logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">cabal-desktop</p><p class="subtitle is-6">cabal-club</p></div></div><div class="content">Cabal p2p offline-first desktop application<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/cabal-club/cabal-desktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/cabal-desktop" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/electron-wechat/icons/128x128/electron-wechat.png" style="position:absolute; top:0; left:0; width:100%;" alt="electron-wechat logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">electron-wechat</p><p class="subtitle is-6">eNkru</p></div></div><div class="content">Wechat desktop application<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/eNkru/electron-wechat" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/electron-wechat" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/element/icons/128x128/element-desktop.png" style="position:absolute; top:0; left:0; width:100%;" alt="element logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">element</p><p class="subtitle is-6">srevinsaju</p></div></div><div class="content">A feature-rich client for Matrix.org<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/srevinsaju/element-appimage" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/element" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/genet/icons/128x128/genet.png" style="position:absolute; top:0; left:0; width:100%;" alt="genet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">genet</p><p class="subtitle is-6">genet-app</p></div></div><div class="content">General Purpose Network Analyzer<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/genet-app/genet" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/genet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="irccloud-desktop logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">irccloud-desktop</p><p class="subtitle is-6">irccloud</p></div></div><div class="content">IRCCloud Desktop Client<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/irccloud/irccloud-desktop" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/irccloud-desktop" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/liskish-wallet/icons/128x128/liskish-wallet.png" style="position:absolute; top:0; left:0; width:100%;" alt="liskish-wallet logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">liskish-wallet</p><p class="subtitle is-6">hirishh</p></div></div><div class="content">Liskish Wallet<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/hirishh/liskish-wallet" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/liskish-wallet" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/media-dupes/icons/128x128/media-dupes.png" style="position:absolute; top:0; left:0; width:100%;" alt="media-dupes logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">media-dupes</p><p class="subtitle is-6">yafp</p></div></div><div class="content">a minimal content duplicator for common media services like youtube<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/yafp/media-dupes" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/media-dupes" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/mikutter/icons/256x256/mikutter.png" style="position:absolute; top:0; left:0; width:100%;" alt="mikutter logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">mikutter</p><p class="subtitle is-6"></p></div></div><div class="content">Mastodon Client<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa- ss-i"></i><span class="ss-card-footer-text"></span></a><a href="/get-appimage/mikutter" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+<div class="grid__item"><div class="card appimage-card mb-medium"><div class="card-content"><div class="media"><div class="media-left"><figure class="image is-128x128"><img src="/get-appimage/img/logo.svg" style="position:absolute; top:0; left:0; width:100%;" alt="nheko logo" loading="lazy"></figure></div><div class="media-content"><p class="title is-4">nheko</p><p class="subtitle is-6">mujx</p></div></div><div class="content">Desktop client for Matrix<br><div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div></div></div><footer class="card-footer appimage-card-footer"><a href="https://github.com/mujx/nheko" class="card-footer-item"target="_blank rel="noreferrer"><i class="fa fa-github ss-i"></i><span class="ss-card-footer-text">Github</span></a><a href="/get-appimage/nheko" class="card-footer-item" target="_blank" rel="noreferrer"><i class="fa fa-external-link-alt ss-i"></i><span class="ss-card-footer-text">Info</span></a></footer></div></div>
+      </div>
+
+      
+      <p style="display: none"><a class="pagination__next"
+            href="./../../../p/5">Next</a>
+      </p>
+      
+
+      <div class="scroll-status">
+        <div class="infinite-scroll-request">
+          <div class="loader-ellips">
+            <span class="loader-ellips__dot loader-ellips__dot--1"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--2"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--3"></span>
+            <span class="loader-ellips__dot loader-ellips__dot--4"></span>
+          </div>
+        </div>
+        <p class="infinite-scroll-error has-text-centered">No more pages to load</p>
+        <p class="infinite-scroll-last has-text-centered">Last page loaded</p>
+      </div>
+
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="./../../../js/utils.js"></script>
+    <script>
+  function darkTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#ffffff");
+    rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
+    rootSelector.style.setProperty("--background-color", " #121212");
+    rootSelector.style.setProperty("--background-color-2", " #000000");
+    $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
+    $('#themeSwitch').prop('checked', true);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--white.png");
+    rootSelector.style.setProperty("--cth", "0");
+  }
+  function lightTheme() {
+    let rootSelector = $(":root").get(0);
+    rootSelector.style.setProperty("--foreground-color", "#000");
+    rootSelector.style.setProperty("--foreground-color-2", "#121212");
+    rootSelector.style.setProperty("--background-color", " #fafafa");
+    rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--cth", "255");
+    $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
+    $('#themeSwitch').prop('checked', false);
+    $("#bulma").attr("src","./../../../img/made-with-bulma--black.png");
+
+  }
+
+  $(document).ready(function() {
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (userPrefersDark) {
+      darkTheme();
+    }
+
+    $('#themeSwitch').change(function () {
+      if (this.checked) {
+        darkTheme();
+      } else {
+        lightTheme();
+      }
+    });
+  });
+</script>
+
+    <script>
+      $(document).ready(function(){
+
+        var msnry = new Masonry( '.grid', {
+          itemSelector: 'none', // select no images on init
+          columnWidth: '.grid__col-sizer',
+          gutter: '.grid__gutter-sizer',
+          percentPosition: true,
+          stagger: 30,
+          fitWidth: true,
+          visibleStyle: {
+            transform: 'translateY(0)',
+            opacity: 1
+          },
+          hiddenStyle: {
+            transform: 'translateY(100px)',
+            opacity: 0,
+          }
+        });
+
+        imagesLoaded( '.grid', function() {
+          msnry.options.itemSelector = '.grid__item'; // select proper items
+          document.querySelector('.grid').classList.add('are-images-ready');
+          var items = document.querySelectorAll('.grid__item');
+          msnry.appended( items );
+        });
+
+      });
+    </script>
+
+  </body>
+  <footer class="footer">
+  <div class="content has-text-centered">
+  <p>
+    &copy; <a href="https://srevinsaju.github.io"
+              target="_blank"><strong>Srevin Saju</strong></a> and
+      <a href="https://appimage.org"
+         target="_blank"><strong>AppImage.org</strong></a> 2020.
+    <br>
+    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    </a>
+    <br>
+    <a href="https://bulma.io">
+      <img id="bulma"
+           src="/get-appimage/img/made-with-bulma--black.png"
+           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+    </a>
+    <br>
+    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+    <br>
+
+  </p>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+     target="_blank" rel="noreferrer"><img
+          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  </div>
+</footer>
+
+</html>
