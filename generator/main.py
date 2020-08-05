@@ -163,6 +163,7 @@ class LibraryBuilder:
             os.path.abspath(os.path.join(output_directory, 'index.html'))
 
         read_parse_and_write_template(
+            self.file_system_loader,
             index_html_template_path,
             index_html_parsed_output_path,
             catalog=Catalog(),
@@ -177,6 +178,7 @@ class LibraryBuilder:
         search_html_parsed_output_path = os.path.abspath(
             os.path.join(output_directory, 'search', 'index.html'))
         read_parse_and_write_template(
+            self.file_system_loader,
             search_html_template_path,
             search_html_parsed_output_path,
             catalog=Catalog(),
