@@ -47,10 +47,10 @@ def parse_args():
         description='Generates static HTML files for the Appimage catalog'
     )
     parser.add_argument(
-        '-i', '--input-json',
+        '-i', '--input-directory',
         default=os.getcwd(),
-        help='Provide the url to JSON file to scan and build static appimage '
-             'HTML, (defaults to: {}) '.format(FEED_URL_JSON)
+        help='Provide the directory where `static` resides '
+             'HTML, (defaults to: {}) '.format(os.getcwd())
     )
     parser.add_argument(
         '-o', '--output-directory',
