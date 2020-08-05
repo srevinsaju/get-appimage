@@ -214,7 +214,9 @@ class LibraryBuilder:
 
     def generate_app_list(self):
         print("Generating App List")
-        pages_directory_path = os.path.join(self.output_directory, 'p')
+        all_app_list_directory_path = os.path.join(self.output_directory,
+                                                   'all')
+        pages_directory_path = os.path.join(all_app_list_directory_path, 'p')
         if not os.path.exists(pages_directory_path):
             os.makedirs(pages_directory_path)
 
@@ -274,9 +276,23 @@ class LibraryBuilder:
                 w.write(index_html_template.render(
                     catalog=Catalog(),
                     cards='\n'.join(column_data),
-                    path_prefix="./../..",
+                    path_prefix="./../../..",
                     next_page_link=next_page_link
                 ))
+
+        index_html_template_path = \
+            os.path.abspath(os.path.join('static', 'all', 'index.html'))
+        index_html_parsed_output_path = \
+            os.path.abspath(
+                os.path.join(all_app_list_directory_path, 'index.html'))
+
+        read_parse_and_write_template(
+            index_html_template_path,
+            index_html_parsed_output_path,
+            catalog=Catalog(),
+            path_prefix="..",
+            next_page_link="/p/0"
+        )
 
 
 def main():
