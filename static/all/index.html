@@ -73,46 +73,11 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
-    <script src="{{ path_prefix }}/js/utils.js"></script>
+    <script src="{{ catalog.base_url }}/js/utils.js"></script>
+    {% include 'light_dark_theme.html' %}
+
     <script>
-        
-      function darkTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
-        $(":root").get(0).style.setProperty("--background-color", " #121212");
-        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
-        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
-        $('#themeSwitch').prop('checked', true);
-        $("#bulma").attr("src","{{ path_prefix }}/img/made-with-bulma--white.png");
-        $(":root").get(0).style.setProperty("--cth", "0");
-      }
-
-      function lightTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#000");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
-        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
-        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
-        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
-        $('#themeSwitch').prop('checked', false);
-        $("#bulma").attr("src","{{ path_prefix }}/img/made-with-bulma--black.png");
-        $(":root").get(0).style.setProperty("--cth", "255");
-      }
-
       $(document).ready(function(){
-        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if ( userPrefersDark ) {
-            darkTheme();
-        }
-
-        $('#themeSwitch').change(function() {
-          if (this.checked) {
-            darkTheme();
-          } else {
-            lightTheme();
-          }
-        });
-
         var msnry = new Masonry( '.grid', {
           itemSelector: 'none', // select no images on init
           columnWidth: '.grid__col-sizer',

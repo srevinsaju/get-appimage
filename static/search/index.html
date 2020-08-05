@@ -3,67 +3,8 @@
   {% include 'head.html' %}
 
   <body>
-    <!-- Navbar -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="{{ catalog.base_url }}">
-          <img src="{{ path_prefix }}{{ catalog.image }}" width="28" height="28"
-               alt="{{ catalog.title }} logo">
-        </a>
-    
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
-        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+    {% include 'navigation.html' %}
 
-      <div id="appimage-navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="{{ catalog.base_url}}/">
-            Home
-          </a>
-          <a class="navbar-item" href="{{ catalog.base_url}}/all/">
-            All AppImages
-          </a>
-          <a class="navbar-item" href="{{ catalog.base_url}}/search/">
-            Search
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#"  onclick="return false;">
-              More
-            </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#about">
-                About
-              </a>
-              <a class="navbar-item" href="#contact">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="{{ catalog.issue_tracker }}">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="field" style="margin: 0.5em;">
-              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
-              <label for="themeSwitch">
-                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
-              </label>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </nav>
-    
     <!-- Search Results - indicator -->
     <section style="margin-top: 3.25em;" class="hero is-primary">
       <div class="hero-body">
@@ -115,47 +56,12 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/minisearch@2.2.2/dist/umd/index.min.js"></script>
-    <script src="{{ path_prefix }}/js/utils.js"></script>
-    <script src="{{ path_prefix }}/js/search.js"></script>
+    <script src="{{ catalog.base_url }}/js/utils.js"></script>
+    <script src="{{ catalog.base_url }}/js/search.js"></script>
+    {% include 'light_dark_theme.html' %}
+
     <script>
-        
-      function darkTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#ffffff");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#fafafa");
-        $(":root").get(0).style.setProperty("--background-color", " #121212");
-        $(":root").get(0).style.setProperty("--background-color-2", " #000000");
-        $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
-        $('#themeSwitch').prop('checked', true);
-        $("#bulma").attr("src","{{ path_prefix }}/img/made-with-bulma--white.png");
-        $(":root").get(0).style.setProperty("--cth", "0");
-      }
-
-      function lightTheme() {
-        $(":root").get(0).style.setProperty("--foreground-color", "#000");
-        $(":root").get(0).style.setProperty("--foreground-color-2", "#121212");
-        $(":root").get(0).style.setProperty("--background-color", " #fafafa");
-        $(":root").get(0).style.setProperty("--background-color-2", " #ffffff");
-        $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
-        $('#themeSwitch').prop('checked', false);
-        $("#bulma").attr("src","{{ path_prefix }}/img/made-with-bulma--black.png");
-        $(":root").get(0).style.setProperty("--cth", "255");
-      }
-
       $(document).ready(function(){
-        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if ( userPrefersDark ) {
-          darkTheme();
-        }
-
-        $('#themeSwitch').change(function() {
-          if (this.checked) {
-            darkTheme();
-          } else {
-            lightTheme();
-          }
-        });
-
         const queryString = window.location.search;
         console.log(queryString);
         const urlParams = new URLSearchParams(queryString);
@@ -172,30 +78,7 @@
     </script>
 
   </body>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        &copy; <strong>Srevin Saju</strong> 2020.
-        <br>
-        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
-          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-        </a>
-        <br>
-        <a href="https://bulma.io">
-          <img id="bulma" src="{{ path_prefix }}/img/made-with-bulma--black.png"
-               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
-        </a>
-        <br>
-        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
-        <br>
- 
-      </p>
-      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
-         target="_blank" rel="noreferrer"><img src="../img/by-nc-nd.svg"
-                                               alt="CC-BY-NC-ND"></a>
-
-    </div>
-  </footer>
+  {% include 'footer.html' %}
 
 
 </html>

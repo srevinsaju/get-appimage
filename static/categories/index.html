@@ -64,75 +64,321 @@
       </div>
     </nav>
 
-    <!-- Hero / Featured Header -->
-    <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
+    <!-- Search Results - indicator -->
+    <section style="margin-top: 3.25em;" class="hero is-primary">
       <div class="hero-body">
         <div class="container">
-          <img class="appimage-hero-img" src="{{ path_prefix }}{{ catalog.image }}"
-               alt="Appimage logo">
-          <h1 class="title">
-            {{ catalog.title }}
+          <h1 class="title" style="margin-bottom: 0.5em;">
+            AppImages by Categories
           </h1>
           <h2 class="subtitle">
-            {{ catalog.description }}
+            AppImages classified under FreeDesktop's specifications.
+            Or do a <a href="{{ base_url }}/search/">Search</a>
           </h2>
-          <form id="appimage-search-container" action="./search/" method="GET">
-            <div class="form-row">
-              <input id="appimage-search-box"
-                class="input appimage-search-input"
-                placeholder="Search for AppImages!"
-                autofocus name="q"
-              />
-              <button class="button is-success" type="submit" style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
-                <i class="fa fa-search"></i>
-              </button>
-
-            </div>
-          </form>
-
-
         </div>
       </div>
     </section>
+
 
     <!-- All the other code comes here! -->
 
     <!-- Appimages card sections -->
     <section id="apps" class="section" style="max-width: 1380px; margin: 0
     auto;">
-      <div class="grid">
-        <div class="grid__col-sizer"></div>
-        <div class="grid__gutter-sizer"></div>
-        {{ cards }}
-      </div>
+       <div class="columns is-multiline is-desktop" style="margin: 1em 0;">
 
-      {% if next_page_link %}
-      <p style="display: none"><a class="pagination__next"
-            href="{{ path_prefix }}{{ next_page_link }}">Next</a>
-      </p>
-      {% endif %}
+          <div class="column ss-project-column">
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-music"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Audio</p>
 
-      <div class="scroll-status">
-        <div class="infinite-scroll-request">
-          <div class="loader-ellips">
-            <span class="loader-ellips__dot loader-ellips__dot--1"></span>
-            <span class="loader-ellips__dot loader-ellips__dot--2"></span>
-            <span class="loader-ellips__dot loader-ellips__dot--3"></span>
-            <span class="loader-ellips__dot loader-ellips__dot--4"></span>
+                    <a href="./audio/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-video"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Video</p>
+
+                    <a href="./video/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-palette"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Graphics</p>
+                    <a href="./graphics/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-code"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Development</p>
+                    <a href="./development/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-tools"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Utilities</p>
+                    <a href="./utility/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
-        </div>
-        <p class="infinite-scroll-error has-text-centered">No more pages to load</p>
-        <p class="infinite-scroll-last has-text-centered">Last page loaded</p>
-      </div>
+          <div class="column ss-project-column">
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-university"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Education</p>
+
+                    <a href="./education/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-microscope"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Science</p>
+                    <a href="./science/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-cogs"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Settings</p>
+                    <a href="./settings/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-photo-video"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Multimedia</p>
+                    <a href="./audiovideo/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="column ss-project-column">
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-network-wired"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Network</p>
+                    <a href="./network/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-photo-video"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Multimedia</p>
+                    <a href="./audiovideo/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-file-word"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Office</p>
+                    <a href="./office/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card appimage-card mb-medium">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <div class="ss-skill-img is-48x48">
+                      <i class="fa fa-file-word"></i>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4">Office</p>
+                    <a href="./office/"><button class="button is-medium">
+                      <span class="icon">
+                        <i class="fa fa-chevron-circle-right"></i>
+                      </span>
+                      <span>AppImages</span>
+                    </button></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+       </div>
+
 
     </section>
 
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
     <script src="{{ path_prefix }}/js/utils.js"></script>
     <script>
         
@@ -173,68 +419,11 @@
           }
         });
 
-        var msnry = new Masonry( '.grid', {
-          itemSelector: 'none', // select no images on init
-          columnWidth: '.grid__col-sizer',
-          gutter: '.grid__gutter-sizer',
-          percentPosition: true,
-          stagger: 30,
-          fitWidth: true,
-          visibleStyle: {
-            transform: 'translateY(0)',
-            opacity: 1
-          },
-          hiddenStyle: {
-            transform: 'translateY(100px)',
-            opacity: 0,
-          }
-        });
-
-        imagesLoaded( '.grid', function() {
-          msnry.options.itemSelector = '.grid__item'; // select proper items
-          document.querySelector('.grid').classList.add('are-images-ready');
-          var items = document.querySelectorAll('.grid__item');
-          msnry.appended( items );
-        });
-
-        var infScroll = new InfiniteScroll( '.grid', {
-          path: '.pagination__next',
-          append: '.grid__item',
-          debug: true,
-          outlayer: msnry,
-          status: '.scroll-status',
-          scrollThreshold: 1,
-        });
-
-        infScroll.loadNextPage();
       });
     </script>
 
   </body>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        &copy; <strong>Srevin Saju</strong> 2020.
-        <br>
-        This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
-          Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-        </a>
-        <br>
-        <a href="https://bulma.io">
-          <img id="bulma" src="{{ path_prefix }}/img/made-with-bulma--black.png"
-               alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
-        </a>
-        <br>
-        Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
-        <br>
- 
-      </p>
-      <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
-         target="_blank" rel="noreferrer"><img
-              src="{{ path_prefix }}/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
-
-    </div>
-  </footer>
+  {% include 'footer.html' %}
 
 
 </html>
