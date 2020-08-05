@@ -57,7 +57,10 @@ class AppImage:
     def screenshots_html(self):
         if not self._screenshots:
             return ''
-        return '<div><img src="https://gitcdn.xyz/cdn/AppImage/' \
+        return '<div style="margin: 0 auto; display: block"><img ' \
+               'style="margin: 0 auto; ' \
+               'display: block;" ' \
+               'src="https://gitcdn.xyz/cdn/AppImage/' \
                'appimage.github.io/master/database/{}" ' \
                'class="appimage-screenshot-image"></div>'\
             .format(self._screenshots[0])
