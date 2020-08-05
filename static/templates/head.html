@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Categories | {{ catalog.title }}</title>
 
-</body>
-</html>
+    <!-- SEO -->
+    <meta name="description" content="{{ catalog.description }}">
+    <meta name="keywords" content="{{ catalog.keywords }}">
+    <meta name="author" content="{{ catalog.author }}">
+
+    <!-- OG -->
+    <meta property="og:title" content="{{ catalog.title }}" />
+    <meta property="og:url" content="{{ catalog.url }}" />
+    <meta property="og:image" content="{{ catalog.base_url }}{{ catalog.image }}" />
+    <meta property="og:description" content="{{ catalog.description }}" />
+    <meta property="og:site_name" content="{{ catalog.title }}" />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="{{ path_prefix }}/css/main.css">
+    <link rel="stylesheet" href="{{ path_prefix }}/css/bulma/bulma-switch.min.css">
+    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+</head>
