@@ -26,6 +26,7 @@ SOFTWARE.
 This file is part of AppImage Catalog Generator
 """
 
+
 class Catalog:
     def __init__(self):
         self.title = "Get AppImage"

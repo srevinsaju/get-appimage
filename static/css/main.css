@@ -344,6 +344,15 @@ pre {
   margin-top: 1em;
 }
 
+.appimage-screenshot-image {
+  max-width: 75%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 1em;
+}
+
+/* media queries and animations */
+
 @media (max-width: 400px) {
   
   .ss-highlight {

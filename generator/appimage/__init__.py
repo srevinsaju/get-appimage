@@ -52,6 +52,16 @@ class AppImage:
         self.github_info = self.get_github_info()
 
     @property
+    def screenshots_html(self):
+        if not self._screenshots:
+            return ''
+        return '<div><img src="https://gitcdn.xyz/cdn/AppImage/' \
+               'appimage.github.io/master/database/{}" ' \
+               'class="appimage-screenshot-image"></div>'\
+            .format(self._screenshots[0])
+
+
+    @property
     def maintainer(self):
         return self.authors[0]
 
@@ -133,7 +143,6 @@ class AppImage:
             icon = '../img/logo.svg'
         return icon
 
-
     @property
     def github(self):
         github_info = self.github_info
@@ -164,12 +173,12 @@ class AppImage:
             TAG_HTML.format(left="Size",
                             right=github_info.get("size"))
         return ''.join((
-            download_button_html,
-            releases_button_html,
             TAGS_GROUP_HTML.format(
-             '\n'.join((latest_tag, github_url, num_downloads, size)))
-            )
-        )
+                '\n'.join((download_button_html, releases_button_html,))),
+            TAGS_GROUP_HTML.format(
+                '\n'.join((latest_tag, github_url, num_downloads, size)))
+
+        ))
 
     def get_github_release_from(self, github_release_api):
         request = urllib.request.Request(github_release_api)

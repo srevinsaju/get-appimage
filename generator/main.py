@@ -204,7 +204,8 @@ class LibraryBuilder:
                     APPTEMPLATE.render(
                         appimage=appimage,
                         library_issue_tracker="https://github.com/srevinsaju"
-                                              "/appimage2.github.io/"
+                                              "/appimage2.github.io/",
+                        catalog=Catalog()
                     )
                 )
             self.json.append(appimage.json_data())
