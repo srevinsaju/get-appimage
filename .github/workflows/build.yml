@@ -17,7 +17,7 @@ jobs:
         run: |
           echo $(realpath .)
           pip3 install -r requirements.txt
-          python -m generator --generate-app-pages --generate-app-list --copy-theme --noconfirm --gh-token=${{ secrets.GITHUB_TOKEN }}
+          python -m generator --generate-app-pages --generate-app-list --generate-categories-pages --copy-theme --noconfirm --gh-token=${{ secrets.GITHUB_TOKEN }}
 
 
       - name: Deploy 🚀
