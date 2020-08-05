@@ -34,6 +34,7 @@ import uuid
 
 from colorama import Fore
 
+from generator.catalog import Catalog
 from generator.constants import TAG_HTML, RELEASES_BUTTON_HTML, \
     TAGS_GROUP_HTML, TAG_CATEGORY_HTML, DOWNLOAD_BUTTON_HTML
 
@@ -50,6 +51,7 @@ class AppImage:
         self._icon = app.get('icons')
         self._screenshots = app.get('screenshots')
         self.github_info = self.get_github_info()
+        self.catalog = Catalog()
 
     @property
     def screenshots_html(self):
@@ -138,9 +140,9 @@ class AppImage:
             return 'https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master'\
                    '/database/{}'.format(icon)
         elif self._icon is None:
-            icon = '../img/logo.svg'
+            icon = '{}/img/logo.svg'.format(self.catalog.base_url)
         else:
-            icon = '../img/logo.svg'
+            icon = '{}/img/logo.svg'.format(self.catalog.base_url)
         return icon
 
     @property
