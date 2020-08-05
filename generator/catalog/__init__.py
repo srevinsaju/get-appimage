@@ -31,11 +31,12 @@ class Catalog:
         self.title = "Get AppImage"
         self.description = "Collection of all AppImages in one website"
         self.author = "Srevin Saju"
-        self.base_url = "https://appimage.org"
+        self.root_url = "https://appimage.org"
         self.url = "https://srevinsaju.github.io/appimage2"
         self.image = "/img/logo.svg"
         self.issue_tracker = "https://github.com/srevinsaju/appimage2/issues"
         self._keywords = ["AppImage", "Linux", "Package"]
+        self.base_url = "/get-appimage"
 
 
     @property
