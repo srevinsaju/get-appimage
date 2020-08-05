@@ -74,7 +74,12 @@ def parse_args():
         help='Start the process of HTML generation. '
     )
     parser.add_argument(
-        '-C', '--force-refresh-feed',
+        '-C', '--generate-categories-pages',
+        action='store_true',
+        help='Generate app pages separated by categories'
+    )
+    parser.add_argument(
+        '-F', '--force-refresh-feed',
         default='',
         help='Fetches feed.json again, and then parses content rather than '
              'cached copy'
