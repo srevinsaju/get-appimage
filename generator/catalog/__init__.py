@@ -35,7 +35,8 @@ class Catalog:
         self.root_url = "https://appimage.org"
         self.url = "https://srevinsaju.github.io/appimage2"
         self.image = "/img/logo.svg"
-        self.issue_tracker = "https://github.com/srevinsaju/appimage2/issues"
+        self.issue_tracker = \
+            "https://github.com/srevinsaju/get-appimage/issues"
         self._keywords = ["AppImage", "Linux", "Package"]
         self.base_url = "/get-appimage"
 
