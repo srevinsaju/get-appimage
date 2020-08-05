@@ -49,7 +49,8 @@ args = parse_args()
 
 class LibraryBuilder:
 
-    def __init__(self, output_directory=args.output_directory):
+    def __init__(self, output_directory=args.output_directory,
+                 input_directory=args.input_directory):
         """
         Handles building the appimage catalog
         :param output_directory:
