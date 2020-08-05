@@ -335,7 +335,6 @@ class AppImage:
             'categories': self.categories,
             'categories_html': self.categories_html
 
-
         }
 
 
