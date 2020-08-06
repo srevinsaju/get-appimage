@@ -360,6 +360,9 @@ class AppImage:
             'latest_release': tag_name
         }
 
+    def get_app_metadata(self):
+        if self.is_github():
+            return self.get_github_info()
 
 
     def json_data(self):
