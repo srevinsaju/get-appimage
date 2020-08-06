@@ -1,1 +1,1 @@
-false
+{"id": "f2ed7867e700410fb6158c122c5f8a96", "owner": "easyops-cn", "author": "weareoutman", "releases_url": "https://github.com/easyops-cn/console-workbench/releases/latest", "github_url": "https://github.com/easyops-cn/console-workbench", "assets": {"49cfab0a8256455d825c160dc3049b1c": {"name": "console-workbench-1.3.3-x86_64.AppImage", "download": "https://github.com/easyops-cn/console-workbench/releases/download/v1.3.3/console-workbench-1.3.3-x86_64.AppImage", "count": 1249, "size": "59.89 MB"}}, "latest_release": "v1.3.3"}

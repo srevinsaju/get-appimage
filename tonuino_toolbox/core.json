@@ -1,1 +1,1 @@
-false
+{"id": "5ec72a9bfb96482fb2d85878ecfbf186", "owner": "raph-ael", "author": "raph-ael", "releases_url": "https://github.com/raph-ael/tonuino-toolbox/releases/latest", "github_url": "https://github.com/raph-ael/tonuino-toolbox", "assets": {"81068e61fbab46b5ac172d981c9fc649": {"name": "tonuino-toolbox-1.1.9-linux-x86_64.AppImage", "download": "https://github.com/raph-ael/tonuino-toolbox/releases/download/v1.1.9/tonuino-toolbox-1.1.9-linux-x86_64.AppImage", "count": 81, "size": "83.42 MB"}}, "latest_release": "v1.1.9"}

@@ -1,1 +1,1 @@
-false
+{"id": "506237e1f87c401282db880e8a7b9da9", "owner": "KDAB", "author": "milianw", "releases_url": "https://github.com/KDAB/hotspot/releases/latest", "github_url": "https://github.com/KDAB/hotspot", "assets": {"da5565b0069b48829fd294343bc2e031": {"name": "hotspot-v1.2.0-x86_64.AppImage", "download": "https://github.com/KDAB/hotspot/releases/download/v1.2.0/hotspot-v1.2.0-x86_64.AppImage", "count": 1980, "size": "32.29 MB"}}, "latest_release": "v1.2.0"}

@@ -1,1 +1,1 @@
-false
+{"id": "040e83b26f4145e8be56fc6080be5b63", "owner": "buckets", "author": "iffy", "releases_url": "https://github.com/buckets/application/releases/latest", "github_url": "https://github.com/buckets/application", "assets": {"09601e40d3cd4588adb5c4f193c62d18": {"name": "Buckets-0.55.3-x86_64.AppImage", "download": "https://github.com/buckets/application/releases/download/v0.55.3/Buckets-0.55.3-x86_64.AppImage", "count": 1600, "size": "68.74 MB"}}, "latest_release": "v0.55.3"}

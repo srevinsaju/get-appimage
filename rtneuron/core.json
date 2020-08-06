@@ -1,1 +1,1 @@
-false
+{"id": "4dbc19bb1d0c430fa2452f6f3447070e", "owner": "BlueBrain", "author": "hernando", "releases_url": "https://github.com/BlueBrain/RTNeuron/releases/latest", "github_url": "https://github.com/BlueBrain/RTNeuron", "assets": {"d1a724383c684e5ea40bcabee7a49442": {"name": "rtneuron_x86_64.AppImage", "download": "https://github.com/BlueBrain/RTNeuron/releases/download/3.0.0-rc1/rtneuron_x86_64.AppImage", "count": 1142, "size": "184.44 MB"}}, "latest_release": "3.0.0-rc1"}

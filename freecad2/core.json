@@ -1,1 +1,1 @@
-false
+{"id": "b97a9bef7f6747848dfaaddcb75005a1", "owner": "FreeCAD", "author": "sgrogan", "releases_url": "https://github.com/FreeCAD/FreeCAD/releases/latest", "github_url": "https://github.com/FreeCAD/FreeCAD", "assets": {"79314f8c4e7047c2920874027f3449d9": {"name": "FreeCAD_0.18-16146-Linux-Conda_Py3Qt5_glibc2.12-x86_64.AppImage", "download": "https://github.com/FreeCAD/FreeCAD/releases/download/0.18.4/FreeCAD_0.18-16146-Linux-Conda_Py3Qt5_glibc2.12-x86_64.AppImage", "count": 378, "size": "577.84 MB"}}, "latest_release": "0.18.4"}

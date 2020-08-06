@@ -1,1 +1,1 @@
-false
+{"id": "8908f205b7a64f0c9ed817612c922a2f", "owner": "ragnar-lodbrok", "author": "ragnar-lodbrok", "releases_url": "https://github.com/ragnar-lodbrok/meow-sql/releases/latest", "github_url": "https://github.com/ragnar-lodbrok/meow-sql", "assets": {"bec9bc0635244ffcaa7fa0ae6296bfbb": {"name": "Linux_MeowSQL_0.4.3-x86_64.AppImage", "download": "https://github.com/ragnar-lodbrok/meow-sql/releases/download/v0.4.3-alpha/Linux_MeowSQL_0.4.3-x86_64.AppImage", "count": 35, "size": "74.72 MB"}}, "latest_release": "v0.4.3-alpha"}

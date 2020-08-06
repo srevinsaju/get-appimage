@@ -1,1 +1,1 @@
-false
+{"id": "ea8b321ab1ac4421b464596001fbaceb", "owner": "groupgets", "author": "kekiefer", "releases_url": "https://github.com/groupgets/GetThermal/releases/latest", "github_url": "https://github.com/groupgets/GetThermal", "assets": {"7c0decf778284952bdc372836b803fc4": {"name": "GetThermal-v0.1.4-x86_64-Linux.AppImage", "download": "https://github.com/groupgets/GetThermal/releases/download/v0.1.4/GetThermal-v0.1.4-x86_64-Linux.AppImage", "count": 922, "size": "39.95 MB"}}, "latest_release": "v0.1.4"}

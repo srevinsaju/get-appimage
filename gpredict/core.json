@@ -1,1 +1,1 @@
-false
+{"id": "e6dbfb7b40c74194a753d5a66cac614f", "owner": "csete", "author": "csete", "releases_url": "https://github.com/csete/gpredict/releases/latest", "github_url": "https://github.com/csete/gpredict", "assets": {"03cbd0f9f0a147efbd751a077c1ebefb": {"name": "Gpredict-2.2.1.glibc2.14-x86_64.AppImage", "download": "https://github.com/csete/gpredict/releases/download/v2.2.1/Gpredict-2.2.1.glibc2.14-x86_64.AppImage", "count": 4944, "size": "9.06 MB"}}, "latest_release": "v2.2.1"}

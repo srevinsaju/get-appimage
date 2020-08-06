@@ -1,1 +1,1 @@
-false
+{"id": "8ca6d43625524745a252cf23f47a93e6", "owner": "QNapi", "author": "krzemin", "releases_url": "https://github.com/QNapi/qnapi/releases/latest", "github_url": "https://github.com/QNapi/qnapi", "assets": {"805c875b6a3b40e4a27e5e855163e7da": {"name": "QNapi-0.2.3-x86_64.AppImage", "download": "https://github.com/QNapi/qnapi/releases/download/0.2.3/QNapi-0.2.3-x86_64.AppImage", "count": 6717, "size": "26.11 MB"}}, "latest_release": "0.2.3"}

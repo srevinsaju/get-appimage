@@ -1,1 +1,1 @@
-false
+{"id": "15e8a2a2e28140f18c45f1ed37146379", "owner": "Qredit", "author": "NayiemWillems", "releases_url": "https://github.com/Qredit/desktop-wallet/releases/latest", "github_url": "https://github.com/Qredit/desktop-wallet", "assets": {"2a1d256cadae4c58af340ebe8c9ff6ef": {"name": "qredit-linux.AppImage", "download": "https://github.com/Qredit/desktop-wallet/releases/download/2.9.3/qredit-linux.AppImage", "count": 4, "size": "100.55 MB"}}, "latest_release": "2.9.3"}

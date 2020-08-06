@@ -1,1 +1,1 @@
-false
+{"id": "b8b2ef3dfeeb47f3b0ff11edf52988e1", "owner": "TheLindaProjectInc", "author": "davidstoneham", "releases_url": "https://github.com/TheLindaProjectInc/Altitude/releases/latest", "github_url": "https://github.com/TheLindaProjectInc/Altitude", "assets": {"c7cfa50de989457687b03f1eb543a8ac": {"name": "Altitude-linux-x64.AppImage", "download": "https://github.com/TheLindaProjectInc/Altitude/releases/download/2.1.5/Altitude-linux-x64.AppImage", "count": 488, "size": "82.48 MB"}}, "latest_release": "2.1.5"}

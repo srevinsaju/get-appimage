@@ -1,1 +1,1 @@
-false
+{"id": "dbb4c6f1b8114a3f8c6d89163e1d45d9", "owner": "vechain", "author": "libotony", "releases_url": "https://github.com/vechain/thor-sync.electron/releases/latest", "github_url": "https://github.com/vechain/thor-sync.electron", "assets": {"4a190b835f62465884a9e620c70cc3f1": {"name": "Sync-linux-x86_64-1.2.6.AppImage", "download": "https://github.com/vechain/thor-sync.electron/releases/download/v1.2.6/Sync-linux-x86_64-1.2.6.AppImage", "count": 442, "size": "57.66 MB"}}, "latest_release": "v1.2.6"}

@@ -1,1 +1,1 @@
-false
+{"id": "06082fb1e4374efc8f91e23f8463fa41", "owner": "UltimateHackingKeyboard", "author": "github-actions[bot]", "releases_url": "https://github.com/UltimateHackingKeyboard/agent/releases/latest", "github_url": "https://github.com/UltimateHackingKeyboard/agent", "assets": {"ae4ecb2da1414cc9b3cdac8b1b63bf99": {"name": "UHK.Agent-1.5.0-linux-x86_64.AppImage", "download": "https://github.com/UltimateHackingKeyboard/agent/releases/download/v1.5.0/UHK.Agent-1.5.0-linux-x86_64.AppImage", "count": 743, "size": "76.74 MB"}}, "latest_release": "v1.5.0"}

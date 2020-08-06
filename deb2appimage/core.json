@@ -1,1 +1,1 @@
-false
+{"id": "10550e989eca448fb192e708431f42f8", "owner": "simoniz0r", "author": "simoniz0r", "releases_url": "https://github.com/simoniz0r/deb2appimage/releases/latest", "github_url": "https://github.com/simoniz0r/deb2appimage", "assets": {"429243be5f83436b991f553b49da3769": {"name": "deb2appimage-0.0.5-x86_64.AppImage", "download": "https://github.com/simoniz0r/deb2appimage/releases/download/v0.0.5/deb2appimage-0.0.5-x86_64.AppImage", "count": 1938, "size": "7.95 MB"}}, "latest_release": "v0.0.5"}

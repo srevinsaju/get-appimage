@@ -1,1 +1,1 @@
-false
+{"id": "5c07ba67501147aea526b3cf7f3b39bd", "owner": "bengtmartensson", "author": "bengtmartensson", "releases_url": "https://github.com/bengtmartensson/harctoolboxbundle/releases/latest", "github_url": "https://github.com/bengtmartensson/harctoolboxbundle", "assets": {"30aef3f7d75245bdb044194bb759ae5b": {"name": "IrScrutinizer-2.2.6-x86_64.AppImage", "download": "https://github.com/bengtmartensson/IrScrutinizer/releases/download/Version-2.2.6/IrScrutinizer-2.2.6-x86_64.AppImage", "count": 78, "size": "38.38 MB"}}, "latest_release": "Version-2.2.6"}

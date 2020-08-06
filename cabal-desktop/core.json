@@ -1,1 +1,1 @@
-false
+{"id": "14e0e6807b76472db89bbc2d95eeb926", "owner": "cabal-club", "author": "nikolaiwarner", "releases_url": "https://github.com/cabal-club/cabal-desktop/releases/latest", "github_url": "https://github.com/cabal-club/cabal-desktop", "assets": {"2776891cd85340a58b12124e5dda8b3d": {"name": "cabal-desktop-6.0.4-linux-x86_64.AppImage", "download": "https://github.com/cabal-club/cabal-desktop/releases/download/v6.0.4/cabal-desktop-6.0.4-linux-x86_64.AppImage", "count": 141, "size": "114.39 MB"}}, "latest_release": "v6.0.4"}

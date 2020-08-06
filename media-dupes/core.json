@@ -1,1 +1,1 @@
-false
+{"id": "2522dc2a0a2e4ac693dcba49d2f6184a", "owner": "yafp", "author": "github-actions[bot]", "releases_url": "https://github.com/yafp/media-dupes/releases/latest", "github_url": "https://github.com/yafp/media-dupes", "assets": {"3d6f1fce6c2f4329afc2c9d27f170abc": {"name": "media-dupes-0.10.3-linux-x86_64.AppImage", "download": "https://github.com/yafp/media-dupes/releases/download/0.10.3/media-dupes-0.10.3-linux-x86_64.AppImage", "count": 3, "size": "120.69 MB"}}, "latest_release": "0.10.3"}

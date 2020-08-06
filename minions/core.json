@@ -1,1 +1,1 @@
-false
+{"id": "a8afa36b646e4728a19ea764422c8a73", "owner": "blahgeek", "author": "blahgeek", "releases_url": "https://github.com/blahgeek/Minions/releases/latest", "github_url": "https://github.com/blahgeek/Minions", "assets": {"dcfab57a98fe46dabb965636f17c90d9": {"name": "Minions-0.5.3-d2ec2b.glibc2.18-x86_64.AppImage", "download": "https://github.com/blahgeek/Minions/releases/download/v0.5.3/Minions-0.5.3-d2ec2b.glibc2.18-x86_64.AppImage", "count": 1346, "size": "37.44 MB"}}, "latest_release": "v0.5.3"}

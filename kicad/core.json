@@ -1,1 +1,1 @@
-false
+{"id": "fbd0018a0ce049de940389a59022e31b", "owner": "KarlZeilhofer", "author": "KarlZeilhofer", "releases_url": "https://github.com/KarlZeilhofer/kicad-appimage/releases/latest", "github_url": "https://github.com/KarlZeilhofer/kicad-appimage", "assets": {"02d041fa449a4c6999d9f13bd9e1da46": {"name": "KiCad-5.1.4.glibc2.27-x86_64.AppImage", "download": "https://github.com/KarlZeilhofer/kicad-appimage/releases/download/v5.1.4/KiCad-5.1.4.glibc2.27-x86_64.AppImage", "count": 1746, "size": "105.72 MB"}}, "latest_release": "v5.1.4"}

@@ -1,1 +1,1 @@
-false
+{"id": "18b03d300a4b4a72bbeea8c28b1cc3a0", "owner": "frappe", "author": "netchampfaris", "releases_url": "https://github.com/frappe/accounting/releases/latest", "github_url": "https://github.com/frappe/accounting", "assets": {"f93dd7801d2e4164b09c3cdbc650a08b": {"name": "Frappe-Books-0.0.3-beta.13.AppImage", "download": "https://github.com/frappe/books/releases/download/v0.0.3-beta.13/Frappe-Books-0.0.3-beta.13.AppImage", "count": 606, "size": "72.92 MB"}}, "latest_release": "v0.0.3-beta.13"}

@@ -1,1 +1,1 @@
-false
+{"id": "1efd7ba930284a59beb7492cc15d385c", "owner": "probonopd", "author": "probonopd", "releases_url": "https://github.com/probonopd/focuswriter/releases/latest", "github_url": "https://github.com/probonopd/focuswriter", "assets": {"fba1c5e15d7b4218a065755269cf00af": {"name": "FocusWriter-a9815c7-x86_64.AppImage", "download": "https://github.com/probonopd/focuswriter/releases/download/continuous/FocusWriter-a9815c7-x86_64.AppImage", "count": 1541, "size": "32.94 MB"}}, "latest_release": "continuous"}

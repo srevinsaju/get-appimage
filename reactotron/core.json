@@ -1,1 +1,1 @@
-false
+{"id": "0384958c18274d63bc9bf502cb4bff86", "owner": "infinitered", "author": "infinitered-circleci", "releases_url": "https://github.com/infinitered/reactotron/releases/latest", "github_url": "https://github.com/infinitered/reactotron", "assets": {"d7a2f5d149af436f8ca6b3dd6c91f2bc": {"name": "Reactotron-2.17.1.AppImage", "download": "https://github.com/infinitered/reactotron/releases/download/v2.17.1/Reactotron-2.17.1.AppImage", "count": 2693, "size": "93.00 MB"}}, "latest_release": "v2.17.1"}

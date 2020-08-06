@@ -1,1 +1,1 @@
-false
+{"id": "be00e92727c549908ad5b490a91203c8", "owner": "patrickelectric", "author": "patrickelectric", "releases_url": "https://github.com/patrickelectric/mini-qml/releases/latest", "github_url": "https://github.com/patrickelectric/mini-qml", "assets": {"e34db7d26f624d88b7828eb72d1035a0": {"name": "mini-qml.AppImage", "download": "https://github.com/patrickelectric/mini-qml/releases/download/continuous/mini-qml.AppImage", "count": 815, "size": "29.89 MB"}}, "latest_release": "continuous"}

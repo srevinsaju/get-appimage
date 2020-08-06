@@ -1,1 +1,1 @@
-false
+{"id": "7ef8ae185d0d4321a3ca353b9717cfb8", "owner": "turtlecoin", "author": "rixombea", "releases_url": "https://github.com/turtlecoin/turtle-wallet-electron/releases/latest", "github_url": "https://github.com/turtlecoin/turtle-wallet-electron", "assets": {"8c67db3afaaa483891f86e7414f09901": {"name": "WalletShell-v0.3.11-linux.AppImage", "download": "https://github.com/turtlecoin/turtle-wallet-electron/releases/download/v0.3.11/WalletShell-v0.3.11-linux.AppImage", "count": 1710, "size": "81.93 MB"}}, "latest_release": "v0.3.11"}

@@ -1,1 +1,1 @@
-false
+{"id": "cca7b40510204925b4017fb9f516a984", "owner": "james-proxy", "author": "mitchhentges", "releases_url": "https://github.com/james-proxy/james/releases/latest", "github_url": "https://github.com/james-proxy/james", "assets": {"141b01eb98ce414c953c2717c7655840": {"name": "james-2.1.2-x86_64.AppImage", "download": "https://github.com/james-proxy/james/releases/download/v2.1.2/james-2.1.2-x86_64.AppImage", "count": 1660, "size": "61.19 MB"}}, "latest_release": "v2.1.2"}

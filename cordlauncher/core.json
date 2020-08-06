@@ -1,1 +1,1 @@
-false
+{"id": "3ebbfa30c8384c9b9c28f2ba6ad503a7", "owner": "ProtocolONE", "author": "p1release", "releases_url": "https://github.com/ProtocolONE/cord.launcher/releases/latest", "github_url": "https://github.com/ProtocolONE/cord.launcher", "assets": {"8d4d6449685c42bb90d693a070263fa6": {"name": "cordlauncher-0.1.2.AppImage", "download": "https://github.com/ProtocolONE/cord.launcher/releases/download/v0.1.2/cordlauncher-0.1.2.AppImage", "count": 931, "size": "66.94 MB"}}, "latest_release": "v0.1.2"}

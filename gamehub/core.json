@@ -1,1 +1,1 @@
-false
+{"id": "3e0ed3107e1440bbacea8d34081c15fb", "owner": "tkashkin", "author": "tkashkin", "releases_url": "https://github.com/tkashkin/GameHub/releases/latest", "github_url": "https://github.com/tkashkin/GameHub", "assets": {"614f93b29a434166884b7619fd4268bf": {"name": "GameHub-bionic-0.16.0-1-master-b0f5e25-x86_64.AppImage", "download": "https://github.com/tkashkin/GameHub/releases/download/0.16.0-1-master/GameHub-bionic-0.16.0-1-master-b0f5e25-x86_64.AppImage", "count": 637, "size": "49.15 MB"}}, "latest_release": "0.16.0-1-master"}

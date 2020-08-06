@@ -1,1 +1,1 @@
-false
+{"id": "aa789939723a4b28b7e5b9b1f0dce6ca", "owner": "Jigsaw-Code", "author": "OutlineBot", "releases_url": "https://github.com/Jigsaw-Code/outline-server/releases/latest", "github_url": "https://github.com/Jigsaw-Code/outline-server", "assets": {"06c0f88aaf04477cad56008f13b035ee": {"name": "Outline-Manager.AppImage", "download": "https://github.com/Jigsaw-Code/outline-server/releases/download/server-v1.3.1/Outline-Manager.AppImage", "count": 22, "size": "92.59 MB"}}, "latest_release": "server-v1.3.1"}

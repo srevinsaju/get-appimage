@@ -1,1 +1,1 @@
-false
+{"id": "83b6ad7103624931843a2b247d32422b", "owner": "labsquare", "author": "dridk", "releases_url": "https://github.com/labsquare/CutePeaks/releases/latest", "github_url": "https://github.com/labsquare/CutePeaks", "assets": {"83850016decc4d369f2d51e7fe05e7db": {"name": "cutepeaks-x86_64.AppImage", "download": "https://github.com/labsquare/CutePeaks/releases/download/0.2.3/cutepeaks-x86_64.AppImage", "count": 1418, "size": "21.53 MB"}}, "latest_release": "0.2.3"}

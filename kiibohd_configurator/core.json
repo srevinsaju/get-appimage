@@ -1,1 +1,1 @@
-false
+{"id": "3f2d63527b554bbb9f937234f8197b67", "owner": "kiibohd", "author": "github-actions[bot]", "releases_url": "https://github.com/kiibohd/configurator/releases/latest", "github_url": "https://github.com/kiibohd/configurator", "assets": {"e9f04d92d33d4db29e72bb7fbf6bf701": {"name": "kiibohd-configurator-1.1.0-linux-x86_64.AppImage", "download": "https://github.com/kiibohd/configurator/releases/download/v1.1.0/kiibohd-configurator-1.1.0-linux-x86_64.AppImage", "count": 35, "size": "91.62 MB"}}, "latest_release": "v1.1.0"}

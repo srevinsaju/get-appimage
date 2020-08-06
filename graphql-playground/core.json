@@ -1,1 +1,1 @@
-false
+{"id": "4202c881c8ca4649a768cd8bcf45c6c3", "owner": "graphcool", "author": "huv1k", "releases_url": "https://github.com/graphcool/graphql-playground/releases/latest", "github_url": "https://github.com/graphcool/graphql-playground", "assets": {"8e6a49b4584d44ba84452267347b9633": {"name": "graphql-playground-electron-1.8.10-x86_64.AppImage", "download": "https://github.com/prisma-labs/graphql-playground/releases/download/v1.8.10/graphql-playground-electron-1.8.10-x86_64.AppImage", "count": 2322, "size": "77.55 MB"}}, "latest_release": "v1.8.10"}

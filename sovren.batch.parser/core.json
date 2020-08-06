@@ -1,1 +1,1 @@
-false
+{"id": "7d428bd526ae44bcb05d864d0178e98e", "owner": "sovren", "author": "zebner", "releases_url": "https://github.com/sovren/batch-utility/releases/latest", "github_url": "https://github.com/sovren/batch-utility", "assets": {"cb71098d978d46d7889eb7faae48fb28": {"name": "Sovren.Batch.Parser.AppImage", "download": "https://github.com/sovren/batch-utility/releases/download/1.2.0/Sovren.Batch.Parser.AppImage", "count": 943, "size": "76.55 MB"}}, "latest_release": "1.2.0"}

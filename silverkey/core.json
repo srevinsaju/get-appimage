@@ -1,1 +1,1 @@
-false
+{"id": "2106087e41f04c458e03cf076d3b2e67", "owner": "metacoma", "author": "metacoma", "releases_url": "https://github.com/metacoma/silverkey/releases/latest", "github_url": "https://github.com/metacoma/silverkey", "assets": {"7eea04d1a88b4c3491f1556a0acc3aa2": {"name": "Silverkey-4e17be7-x86_64.AppImage", "download": "https://github.com/metacoma/silverkey/releases/download/appimage/Silverkey-4e17be7-x86_64.AppImage", "count": 12, "size": "27.35 MB"}}, "latest_release": "appimage"}

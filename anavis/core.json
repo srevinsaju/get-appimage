@@ -1,1 +1,1 @@
-false
+{"id": "0413a8f777e04983bc3995e39fd6f7c4", "owner": "learningmedia", "author": "anavis-ci-user", "releases_url": "https://github.com/learningmedia/anavis/releases/latest", "github_url": "https://github.com/learningmedia/anavis", "assets": {"0184fcdddb5b469b80988d4831d1e586": {"name": "anavis-2.0.0-beta.13-linux-x86_64.AppImage", "download": "https://github.com/learningmedia/anavis/releases/download/v2.0.0-beta.13/anavis-2.0.0-beta.13-linux-x86_64.AppImage", "count": 539, "size": "63.99 MB"}}, "latest_release": "v2.0.0-beta.13"}

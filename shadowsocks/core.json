@@ -1,1 +1,1 @@
-false
+{"id": "425ee228f21b4b94b264df4cf793e871", "owner": "shadowsocks", "author": "librehat", "releases_url": "https://github.com/shadowsocks/shadowsocks-qt5/releases/latest", "github_url": "https://github.com/shadowsocks/shadowsocks-qt5", "assets": {"909ba5402bae4cfead9bca41bb6768b8": {"name": "Shadowsocks-Qt5-3.0.1-x86_64.AppImage", "download": "https://github.com/shadowsocks/shadowsocks-qt5/releases/download/v3.0.1/Shadowsocks-Qt5-3.0.1-x86_64.AppImage", "count": 199198, "size": "13.97 MB"}}, "latest_release": "v3.0.1"}

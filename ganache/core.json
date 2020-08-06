@@ -1,1 +1,1 @@
-false
+{"id": "fd97c9d457ac4cdfb5fa05ff64cbc03c", "owner": "trufflesuite", "author": "davidmurdoch", "releases_url": "https://github.com/trufflesuite/ganache/releases/latest", "github_url": "https://github.com/trufflesuite/ganache", "assets": {"9c13b5065dda4749a0a09cc8f0e69ce2": {"name": "ganache-2.4.0-linux-x86_64.AppImage", "download": "https://github.com/trufflesuite/ganache/releases/download/v2.4.0/ganache-2.4.0-linux-x86_64.AppImage", "count": 6748, "size": "151.85 MB"}}, "latest_release": "v2.4.0"}

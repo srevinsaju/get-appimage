@@ -1,1 +1,1 @@
-false
+{"id": "999ec94bf63d43ca81ab06ee8e8ce48f", "owner": "icidasset", "author": "icidasset", "releases_url": "https://github.com/icidasset/diffuse/releases/latest", "github_url": "https://github.com/icidasset/diffuse", "assets": {"08cd7368ff3f464881c246832d6400b0": {"name": "diffuse-linux.AppImage", "download": "https://github.com/icidasset/diffuse/releases/download/2.5.4/diffuse-linux.AppImage", "count": 35, "size": "103.38 MB"}}, "latest_release": "2.5.4"}

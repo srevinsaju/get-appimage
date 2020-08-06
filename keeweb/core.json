@@ -1,1 +1,1 @@
-false
+{"id": "f0ecc98596514ee29815deaef3f5f29b", "owner": "keeweb", "author": "github-actions[bot]", "releases_url": "https://github.com/keeweb/keeweb/releases/latest", "github_url": "https://github.com/keeweb/keeweb", "assets": {"366e75f41be342be87a8b995db4dffce": {"name": "KeeWeb-1.15.5.linux.AppImage", "download": "https://github.com/keeweb/keeweb/releases/download/v1.15.5/KeeWeb-1.15.5.linux.AppImage", "count": 282, "size": "75.67 MB"}}, "latest_release": "v1.15.5"}

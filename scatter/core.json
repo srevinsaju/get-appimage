@@ -1,1 +1,1 @@
-false
+{"id": "e07fb4b80ee64af2805eebbe7517ab91", "owner": "GetScatter", "author": "nsjames", "releases_url": "https://github.com/GetScatter/ScatterDesktop/releases/latest", "github_url": "https://github.com/GetScatter/ScatterDesktop", "assets": {"3d9181b014e848b3a6944399ab918f98": {"name": "linux-scatter-12.1.1-x86_64.AppImage", "download": "https://github.com/GetScatter/ScatterDesktop/releases/download/12.1.1/linux-scatter-12.1.1-x86_64.AppImage", "count": 2018, "size": "83.08 MB"}}, "latest_release": "12.1.1"}

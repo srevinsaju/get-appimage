@@ -1,1 +1,1 @@
-false
+{"id": "8c403a0676d4471c93f5c41ebe5e8209", "owner": "w3finance", "author": "HiZhaoYun", "releases_url": "https://github.com/w3finance/PolkaKey/releases/latest", "github_url": "https://github.com/w3finance/PolkaKey", "assets": {"fad33d9f9fb64d09846d20aa35f3aede": {"name": "PolkaKey-v0.8.0-x86_64.AppImage", "download": "https://github.com/w3finance/PolkaKey/releases/download/v0.8.0/PolkaKey-v0.8.0-x86_64.AppImage", "count": 95, "size": "75.65 MB"}}, "latest_release": "v0.8.0"}

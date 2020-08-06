@@ -1,1 +1,1 @@
-false
+{"id": "a36e302fbeb04758a7ca86011e090abb", "owner": "myazarc", "author": "myazarc", "releases_url": "https://github.com/myazarc/mira-backup/releases/latest", "github_url": "https://github.com/myazarc/mira-backup", "assets": {"36a326e561064fb49463e4e5fca7c168": {"name": "mira-backup-1.0.0-x86_64.AppImage", "download": "https://github.com/myazarc/mira-backup/releases/download/v1.0.0-beta.1/mira-backup-1.0.0-x86_64.AppImage", "count": 1275, "size": "56.44 MB"}}, "latest_release": "v1.0.0-beta.1"}

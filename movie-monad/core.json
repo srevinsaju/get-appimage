@@ -1,1 +1,1 @@
-false
+{"id": "27029bf0ad2d41048116e826a4266c43", "owner": "lettier", "author": "lettier", "releases_url": "https://github.com/lettier/movie-monad/releases/latest", "github_url": "https://github.com/lettier/movie-monad", "assets": {"505bca2280214628b4f26a8db223bb40": {"name": "movie-monad-0.0.7.0-x86_64.AppImage", "download": "https://github.com/lettier/movie-monad/releases/download/0.0.7.0/movie-monad-0.0.7.0-x86_64.AppImage", "count": 1127, "size": "36.04 MB"}}, "latest_release": "0.0.7.0"}

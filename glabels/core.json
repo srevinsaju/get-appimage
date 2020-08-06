@@ -1,1 +1,1 @@
-false
+{"id": "001f01ec2eb54695a7562fa625257de9", "owner": "jimevins", "author": "jimevins", "releases_url": "https://github.com/jimevins/glabels-qt/releases/latest", "github_url": "https://github.com/jimevins/glabels-qt", "assets": {"d15af1485a384293b84f09d04f6e64d6": {"name": "glabels-3.99-master561-x86_64.AppImage", "download": "https://github.com/jimevins/glabels-qt/releases/download/glabels-3.99-master561/glabels-3.99-master561-x86_64.AppImage", "count": 349, "size": "50.64 MB"}}, "latest_release": "glabels-3.99-master561"}

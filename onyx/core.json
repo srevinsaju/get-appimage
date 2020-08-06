@@ -1,1 +1,1 @@
-false
+{"id": "706612fe4bcd4b7caf3230300a57e8ab", "owner": "MainframeHQ", "author": "howleysv", "releases_url": "https://github.com/MainframeHQ/onyx/releases/latest", "github_url": "https://github.com/MainframeHQ/onyx", "assets": {"1d9b85004e854f30b807ea165ea14f50": {"name": "Onyx-0.5.2-linux-amd64.AppImage", "download": "https://github.com/MainframeHQ/onyx/releases/download/v0.5.2/Onyx-0.5.2-linux-amd64.AppImage", "count": 1417, "size": "71.26 MB"}}, "latest_release": "v0.5.2"}

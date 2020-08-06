@@ -1,1 +1,1 @@
-false
+{"id": "1d5399810c45462aab034570289be636", "owner": "marktext", "author": "Jocs", "releases_url": "https://github.com/marktext/marktext/releases/latest", "github_url": "https://github.com/marktext/marktext", "assets": {"e013e35ce92b49f790c6d0eb52622f1b": {"name": "marktext-x86_64.AppImage", "download": "https://github.com/marktext/marktext/releases/download/v0.16.2/marktext-x86_64.AppImage", "count": 2297, "size": "105.07 MB"}}, "latest_release": "v0.16.2"}

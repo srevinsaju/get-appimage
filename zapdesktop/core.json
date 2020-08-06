@@ -1,1 +1,1 @@
-false
+{"id": "5c2e66382c9c4b97b87dfe2c2b12e625", "owner": "LN-Zap", "author": "mrfelton", "releases_url": "https://github.com/LN-Zap/zap-desktop/releases/latest", "github_url": "https://github.com/LN-Zap/zap-desktop", "assets": {"8e62bd0cddf84516ab1a6560539cd5da": {"name": "Zap-linux-x86_64-v0.7.2-beta.AppImage", "download": "https://github.com/LN-Zap/zap-desktop/releases/download/v0.7.2-beta/Zap-linux-x86_64-v0.7.2-beta.AppImage", "count": 148, "size": "95.51 MB"}}, "latest_release": "v0.7.2-beta"}

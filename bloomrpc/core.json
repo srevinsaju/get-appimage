@@ -1,1 +1,1 @@
-false
+{"id": "5719b01f95c9401e8c0e9e7c7f4ac7f2", "owner": "uw-labs", "author": "fenos", "releases_url": "https://github.com/uw-labs/bloomrpc/releases/latest", "github_url": "https://github.com/uw-labs/bloomrpc", "assets": {"ef8655a1b5d04ee098a403227bfe958f": {"name": "bloomrpc-1.4.1-x86_64.AppImage", "download": "https://github.com/uw-labs/bloomrpc/releases/download/1.4.1/bloomrpc-1.4.1-x86_64.AppImage", "count": 1635, "size": "152.42 MB"}}, "latest_release": "1.4.1"}

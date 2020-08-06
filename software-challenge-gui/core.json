@@ -1,1 +1,1 @@
-false
+{"id": "3eee531dda1248388d4cea9867be1f77", "owner": "CAU-Kiel-Tech-Inf", "author": "socha-bot", "releases_url": "https://github.com/CAU-Kiel-Tech-Inf/socha-gui/releases/latest", "github_url": "https://github.com/CAU-Kiel-Tech-Inf/socha-gui", "assets": {"5c60a5737c6b43cdaede1863b4ad24aa": {"name": "Software-Challenge-GUI-linux-20.3.4.AppImage", "download": "https://github.com/CAU-Kiel-Tech-Inf/socha-gui/releases/download/20.3.4/Software-Challenge-GUI-linux-20.3.4.AppImage", "count": 230, "size": "89.67 MB"}}, "latest_release": "20.3.4"}

@@ -1,1 +1,1 @@
-false
+{"id": "7545d5cc61e5496284e5992f76dadbfd", "owner": "huwdp", "author": "huwdp", "releases_url": "https://github.com/huwdp/huwinterpreter/releases/latest", "github_url": "https://github.com/huwdp/huwinterpreter", "assets": {"ae0aee0d22304036a589da44adb9ffed": {"name": "HuwCode-20190525-x86_64.AppImage", "download": "https://github.com/huwdp/huwinterpreter/releases/download/releases/HuwCode-20190525-x86_64.AppImage", "count": 989, "size": "15.09 MB"}}, "latest_release": "releases"}

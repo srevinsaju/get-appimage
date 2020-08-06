@@ -1,1 +1,1 @@
-false
+{"id": "6b16fd442760499f9344298d594b39ac", "owner": "iotaledger", "author": "rajivshah3", "releases_url": "https://github.com/iotaledger/trinity-wallet/releases/latest", "github_url": "https://github.com/iotaledger/trinity-wallet", "assets": {"69291e646ca7444ab759712003d3fc10": {"name": "trinity-desktop-1.5.2.AppImage", "download": "https://github.com/iotaledger/trinity-wallet/releases/download/desktop-1.5.2/trinity-desktop-1.5.2.AppImage", "count": 1516, "size": "112.52 MB"}}, "latest_release": "desktop-1.5.2"}

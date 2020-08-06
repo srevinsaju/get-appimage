@@ -1,1 +1,1 @@
-false
+{"id": "a043183575614434a86c2cfd6ed788a3", "owner": "eNkru", "author": "eNkru", "releases_url": "https://github.com/eNkru/electron-wechat/releases/latest", "github_url": "https://github.com/eNkru/electron-wechat", "assets": {"ae4179a445704589bd03cd9f24ccc5f7": {"name": "electron-wechat-1.0.0-x86_64.AppImage", "download": "https://github.com/eNkru/freechat/releases/download/v1.0.0/electron-wechat-1.0.0-x86_64.AppImage", "count": 2283, "size": "66.66 MB"}}, "latest_release": "v1.0.0"}

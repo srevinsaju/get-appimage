@@ -1,1 +1,1 @@
-false
+{"id": "8a15d301b5044fb696db1ccd516abbfb", "owner": "keymanager", "author": "BeAce", "releases_url": "https://github.com/keymanager/keymanager/releases/latest", "github_url": "https://github.com/keymanager/keymanager", "assets": {"fa314903ef8b48cda227f588a8d3729a": {"name": "KeyManager-0.19.10-x86_64.AppImage", "download": "https://github.com/keymanager/keymanager/releases/download/v0.19.10/KeyManager-0.19.10-x86_64.AppImage", "count": 1342, "size": "65.51 MB"}}, "latest_release": "v0.19.10"}

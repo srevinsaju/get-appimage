@@ -1,1 +1,1 @@
-false
+{"id": "3272cb086431439db5ee86ebaab3581f", "owner": "migmartri", "author": "migmartri", "releases_url": "https://github.com/migmartri/slacktronic/releases/latest", "github_url": "https://github.com/migmartri/slacktronic", "assets": {"0467d1f2c8074324a05bcaac9b63c521": {"name": "slacktronic-0.2.0-x86_64.AppImage", "download": "https://github.com/migmartri/slacktronic/releases/download/v0.2.0/slacktronic-0.2.0-x86_64.AppImage", "count": 1212, "size": "53.08 MB"}}, "latest_release": "v0.2.0"}

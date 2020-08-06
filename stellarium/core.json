@@ -1,1 +1,1 @@
-false
+{"id": "00a56d4864944cb5a357042facaed115", "owner": "Stellarium", "author": "alex-w", "releases_url": "https://github.com/Stellarium/stellarium/releases/latest", "github_url": "https://github.com/Stellarium/stellarium", "assets": {"572eb9f57bc64e548f105bd20ab5c0a9": {"name": "Stellarium-0.20.2-x86_64.AppImage", "download": "https://github.com/Stellarium/stellarium/releases/download/v0.20.2/Stellarium-0.20.2-x86_64.AppImage", "count": 8583, "size": "261.83 MB"}}, "latest_release": "v0.20.2"}

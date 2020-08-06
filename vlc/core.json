@@ -1,1 +1,1 @@
-false
+{"id": "38694773aacd40fbae567f47ae4be020", "owner": "darealshinji", "author": "darealshinji", "releases_url": "https://github.com/darealshinji/vlc-AppImage/releases/latest", "github_url": "https://github.com/darealshinji/vlc-AppImage", "assets": {"8ffec00a72ad4c56b9413ed93c2ca136": {"name": "VLC-2.2.8.glibc2.16-x86_64.AppImage", "download": "https://github.com/darealshinji/vlc-AppImage/releases/download/2.2.8/VLC-2.2.8.glibc2.16-x86_64.AppImage", "count": 8383, "size": "53.22 MB"}}, "latest_release": "2.2.8"}

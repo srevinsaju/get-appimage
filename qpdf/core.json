@@ -1,1 +1,1 @@
-false
+{"id": "34c28fcfc4014d1e8f294a56468f250a", "owner": "qpdf", "author": "jberkenbilt", "releases_url": "https://github.com/qpdf/qpdf/releases/latest", "github_url": "https://github.com/qpdf/qpdf", "assets": {"a6150e446bd04e37b6a0e580cc83a54f": {"name": "qpdf-10.0.1-x86_64.AppImage", "download": "https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.0.1/qpdf-10.0.1-x86_64.AppImage", "count": 566, "size": "4.97 MB"}}, "latest_release": "release-qpdf-10.0.1"}

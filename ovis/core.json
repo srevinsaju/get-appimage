@@ -1,1 +1,1 @@
-false
+{"id": "7d3260b1769c4ac28d3efa7096c9e073", "owner": "OpenMDAO", "author": "kmarsteller", "releases_url": "https://github.com/OpenMDAO/ovis/releases/latest", "github_url": "https://github.com/OpenMDAO/ovis", "assets": {"187ab20aa11d49aba266fed11ebe30a9": {"name": "OVis-0.2.3-x86_64.AppImage", "download": "https://github.com/OpenMDAO/ovis/releases/download/v0.2.3-beta/OVis-0.2.3-x86_64.AppImage", "count": 1224, "size": "65.60 MB"}}, "latest_release": "v0.2.3-beta"}

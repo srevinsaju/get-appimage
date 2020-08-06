@@ -1,1 +1,1 @@
-false
+{"id": "57d7d816e248441daf48823eafa3c94f", "owner": "JDAI-CV", "author": "daquexian", "releases_url": "https://github.com/JDAI-CV/DNNLibrary/releases/latest", "github_url": "https://github.com/JDAI-CV/DNNLibrary", "assets": {"2e1d5eed7e204e578531d2ebcb6e3a92": {"name": "onnx2daq.AppImage", "download": "https://github.com/JDAI-CV/DNNLibrary/releases/download/v0.9.0/onnx2daq.AppImage", "count": 405, "size": "1.06 MB"}}, "latest_release": "v0.9.0"}

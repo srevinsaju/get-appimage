@@ -1,1 +1,1 @@
-false
+{"id": "c80e774fd7284aa19dcfbc7ae21e468b", "owner": "AXErunners", "author": "charlesrocket", "releases_url": "https://github.com/AXErunners/electrum-axe/releases/latest", "github_url": "https://github.com/AXErunners/electrum-axe", "assets": {"99b2b798c71f407b932dc5f4ccc89a42": {"name": "Axe-Electrum-3.3.8.8-x86_64.AppImage", "download": "https://github.com/AXErunners/electrum-axe/releases/download/3.3.8.8/Axe-Electrum-3.3.8.8-x86_64.AppImage", "count": 79, "size": "50.43 MB"}}, "latest_release": "3.3.8.8"}

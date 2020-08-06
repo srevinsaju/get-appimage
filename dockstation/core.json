@@ -1,1 +1,1 @@
-false
+{"id": "de1051d962d446ce8205b752f3589e11", "owner": "DockStation", "author": "igor-lemon", "releases_url": "https://github.com/DockStation/dockstation/releases/latest", "github_url": "https://github.com/DockStation/dockstation", "assets": {"aad13429cf06459098de61b6f1bb31c9": {"name": "dockstation-1.5.1-x86_64.AppImage", "download": "https://github.com/DockStation/dockstation/releases/download/v1.5.1/dockstation-1.5.1-x86_64.AppImage", "count": 9335, "size": "83.09 MB"}}, "latest_release": "v1.5.1"}

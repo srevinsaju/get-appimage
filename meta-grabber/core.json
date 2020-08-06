@@ -1,1 +1,1 @@
-false
+{"id": "9e8d5d6a1ab347759a34ba9eb5f039f0", "owner": "andreaswilli", "author": "andreaswilli", "releases_url": "https://github.com/andreaswilli/meta-grabber/releases/latest", "github_url": "https://github.com/andreaswilli/meta-grabber", "assets": {"2521970ec9fd42c393676c2ab2f6416b": {"name": "meta-grabber-0.1.9-x86_64.AppImage", "download": "https://github.com/andreaswilli/meta-grabber/releases/download/v0.1.9/meta-grabber-0.1.9-x86_64.AppImage", "count": 826, "size": "76.61 MB"}}, "latest_release": "v0.1.9"}

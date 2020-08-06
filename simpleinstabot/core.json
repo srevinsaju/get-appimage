@@ -1,1 +1,1 @@
-false
+{"id": "90f54ca357b54354a7c3de1a220443d9", "owner": "mifi", "author": "github-actions[bot]", "releases_url": "https://github.com/mifi/SimpleInstaBot/releases/latest", "github_url": "https://github.com/mifi/SimpleInstaBot", "assets": {"6ef4419163754ac68e75839ec9273c28": {"name": "SimpleInstaBot-linux.AppImage", "download": "https://github.com/mifi/SimpleInstaBot/releases/download/v1.4.0/SimpleInstaBot-linux.AppImage", "count": 32, "size": "106.29 MB"}}, "latest_release": "v1.4.0"}

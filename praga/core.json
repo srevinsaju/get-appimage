@@ -1,1 +1,1 @@
-false
+{"id": "900798d9dc914c42be7ad41c00582358", "owner": "ARPA-SIMC", "author": "ftomei", "releases_url": "https://github.com/ARPA-SIMC/CRITERIA3D/releases/latest", "github_url": "https://github.com/ARPA-SIMC/CRITERIA3D", "assets": {"723609f6b5b14e579c1f88ff53c8f3b7": {"name": "SoilWidget-x86_64.AppImage", "download": "https://github.com/ARPA-SIMC/CRITERIA3D/releases/download/SoilWidget/SoilWidget-x86_64.AppImage", "count": 397, "size": "30.58 MB"}}, "latest_release": "SoilWidget"}

@@ -1,1 +1,1 @@
-false
+{"id": "b8ce0bab4551472b8be112e8495a4776", "owner": "dino-", "author": "dino-", "releases_url": "https://github.com/dino-/glulxe-appimage-build/releases/latest", "github_url": "https://github.com/dino-/glulxe-appimage-build", "assets": {"9e2c577d294244788f163025c79aff5f": {"name": "glulxe-x86_64.AppImage", "download": "https://github.com/dino-/glulxe-appimage-build/releases/download/054.0/glulxe-x86_64.AppImage", "count": 1167, "size": "0.48 MB"}}, "latest_release": "054.0"}

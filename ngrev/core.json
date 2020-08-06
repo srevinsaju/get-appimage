@@ -1,1 +1,1 @@
-false
+{"id": "cbdef88be9bd48fabe5b82f44a7edb9b", "owner": "mgechev", "author": "mgechev", "releases_url": "https://github.com/mgechev/ngrev/releases/latest", "github_url": "https://github.com/mgechev/ngrev", "assets": {"42ec58ca8ea0455bbd75b9eef79f78b8": {"name": "ngrev-0.0.27-x86_64.AppImage", "download": "https://github.com/ng-ast/ngrev/releases/download/0.0.27/ngrev-0.0.27-x86_64.AppImage", "count": 1562, "size": "78.25 MB"}}, "latest_release": "0.0.27"}

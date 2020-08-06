@@ -1,1 +1,1 @@
-false
+{"id": "e692b7dde3cf4e82a29c31e79b427ac9", "owner": "cerebral", "author": "christianalfoni", "releases_url": "https://github.com/cerebral/cerebral-debugger/releases/latest", "github_url": "https://github.com/cerebral/cerebral-debugger", "assets": {"7fc99609acb549a097ec699ce200bf2f": {"name": "cerebral-debugger-3.1.0-x86_64.AppImage", "download": "https://github.com/cerebral/cerebral-debugger/releases/download/v3.1.0/cerebral-debugger-3.1.0-x86_64.AppImage", "count": 782, "size": "52.92 MB"}}, "latest_release": "v3.1.0"}

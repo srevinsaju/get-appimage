@@ -1,1 +1,1 @@
-false
+{"id": "efc5dfc8745543dcbd0890d8a7782340", "owner": "jessedp", "author": "github-actions[bot]", "releases_url": "https://github.com/jessedp/tablo-tools-electron/releases/latest", "github_url": "https://github.com/jessedp/tablo-tools-electron", "assets": {"012ff9585ffe46d3b1cf698bf09187a7": {"name": "TabloTools-0.2.4.AppImage", "download": "https://github.com/jessedp/tablo-tools-electron/releases/download/v0.2.4/TabloTools-0.2.4.AppImage", "count": 25, "size": "130.12 MB"}}, "latest_release": "v0.2.4"}

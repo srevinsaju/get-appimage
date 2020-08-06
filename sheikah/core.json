@@ -1,1 +1,1 @@
-false
+{"id": "59df21c33190421e90486f58b91d4c26", "owner": "witnet", "author": "Tommytrg", "releases_url": "https://github.com/witnet/sheikah/releases/latest", "github_url": "https://github.com/witnet/sheikah", "assets": {"16a81442588b4db78d2e4db4edbd253e": {"name": "sheikah-witnet-wallet-claiming-0.0.2.AppImage", "download": "https://github.com/witnet/sheikah/releases/download/claiming-0.0.2/sheikah-witnet-wallet-claiming-0.0.2.AppImage", "count": 154, "size": "66.69 MB"}}, "latest_release": "claiming-0.0.2"}

@@ -1,1 +1,1 @@
-false
+{"id": "93433a6ce8964f77b507de35d65e26e5", "owner": "bytechcoin", "author": "bytechcoin", "releases_url": "https://github.com/bytechcoin/bytech-wallet-electron/releases/latest", "github_url": "https://github.com/bytechcoin/bytech-wallet-electron", "assets": {"239af1ddc33e47f88025cde79c3caddc": {"name": "WalletTech-v0.3.6-linux.AppImage", "download": "https://github.com/bytechcoin/bytech-wallet-electron/releases/download/v0.3.6/WalletTech-v0.3.6-linux.AppImage", "count": 1143, "size": "81.91 MB"}}, "latest_release": "v0.3.6"}

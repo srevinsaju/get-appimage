@@ -1,1 +1,1 @@
-false
+{"id": "e6339c76854d43eb8ec46cfb3695c1d8", "owner": "3dproger", "author": "3dproger", "releases_url": "https://github.com/3dproger/ProcDepMonitor/releases/latest", "github_url": "https://github.com/3dproger/ProcDepMonitor", "assets": {"4261efbadd534d98aa12bc6c6fd01e37": {"name": "Process_Dependency_Monitor-1.1.2-x86_64.AppImage", "download": "https://github.com/3dproger/ProcDepMonitor/releases/download/1.1.2/Process_Dependency_Monitor-1.1.2-x86_64.AppImage", "count": 210, "size": "34.76 MB"}}, "latest_release": "1.1.2"}

@@ -1,1 +1,1 @@
-false
+{"id": "b2424e2988c545358b298f216c4f468f", "owner": "rotki", "author": "LefterisJP", "releases_url": "https://github.com/rotki/rotki/releases/latest", "github_url": "https://github.com/rotki/rotki", "assets": {"8efe6820d57f44f79805899a0f71380e": {"name": "rotki-linux_x86_64-v1.6.1.AppImage", "download": "https://github.com/rotki/rotki/releases/download/v1.6.1/rotki-linux_x86_64-v1.6.1.AppImage", "count": 55, "size": "136.36 MB"}}, "latest_release": "v1.6.1"}

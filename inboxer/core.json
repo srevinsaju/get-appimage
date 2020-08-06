@@ -1,1 +1,1 @@
-false
+{"id": "71c4e49a391d44f6a902c6c288591586", "owner": "denysdovhan", "author": "jmarino", "releases_url": "https://github.com/denysdovhan/inboxer/releases/latest", "github_url": "https://github.com/denysdovhan/inboxer", "assets": {"37461ff2317348dda0818c4e285dfaaa": {"name": "inboxer-1.3.2-x86_64.AppImage", "download": "https://github.com/denysdovhan/inboxer/releases/download/v1.3.2/inboxer-1.3.2-x86_64.AppImage", "count": 1677, "size": "64.98 MB"}}, "latest_release": "v1.3.2"}

@@ -1,1 +1,1 @@
-false
+{"id": "1ea79a8a1a7a46c483efa09e978dcd60", "owner": "fontforge", "author": "frank-trampe", "releases_url": "https://github.com/fontforge/fontforge/releases/latest", "github_url": "https://github.com/fontforge/fontforge", "assets": {"de20ab76220e4ce48f9fe49fa0ad9298": {"name": "FontForge-2020-03-14-67687b0-x86_64.AppImage", "download": "https://github.com/fontforge/fontforge/releases/download/20200314/FontForge-2020-03-14-67687b0-x86_64.AppImage", "count": 1860, "size": "37.16 MB"}}, "latest_release": "20200314"}

@@ -1,1 +1,1 @@
-false
+{"id": "268920e6e3c146eaade9df01ae991f0b", "owner": "LMMS", "author": "PhysSong", "releases_url": "https://github.com/LMMS/lmms/releases/latest", "github_url": "https://github.com/LMMS/lmms", "assets": {"e38031152c8748429fd98fcf30387609": {"name": "lmms-1.2.2-linux-x86_64.AppImage", "download": "https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage", "count": 8277, "size": "96.36 MB"}}, "latest_release": "v1.2.2"}

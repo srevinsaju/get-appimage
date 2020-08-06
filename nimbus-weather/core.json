@@ -1,1 +1,1 @@
-false
+{"id": "b7481a35701b48b699a3b38123108943", "owner": "tgrowden", "author": "tgrowden", "releases_url": "https://github.com/tgrowden/nimbus-weather/releases/latest", "github_url": "https://github.com/tgrowden/nimbus-weather", "assets": {"60c636b1d22f4073865cc5413cf9610e": {"name": "nimbus-weather-electron-0.9.0-x86_64.AppImage", "download": "https://github.com/tgrowden/nimbus-weather/releases/download/v0.9.0/nimbus-weather-electron-0.9.0-x86_64.AppImage", "count": 1449, "size": "67.23 MB"}}, "latest_release": "v0.9.0"}

@@ -1,1 +1,1 @@
-false
+{"id": "c6b47ead38ae4bbebd1f1dba0bd085da", "owner": "gsequencer", "author": "joelkraehemann", "releases_url": "https://github.com/gsequencer/gsequencer/releases/latest", "github_url": "https://github.com/gsequencer/gsequencer", "assets": {"d64c65c65826427aa97728a020d576d2": {"name": "GSequencer-3.5.6-x86_64.AppImage", "download": "https://github.com/gsequencer/gsequencer/releases/download/3.5.6/GSequencer-3.5.6-x86_64.AppImage", "count": 24, "size": "133.22 MB"}}, "latest_release": "3.5.6"}

@@ -1,1 +1,1 @@
-false
+{"id": "bd0d027ad962437fa27a3795eaf982cc", "owner": "ssbc", "author": "mixmix", "releases_url": "https://github.com/ssbc/patchbay/releases/latest", "github_url": "https://github.com/ssbc/patchbay", "assets": {"1d4410b0ef174cdc9f5b37d1e3e52f55": {"name": "patchbay-Linux-8.1.0-x86_64.AppImage", "download": "https://github.com/ssbc/patchbay/releases/download/v8.1.0/patchbay-Linux-8.1.0-x86_64.AppImage", "count": 1631, "size": "126.42 MB"}}, "latest_release": "v8.1.0"}

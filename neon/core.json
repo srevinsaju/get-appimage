@@ -1,1 +1,1 @@
-false
+{"id": "c0cdace48f38462bb090e77de3994dad", "owner": "CityOfZion", "author": "comountainclimber", "releases_url": "https://github.com/CityOfZion/neon-wallet/releases/latest", "github_url": "https://github.com/CityOfZion/neon-wallet", "assets": {"1b58f1c6729e4e60a238772c1c080798": {"name": "Neon-2.5.0-x86_64.Linux.AppImage", "download": "https://github.com/CityOfZion/neon-wallet/releases/download/2.5.0/Neon-2.5.0-x86_64.Linux.AppImage", "count": 1032, "size": "90.48 MB"}}, "latest_release": "2.5.0"}

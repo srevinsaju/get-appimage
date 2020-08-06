@@ -1,1 +1,1 @@
-false
+{"id": "15e3df6351ae476aba8bd5a5c2be075c", "owner": "bitshares", "author": "bitshares-ui-automation", "releases_url": "https://github.com/bitshares/bitshares-ui/releases/latest", "github_url": "https://github.com/bitshares/bitshares-ui", "assets": {"37dfadcb660d46958186c6724b82ba3f": {"name": "BitShares.3.3.191120.AppImage", "download": "https://github.com/bitshares/bitshares-ui/releases/download/3.3.191120/BitShares.3.3.191120.AppImage", "count": 451, "size": "61.47 MB"}}, "latest_release": "3.3.191120"}

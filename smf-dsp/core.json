@@ -1,1 +1,1 @@
-false
+{"id": "c22c20255eac454480f8a6afd68c14ec", "owner": "jpcima", "author": "jpcima", "releases_url": "https://github.com/jpcima/smf-dsp/releases/latest", "github_url": "https://github.com/jpcima/smf-dsp", "assets": {"21e9c85ebf344e44b0634db2bac7dddb": {"name": "SMF-DSP_MIDI_player-x86_64.AppImage", "download": "https://github.com/jpcima/smf-dsp/releases/download/automatic/SMF-DSP_MIDI_player-x86_64.AppImage", "count": 5, "size": "17.24 MB"}}, "latest_release": "automatic"}

@@ -1,1 +1,1 @@
-false
+{"id": "5e4189a8604c4600b6fe144bb9b568a8", "owner": "texstudio-org", "author": "sunderme", "releases_url": "https://github.com/texstudio-org/texstudio/releases/latest", "github_url": "https://github.com/texstudio-org/texstudio", "assets": {"ca312aa29e8b44269417b8df9f752945": {"name": "texstudio-2.12.22-x86_64.AppImage", "download": "https://github.com/texstudio-org/texstudio/releases/download/2.12.22/texstudio-2.12.22-x86_64.AppImage", "count": 2353, "size": "58.47 MB"}}, "latest_release": "2.12.22"}

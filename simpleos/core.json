@@ -1,1 +1,1 @@
-false
+{"id": "6a49d640d6844e3299b996618eae4706", "owner": "eosrio", "author": "igorls", "releases_url": "https://github.com/eosrio/simpleos/releases/latest", "github_url": "https://github.com/eosrio/simpleos", "assets": {"d839da05055244a9a678ae60334527b0": {"name": "simpleos-1.0.5.AppImage", "download": "https://github.com/eosrio/simpleos/releases/download/v1.0.5/simpleos-1.0.5.AppImage", "count": 160, "size": "160.93 MB"}}, "latest_release": "v1.0.5"}
