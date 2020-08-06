@@ -36,7 +36,8 @@ from colorama import Fore
 
 from generator.catalog import Catalog
 from generator.constants import TAG_HTML, RELEASES_BUTTON_HTML, \
-    TAGS_GROUP_HTML, TAG_CATEGORY_HTML, DOWNLOAD_BUTTON_HTML
+    TAGS_GROUP_HTML, TAG_CATEGORY_HTML, DOWNLOAD_BUTTON_HTML, \
+    TAGS_GROUP_NO_MARGIN_HTML
 
 
 class AppImage:
