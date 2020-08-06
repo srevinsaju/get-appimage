@@ -26,66 +26,68 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/get-appimage">
-          <img src="../img/logo.svg" width="28" height="28"
-               alt="Get AppImage logo">
-        </a>
-    
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop" 
-        onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/get-appimage">
+      <img src="/get-appimage/img/logo.svg" width="28" height="28"
+           alt="Get AppImage logo">
+    </a>
 
-      <div id="appimage-navbar" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="/get-appimage/">
-            Home
-          </a>
-          <a class="navbar-item" href="/get-appimage/all/">
-            All AppImages
-          </a>
-          <a class="navbar-item" href="/get-appimage/search/">
-            Search
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#"  onclick="return false;">
-              More
-            </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#about">
-                About
-              </a>
-              <a class="navbar-item" href="#contact">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item" href="https://github.com/srevinsaju/get-appimage/issues">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="field" style="margin: 0.5em;">
-              <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
-              <label for="themeSwitch">
-                <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
-              </label>
-            </div>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="ssNavBarTop"
+    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
 
-          </div>
+  <div id="appimage-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/get-appimage/">
+        Home
+      </a>
+      <a class="navbar-item" href="/get-appimage/all/">
+        All AppImages
+      </a>
+      <a class="navbar-item" href="/get-appimage/categories/">
+        Categories
+      </a>
+      <a class="navbar-item" href="/get-appimage/search/">
+        Search
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#"  onclick="return false;">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#about">
+            About
+          </a>
+          <a class="navbar-item" href="mailto:srevinsaju@sugarlabs.org">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://github.com/srevinsaju/get-appimage/issues">
+            Report an issue
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
 
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field" style="margin: 0.5em;">
+          <input id="themeSwitch" type="checkbox" name="switchRoundedDefault" class="switch is-rounded">
+          <label for="themeSwitch">
+            <i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
     <!-- Search Results - indicator -->
     <section style="margin-top: 3.25em;" class="hero is-primary">
       <div class="hero-body">
