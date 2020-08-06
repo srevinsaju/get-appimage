@@ -199,6 +199,22 @@ class AppImage:
                 '\n'.join((latest_tag, github_url, size)))
         ))
 
+    def is_github(self):
+        """
+        Checks if the app-image has its source link from github
+        :return:
+        :rtype:
+        """
+        if not self.links:
+            return False
+
+        if not len(self._links) >= 1:
+            return False
+
+        if not self._links[0].get("type", '').lower() == "github":
+            return False
+
+        return True
 
     def get_github_release_from(self, github_release_api):
         request = urllib.request.Request(github_release_api)
