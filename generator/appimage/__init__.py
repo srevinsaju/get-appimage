@@ -107,7 +107,6 @@ class AppImage:
     def title_formatted(self):
         return self._title.replace('_', ' ').replace('-', ' ')
 
-
     @property
     def categories(self):
         return self._categories
@@ -123,7 +122,6 @@ class AppImage:
             return authors
         else:
             return ['']
-
 
     @property
     def licenses(self):
@@ -181,6 +179,7 @@ class AppImage:
         size = \
             TAG_HTML.format(left="Size",
                             right=github_info.get("size"))
+
         return ''.join((
             TAGS_GROUP_HTML.format(
                 '\n'.join((download_button_html, releases_button_html,))),
@@ -188,6 +187,7 @@ class AppImage:
                 '\n'.join((latest_tag, github_url, num_downloads, size)))
 
         ))
+
 
     def get_github_release_from(self, github_release_api):
         request = urllib.request.Request(github_release_api)
@@ -286,6 +286,7 @@ class AppImage:
         return False  # nothing has worked :'(
 
     def get_github_info(self):
+
         print('[STATIC][{}][GH] Parsing information from GitHub'.format(
             self.title
         ))
@@ -311,7 +312,6 @@ class AppImage:
             return False
 
         tag_name = data.get("tag_name")
-
         for i in data.get("assets"):
             download_url = i.get('browser_download_url')
             if download_url.lower().endswith('.appimage'):
@@ -342,6 +342,8 @@ class AppImage:
             'latest_release': tag_name
         }
 
+
+
     def json_data(self):
         return {
             'id': uuid.uuid4().hex,
@@ -352,7 +354,6 @@ class AppImage:
             'github': self.links,
             'categories': self.categories,
             'categories_html': self.categories_html
-
         }
 
 
