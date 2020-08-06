@@ -62,7 +62,7 @@ CARD_TEMPLATE = \
     '<i class="fa fa-{is_github} ss-i"></i>' \
     '<span class="ss-card-footer-text">{left_card_description}</span>' \
     '</a>' \
-    '<a href="{base_url}/{applink}" class="card-footer-item" target="_blank" ' \
+    '<a href="{base_url}/{applink}" class="card-footer-item" target="_blank" '\
     'rel="noreferrer">' \
     '<i class="fa fa-external-link-alt ss-i"></i>' \
     '<span class="ss-card-footer-text">Info</span>' \
