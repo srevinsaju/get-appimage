@@ -1,1 +1,1 @@
-{"id": "aff06c3d34434baeb43460b01cb81e48", "owner": "probonopd", "author": "probonopd", "releases_url": "https://github.com/probonopd/qemu-ppc/releases/latest", "github_url": "https://github.com/probonopd/qemu-ppc", "assets": {"9383c94f09f34b4896183c4ddf4303f0": {"name": "QEMU_PowerPC-38d1b31e05-x86_64.AppImage", "download": "https://github.com/probonopd/qemu-ppc/releases/download/continuous/QEMU_PowerPC-38d1b31e05-x86_64.AppImage", "count": 1651, "size": "15.09 MB"}}, "latest_release": "continuous"}
+false

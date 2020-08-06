@@ -1,1 +1,1 @@
-{"id": "5689033cce7249fd9ce8dcfd912e71ad", "owner": "qTox", "author": "qTox-Bot", "releases_url": "https://github.com/qTox/qTox-nightly-releases/releases/latest", "github_url": "https://github.com/qTox/qTox-nightly-releases", "assets": {"e0c4c80a0f4b4f4cb2486eb4ce533f0e": {"name": "qTox-f5c813bdb9c7a6c3e8cdccfdee092148c838e571-x86_64.AppImage", "download": "https://github.com/qTox/qTox-nightly-releases/releases/download/ci-master-9801/qTox-f5c813bdb9c7a6c3e8cdccfdee092148c838e571-x86_64.AppImage", "count": 0, "size": "91.56 MB"}}, "latest_release": "ci-master-9801"}
+false
