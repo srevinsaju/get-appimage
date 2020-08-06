@@ -103,7 +103,11 @@
                     PhotoFlare
                 </h1>
                 <h2 class="subtitle">
-                  PhotoFlare 
+                  PhotoFlare
+                  
+                    <i class="fa fa-check-circle"></i>
+                  
+
                 </h2>
                 <h3>
                     <p>This is an effort to bring quick, simple but powerful image editing to the masses. PhotoFlare is inspired by the image editor currently only available on Microsoft Windows – PhotoFiltre. However, it will not be a straight clone. It is being built from the ground up to be much improved and cross platform too!</p>
@@ -116,10 +120,13 @@
   <li>Multiple translations are supported.</li>
 </ul>
                 </h3>
-                <div class="field is-grouped is-grouped-multiline appimage-tags-group">
-                  <div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div>
+                <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin">
+                  <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Graphics">Graphics</a><span class="tag is-dark">#</span></div></div></div>
                 </div>
-                
+                <div class="field is-grouped is-grouped-multiline appimage-tags-group">
+<a href="https://github.com/PhotoFlare/photoflare/releases/latest" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-upload"></i></span><span>Releases</span></button></a></div><div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><span class="tag is-dark">Latest</span><span class="tag is-info">v1.6.5</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark"><i class='fab fa-github'></i> Github</span><span class="tag is-info">https://github.com/PhotoFlare/photoflare</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark">Size</span><span class="tag is-info">None</span></div></div></div>
 
               </div>
 
@@ -187,6 +194,7 @@
     rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
     rootSelector.style.setProperty("--background-color", " #121212");
     rootSelector.style.setProperty("--background-color-2", " #000000");
+    rootSelector.style.setProperty("--background-color-3", " #1D1D1D");
     $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
     $('#themeSwitch').prop('checked', true);
     $("#bulma").attr("src","/img/made-with-bulma--white.png");
@@ -198,6 +206,7 @@
     rootSelector.style.setProperty("--foreground-color-2", "#121212");
     rootSelector.style.setProperty("--background-color", " #fafafa");
     rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--background-color-3", " #ffffff");
     rootSelector.style.setProperty("--cth", "255");
     $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
     $('#themeSwitch').prop('checked', false);
@@ -207,16 +216,31 @@
 
   $(document).ready(function() {
     const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (userPrefersDark) {
-      darkTheme();
+    const userThemePreference = localStorage.getItem('GetAppImageThemePreference');
+    console.log(`userThemePreference is ${userThemePreference} `);
+    switch(userThemePreference) {
+      case 'DARK':
+        darkTheme();
+        break;
+      case "LIGHT":
+        // code block
+        break;
+      default:
+        if (userPrefersDark) {
+            darkTheme();
+        }
+        break;
     }
 
     $('#themeSwitch').change(function () {
       if (this.checked) {
         darkTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'DARK');
+        console.log(`Setting Dark theme.`);
       } else {
         lightTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'LIGHT');
+        console.log(`Setting Light theme.`);
       }
     });
   });

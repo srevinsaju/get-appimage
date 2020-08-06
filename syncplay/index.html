@@ -103,15 +103,22 @@
                     Syncplay
                 </h1>
                 <h2 class="subtitle">
-                  Syncplay 
+                  Syncplay
+                  
+                    <i class="fa fa-check-circle"></i>
+                  
+
                 </h2>
                 <h3>
                     <p>Syncplay synchronises the position and play state of multiple media players so that the viewers can watch the same thing at the same time. This means that when one person pauses/unpauses playback or seeks (jumps position) within their media player then this will be replicated across all media players connected to the same server and in the same &apos;room&apos; (viewing session). When a new person joins they will also be synchronised. Syncplay also includes text-based chat so you can discuss a video as you watch it (or you could use third-party Voice over IP software to talk over a video).</p>
                 </h3>
-                <div class="field is-grouped is-grouped-multiline appimage-tags-group">
-                  <div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=AudioVideo">AudioVideo</a><span class="tag is-dark">#</span></div></div></div>
+                <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin">
+                  <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=AudioVideo">AudioVideo</a><span class="tag is-dark">#</span></div></div></div>
                 </div>
-                
+                <div class="field is-grouped is-grouped-multiline appimage-tags-group"><a href="https://github.com/Syncplay/syncplay/releases/download/v1.6.5/Syncplay-1.6.5-x86_64.AppImage" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-download"></i></span><span>Download Syncplay-1.6.5-x86_64.AppImage</span><span class="tag is-success" style="margin: 0 0 0 1em">190.00 MB</span></button></a>
+<a href="https://github.com/Syncplay/syncplay/releases/latest" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-upload"></i></span><span>Releases</span></button></a></div><div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><span class="tag is-dark">Latest</span><span class="tag is-info">v1.6.5</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark"><i class='fab fa-github'></i> Github</span><span class="tag is-info">https://github.com/Syncplay/syncplay</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark">Size</span><span class="tag is-info">None</span></div></div></div>
 
               </div>
 
@@ -179,6 +186,7 @@
     rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
     rootSelector.style.setProperty("--background-color", " #121212");
     rootSelector.style.setProperty("--background-color-2", " #000000");
+    rootSelector.style.setProperty("--background-color-3", " #1D1D1D");
     $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
     $('#themeSwitch').prop('checked', true);
     $("#bulma").attr("src","/img/made-with-bulma--white.png");
@@ -190,6 +198,7 @@
     rootSelector.style.setProperty("--foreground-color-2", "#121212");
     rootSelector.style.setProperty("--background-color", " #fafafa");
     rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--background-color-3", " #ffffff");
     rootSelector.style.setProperty("--cth", "255");
     $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
     $('#themeSwitch').prop('checked', false);
@@ -199,16 +208,31 @@
 
   $(document).ready(function() {
     const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (userPrefersDark) {
-      darkTheme();
+    const userThemePreference = localStorage.getItem('GetAppImageThemePreference');
+    console.log(`userThemePreference is ${userThemePreference} `);
+    switch(userThemePreference) {
+      case 'DARK':
+        darkTheme();
+        break;
+      case "LIGHT":
+        // code block
+        break;
+      default:
+        if (userPrefersDark) {
+            darkTheme();
+        }
+        break;
     }
 
     $('#themeSwitch').change(function () {
       if (this.checked) {
         darkTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'DARK');
+        console.log(`Setting Dark theme.`);
       } else {
         lightTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'LIGHT');
+        console.log(`Setting Light theme.`);
       }
     });
   });

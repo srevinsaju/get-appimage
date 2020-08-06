@@ -103,7 +103,11 @@
                     ScreenCloud
                 </h1>
                 <h2 class="subtitle">
-                  olav-st 
+                  olav-st
+                  
+                    <i class="fa fa-check-circle"></i>
+                  
+
                 </h2>
                 <h3>
                     <p>Take a screenshot using one of the 3 hotkeys or simply click the ScreenCloud tray icon. You can choose where you want to save your screenshot. Several cloud services as well as local storage is supported. A built-in screenshot editor lets you annotate your screenshots to highlight the important parts!</p>
@@ -115,10 +119,13 @@
   <li>Built in screenshot editor</li>
 </ul>
                 </h3>
-                <div class="field is-grouped is-grouped-multiline appimage-tags-group">
-                  <div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div>
+                <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin">
+                  <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Network">Network</a><span class="tag is-dark">#</span></div></div></div>
                 </div>
-                
+                <div class="field is-grouped is-grouped-multiline appimage-tags-group"><a href="https://github.com/olav-st/screencloud/releases/download/v1.5.1/ScreenCloud-v1.5.1-x86_64.AppImage" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-download"></i></span><span>Download ScreenCloud-v1.5.1-x86_64.AppImage</span><span class="tag is-success" style="margin: 0 0 0 1em">74.08 MB</span></button></a>
+<a href="https://github.com/olav-st/screencloud/releases/latest" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-upload"></i></span><span>Releases</span></button></a></div><div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><span class="tag is-dark">Latest</span><span class="tag is-info">v1.5.1</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark"><i class='fab fa-github'></i> Github</span><span class="tag is-info">https://github.com/olav-st/screencloud</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark">Size</span><span class="tag is-info">None</span></div></div></div>
 
               </div>
 
@@ -186,6 +193,7 @@
     rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
     rootSelector.style.setProperty("--background-color", " #121212");
     rootSelector.style.setProperty("--background-color-2", " #000000");
+    rootSelector.style.setProperty("--background-color-3", " #1D1D1D");
     $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
     $('#themeSwitch').prop('checked', true);
     $("#bulma").attr("src","/img/made-with-bulma--white.png");
@@ -197,6 +205,7 @@
     rootSelector.style.setProperty("--foreground-color-2", "#121212");
     rootSelector.style.setProperty("--background-color", " #fafafa");
     rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--background-color-3", " #ffffff");
     rootSelector.style.setProperty("--cth", "255");
     $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
     $('#themeSwitch').prop('checked', false);
@@ -206,16 +215,31 @@
 
   $(document).ready(function() {
     const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (userPrefersDark) {
-      darkTheme();
+    const userThemePreference = localStorage.getItem('GetAppImageThemePreference');
+    console.log(`userThemePreference is ${userThemePreference} `);
+    switch(userThemePreference) {
+      case 'DARK':
+        darkTheme();
+        break;
+      case "LIGHT":
+        // code block
+        break;
+      default:
+        if (userPrefersDark) {
+            darkTheme();
+        }
+        break;
     }
 
     $('#themeSwitch').change(function () {
       if (this.checked) {
         darkTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'DARK');
+        console.log(`Setting Dark theme.`);
       } else {
         lightTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'LIGHT');
+        console.log(`Setting Light theme.`);
       }
     });
   });

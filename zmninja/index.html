@@ -103,13 +103,15 @@
                     zmNinja
                 </h1>
                 <h2 class="subtitle">
-                  pliablepixels 
+                  pliablepixels
+                  
+
                 </h2>
                 <h3>
                     Home security mobile app for ZoneMinder
                 </h3>
-                <div class="field is-grouped is-grouped-multiline appimage-tags-group">
-                  <div class="field is-grouped is-grouped-multiline appimage-tags-group"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div>
+                <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin">
+                  <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div>
                 </div>
                 
 
@@ -179,6 +181,7 @@
     rootSelector.style.setProperty("--foreground-color-2", "#fafafa");
     rootSelector.style.setProperty("--background-color", " #121212");
     rootSelector.style.setProperty("--background-color-2", " #000000");
+    rootSelector.style.setProperty("--background-color-3", " #1D1D1D");
     $("label[for='themeSwitch']").html('<i class="fa fa-moon"></i><span class="sr-only">Dark Mode</span>')
     $('#themeSwitch').prop('checked', true);
     $("#bulma").attr("src","/img/made-with-bulma--white.png");
@@ -190,6 +193,7 @@
     rootSelector.style.setProperty("--foreground-color-2", "#121212");
     rootSelector.style.setProperty("--background-color", " #fafafa");
     rootSelector.style.setProperty("--background-color-2", " #ffffff");
+    rootSelector.style.setProperty("--background-color-3", " #ffffff");
     rootSelector.style.setProperty("--cth", "255");
     $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
     $('#themeSwitch').prop('checked', false);
@@ -199,16 +203,31 @@
 
   $(document).ready(function() {
     const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (userPrefersDark) {
-      darkTheme();
+    const userThemePreference = localStorage.getItem('GetAppImageThemePreference');
+    console.log(`userThemePreference is ${userThemePreference} `);
+    switch(userThemePreference) {
+      case 'DARK':
+        darkTheme();
+        break;
+      case "LIGHT":
+        // code block
+        break;
+      default:
+        if (userPrefersDark) {
+            darkTheme();
+        }
+        break;
     }
 
     $('#themeSwitch').change(function () {
       if (this.checked) {
         darkTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'DARK');
+        console.log(`Setting Dark theme.`);
       } else {
         lightTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'LIGHT');
+        console.log(`Setting Light theme.`);
       }
     });
   });
