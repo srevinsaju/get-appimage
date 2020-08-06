@@ -151,45 +151,52 @@ class AppImage:
             icon = '{}/img/logo.svg'.format(self.catalog.base_url)
         return icon
 
+    # GitHub api management / data retrieval functions / methods below
     @property
     def github(self):
         if not self.is_github():
             return ''
 
+        # check and parse github_information
         github_info = self.github_info
         if not github_info:
             return ''
 
-        # buttons
-        download_button_html = \
-            DOWNLOAD_BUTTON_HTML.format(url=github_info.get("download_url"))
-
-        releases_button_html = \
-            RELEASES_BUTTON_HTML.format(url=github_info.get("releases_url"))
-
-        # tags
-        latest_tag = \
-            TAG_HTML.format(left="Latest",
-                            right=github_info.get("latest_release"))
-
+        # a tag to show URL to github repository
         github_url = \
             TAG_HTML.format(left="<i class='fab fa-github'></i> Github",
                             right=github_info.get("github_url"))
 
-        num_downloads = \
-            TAG_HTML.format(left="Downloads",
-                            right=github_info.get("download_count"))
+        # shows the latest stable release containing an appimage
+        latest_tag = \
+            TAG_HTML.format(left="Latest",
+                            right=github_info.get("latest_release"))
 
+        # size of the appimage
         size = \
-            TAG_HTML.format(left="Size",
-                            right=github_info.get("size"))
+            TAG_HTML.format(left="Size", right=github_info.get("size"))
+
+        # a button link to the releases page
+        releases_button_html = \
+            RELEASES_BUTTON_HTML.format(url=github_info.get("releases_url"))
+
+        # download buttons for all appimages
+        download_buttons = list()
+        assets = github_info.get('assets')
+        for uid in assets:
+            download_button_html = \
+                DOWNLOAD_BUTTON_HTML.format(
+                    url=assets[uid].get("download"),
+                    name=assets[uid].get("name"),
+                    size=assets[uid].get('size')
+                )
+            download_buttons.append(download_button_html)
 
         return ''.join((
+            TAGS_GROUP_NO_MARGIN_HTML.format(
+                '\n'.join((''.join(download_buttons), releases_button_html,))),
             TAGS_GROUP_HTML.format(
-                '\n'.join((download_button_html, releases_button_html,))),
-            TAGS_GROUP_HTML.format(
-                '\n'.join((latest_tag, github_url, num_downloads, size)))
-
+                '\n'.join((latest_tag, github_url, size)))
         ))
 
 
