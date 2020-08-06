@@ -71,18 +71,15 @@ CARD_TEMPLATE = \
 DOWNLOAD_BUTTON_HTML = \
     '<a href="{url}" target="_blank"><button ' \
     'class="button appimage-store-button">' \
-    '<span class="icon">' \
-    '<i class="fa fa-download"></i>' \
-    '</span>' \
-    '<span>Download</span>' \
+    '<span class="icon"><i class="fa fa-download"></i></span>' \
+    '<span>Download {name}</span>' \
+    '<span class="tag is-success" style="margin: 0 0 0 1em">{size}</span>' \
     '</button></a>'
 
 RELEASES_BUTTON_HTML = \
     '<a href="{url}" target="_blank"><button ' \
     'class="button appimage-store-button">' \
-    '<span class="icon">' \
-    '<i class="fa fa-upload"></i>' \
-    '</span>' \
+    '<span class="icon"><i class="fa fa-upload"></i></span>' \
     '<span>Releases</span>' \
     '</button></a>'
 
