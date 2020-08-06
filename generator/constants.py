@@ -105,5 +105,3 @@ TAGS_GROUP_HTML = \
 TAGS_GROUP_NO_MARGIN_HTML = \
     '<div class="field is-grouped is-grouped-multiline ' \
     'appimage-tags-group">{}</div>'
-
-
