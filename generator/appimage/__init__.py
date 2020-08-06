@@ -297,18 +297,13 @@ class AppImage:
         return False  # nothing has worked :'(
 
     def get_github_info(self):
+        if not self.is_github():
+            # pre check if the appimage is from github, if not, exit
+            return False
 
         print('[STATIC][{}][GH] Parsing information from GitHub'.format(
             self.title
         ))
-        if not self.links:
-            return False
-
-        if not len(self._links) >= 1:
-            return False
-
-        if not self._links[0].get("type", '').lower() == "github":
-            return False
 
         # process github specific code
         owner = self._links[0].get("url", '').split('/')[0]
@@ -323,33 +318,29 @@ class AppImage:
             return False
 
         tag_name = data.get("tag_name")
+        appimages_assets = dict()
         for i in data.get("assets"):
             download_url = i.get('browser_download_url')
             if download_url.lower().endswith('.appimage'):
                 # a valid appimage file found in release assets
-                appimage_download_url = download_url
-                download_count = i.get('download_count')
-                appimage_size = "{0:.2f} MB".format(i.get('size') / (1000 *
-                                                                   1000))
-                break
-        else:
-            appimage_download_url = None
-            download_count = False
-            appimage_size = False
+                appimages_assets[uuid.uuid4().hex] = {
+                    'name': i.get('name'),
+                    'download': download_url,
+                    'count': i.get('download_count'),
+                    'size': "{0:.2f} MB".format(i.get('size') / (1000 * 1000))
+                }
 
         return {
             'id': uuid.uuid4().hex,
             'owner': owner,
             'author': data.get('author').get('login'),
-            'download_url': appimage_download_url,
             'releases_url': "https://github.com/{path}/releases/latest".format(
                 path=self._links[0].get("url")
             ),
             'github_url': "https://github.com/{path}".format(
                 path=self._links[0].get("url")
             ),
-            'download_count': download_count,
-            'size': appimage_size,
+            'assets': appimages_assets,
             'latest_release': tag_name
         }
 
