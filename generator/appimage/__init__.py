@@ -152,6 +152,9 @@ class AppImage:
 
     @property
     def github(self):
+        if not self.is_github():
+            return ''
+
         github_info = self.github_info
         if not github_info:
             return ''
