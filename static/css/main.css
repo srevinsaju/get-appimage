@@ -31,6 +31,7 @@ This file is part of AppImage Catalog Generator
   --foreground-color-2: #121212;
   --background-color: #fafafa;
   --background-color-2: #ffffff;
+  --background-color-3: #ffffff;
   --accent: #008cff;
   --accent-dark: #0051ff;
   --accent-secondary: #00158b;
@@ -208,7 +209,7 @@ Utilities
 .appimage-card {
   border-radius: 1em;
   min-width: 300px;
-  background-color: var(--background-color-2);
+  background-color: var(--background-color-3);
   color: var(--foreground-color);
   transition: background-color 0.2s;
 }
@@ -217,6 +218,9 @@ Utilities
   border-top: 1px solid var(--background-color);
 }
 
+.appimage-left-top-margin {
+  margin: 0.4em 0.4em 0 0;
+}
 
 .appimage-project-column {
   max-width: 550px;
@@ -246,7 +250,7 @@ Utilities
  */
 
 .appimage-store-button {
-  margin: 1em 0.2em;
+  margin: 0.4em 0.4em 0 0;
 }
 
 .highlight .bd-copy, .highlight .bd-expand {
