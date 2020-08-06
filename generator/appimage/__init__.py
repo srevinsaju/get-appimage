@@ -82,12 +82,16 @@ class AppImage:
 
     @property
     def is_verified(self):
-        if self.github_info:
-            if (self._authors[0] == self.github_info.get('author')) or \
-                    (self._authors[0] == self.github_info.get('owner')):
-                return '<i class="fa fa-shield-alt"></i>'
-            else:
-                return ''
+        if self.is_github() and self.github_info:
+            if (self.maintainer == self.github_info.get('author')) or \
+                    (self.maintainer == self.github_info.get('owner')):
+                return True
+        return False
+
+    @property
+    def is_verified_html(self):
+        if self.is_verified:
+            return '<i class="fa fa-shield-alt"></i>'
         else:
             return ''
 
