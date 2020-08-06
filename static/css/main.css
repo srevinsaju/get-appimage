@@ -134,6 +134,11 @@ Utilities
   height: 10em;
 }
 
+.appimage-app-img {
+  width: 128px;
+  height: auto;
+}
+
 .appimage-search-input {
   color: var(--foreground-color);
   background-color: var(--background-color);
