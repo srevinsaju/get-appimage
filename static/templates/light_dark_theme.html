@@ -27,16 +27,31 @@
 
   $(document).ready(function() {
     const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (userPrefersDark) {
-      darkTheme();
+    const userThemePreference = localStorage.getItem('GetAppImageThemePreference');
+    console.log(`userThemePreference is ${userThemePreference} `);
+    switch(userThemePreference) {
+      case 'DARK':
+        darkTheme();
+        break;
+      case "LIGHT":
+        // code block
+        break;
+      default:
+        if (userPrefersDark) {
+            darkTheme();
+        }
+        break;
     }
 
     $('#themeSwitch').change(function () {
       if (this.checked) {
         darkTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'DARK');
+        console.log(`Setting Dark theme.`);
       } else {
         lightTheme();
+        localStorage.setItem('GetAppImageThemePreference', 'LIGHT');
+        console.log(`Setting Light theme.`);
       }
     });
   });
