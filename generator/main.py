@@ -217,6 +217,8 @@ class LibraryBuilder:
                     )
                 )
             self.json.append(appimage.json_data())
+            with open(os.path.join(path_to_appfolder, 'core.json'), 'w') as w:
+                json.dump(appimage.get_app_metadata(), w)
 
         # write json file
         self.write_json_index()
