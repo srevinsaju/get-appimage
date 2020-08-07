@@ -1,1 +1,1 @@
-false
+{"id": "a5168c8c27db47b1802c5f92cdad47c5", "owner": "beekeeper-studio", "author": "github-actions[bot]", "releases_url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/latest", "github_url": "https://github.com/beekeeper-studio/beekeeper-studio", "assets": {"042ba889c1ec4830bc36d6bde6193faa": {"name": "Beekeeper-Studio-1.6.11.AppImage", "download": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v1.6.11/Beekeeper-Studio-1.6.11.AppImage", "count": 118, "size": "92.88 MB"}}, "latest_release": "v1.6.11"}
