@@ -25,13 +25,14 @@ SOFTWARE.
 -----------------------------
 This file is part of AppImage Catalog Generator
 """
-
+import hashlib
 import html
 import json
 import os
 import urllib.request
 import uuid
 
+import dateutil.parser
 from colorama import Fore
 
 from generator.catalog import Catalog
