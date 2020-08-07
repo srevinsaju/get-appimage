@@ -99,6 +99,12 @@ class AppImage:
 
     @property
     def description(self):
+        """
+        Returns the description of the app
+
+        :return:
+        :rtype:
+        """
         return self._description
 
     @property
