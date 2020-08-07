@@ -1,1 +1,1 @@
-false
+{"id": "3740c37773834d3fb98015a8d0eddcd3", "owner": "foolo", "author": "foolo", "releases_url": "https://github.com/foolo/tnt/releases/latest", "github_url": "https://github.com/foolo/tnt", "assets": {"7bd2cb73f01b4b8c85ddb9cd6a4cee29": {"name": "tnt-0.3-linux-x64.AppImage", "download": "https://github.com/foolo/tnt/releases/download/0.3/tnt-0.3-linux-x64.AppImage", "count": 446, "size": "81.12 MB"}}, "latest_release": "0.3"}
