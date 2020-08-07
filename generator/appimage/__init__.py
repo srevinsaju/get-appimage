@@ -128,6 +128,11 @@ class AppImage:
 
     @property
     def categories(self):
+        """
+        Returns a list of categories
+        :return:
+        :rtype:
+        """
         return self._categories
 
     @property
