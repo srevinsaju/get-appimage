@@ -40,9 +40,9 @@
     <!-- All the other code comes here! -->
 
     <!-- Appimages card sections -->
-    <section id="apps" class="section" style="max-width: 1380px; margin: 0
+    <section id="apps" class="section" style="max-width: 1200px; margin: 0
     auto;">
-      <div class="grid">
+      <div class="grid are-images-unloaded">
         <div class="grid__col-sizer"></div>
         <div class="grid__gutter-sizer"></div>
         {{ cards }}
@@ -54,7 +54,7 @@
       </p>
       {% endif %}
 
-      <div class="scroll-status">
+      <div class="page-load-status">
         <div class="infinite-scroll-request">
           <div class="loader-ellips">
             <span class="loader-ellips__dot loader-ellips__dot--1"></span>
@@ -68,57 +68,65 @@
       </div>
 
     </section>
-
+    {% include 'footer.html' %}
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
     <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
     <script src="{{ catalog.base_url }}/js/utils.js"></script>
     {% include 'light_dark_theme.html' %}
 
     <script>
       $(document).ready(function(){
-        var msnry = new Masonry( '.grid', {
-          itemSelector: 'none', // select no images on init
-          columnWidth: '.grid__col-sizer',
-          gutter: '.grid__gutter-sizer',
+        //-------------------------------------//
+        // init Isotope
+
+        var $grid = $('.grid').isotope({
+          itemSelector: 'none', // select none at first
+          masonry: {
+            columnWidth: '.grid__col-sizer',
+            gutter: '.grid__gutter-sizer',
+          },
           percentPosition: true,
           stagger: 30,
-          fitWidth: true,
-          visibleStyle: {
-            transform: 'translateY(0)',
-            opacity: 1
-          },
-          hiddenStyle: {
-            transform: 'translateY(100px)',
-            opacity: 0,
-          }
+          // nicer reveal transition
+          visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+          hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
         });
 
-        imagesLoaded( '.grid', function() {
-          msnry.options.itemSelector = '.grid__item'; // select proper items
-          document.querySelector('.grid').classList.add('are-images-ready');
-          var items = document.querySelectorAll('.grid__item');
-          msnry.appended( items );
+
+        // initial items reveal
+        $grid.imagesLoaded( function() {
+          $grid.removeClass('are-images-unloaded');
+          $grid.isotope( 'option', { itemSelector: '.grid__item' });
+          var $items = $grid.find('.grid__item');
+          $grid.isotope( 'appended', $items );
         });
 
-        var infScroll = new InfiniteScroll( '.grid', {
+        // init Infinte Scroll
+        // get Isotope instance
+        var iso = $grid.data('isotope');
+
+        $grid.infiniteScroll({
           path: '.pagination__next',
-          append: '.grid__item',
-          debug: true,
-          outlayer: msnry,
-          status: '.scroll-status',
-          scrollThreshold: 1,
+          status: '.page-load-status',
+          // do not set append
+          // do not set outlayer
         });
 
-        infScroll.loadNextPage();
+        // append items on load
+        $grid.on( 'load.infiniteScroll', function( event, response, path ) {
+          var $items = $( response ).find('.grid__item');
+          // append items after images loaded
+          $items.imagesLoaded( function() {
+            $grid.append( $items );
+            $grid.isotope( 'insert', $items );
+          });
+        });
+
       });
     </script>
-
   </body>
-  {% include 'footer.html' %}
-
-
 </html>
