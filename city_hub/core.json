@@ -1,1 +1,1 @@
-false
+{"id": "d02f95def78542debaa0a1fe8ed88d8c", "owner": "CityChainFoundation", "author": "github-actions[bot]", "releases_url": "https://github.com/CityChainFoundation/city-hub/releases/latest", "github_url": "https://github.com/CityChainFoundation/city-hub", "assets": {"088cae6f6e0a48e2af891bbcf4dbfd8c": {"name": "City.Hub-1.0.26-linux-x86_64.AppImage", "download": "https://github.com/CityChainFoundation/city-hub/releases/download/v1.0.26/City.Hub-1.0.26-linux-x86_64.AppImage", "count": 145, "size": "124.01 MB"}}, "latest_release": "v1.0.26"}

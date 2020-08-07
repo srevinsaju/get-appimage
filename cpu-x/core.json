@@ -1,1 +1,1 @@
-false
+{"id": "2c55e291a54b49b1a586cd62e63a051d", "owner": "X0rg", "author": "github-actions[bot]", "releases_url": "https://github.com/X0rg/CPU-X/releases/latest", "github_url": "https://github.com/X0rg/CPU-X", "assets": {"8ff410a5a397455fa0be16fc1747af7c": {"name": "CPU-X-v4.0.1-x86_64.AppImage", "download": "https://github.com/X0rg/CPU-X/releases/download/v4.0.1/CPU-X-v4.0.1-x86_64.AppImage", "count": 1866, "size": "26.56 MB"}}, "latest_release": "v4.0.1"}
