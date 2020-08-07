@@ -36,6 +36,7 @@ from colorama import init as colorama_init
 from colorama import Fore
 from progressbar import progressbar
 
+from generator.appimage.card import Card
 from .cli import parse_args, version
 from .constants import CARD_TEMPLATE, APPTEMPLATE, FEED_URL_JSON, CATEGORIES
 from .utils import ask_to_remove, copytree, read_parse_and_write_template, \
@@ -351,8 +352,7 @@ class LibraryBuilder:
             next_page_link="/all/p/0"
         )
 
-    @staticmethod
-    def _create_p_directories(json_file, pages_directory_path,
+    def _create_p_directories(self, json_file, pages_directory_path,
                               index_html_template):
         """
         Internal helper function to create ./p/* directories and files in them
@@ -366,6 +366,12 @@ class LibraryBuilder:
         :rtype:
         """
         last_page = True
+
+        # initialize the templates
+        card_template = \
+            Environment(loader=self.file_system_loader)\
+            .from_string(CARD_TEMPLATE)
+
         for i in range(0, len(json_file), 18)[::-1]:
 
             directory = os.path.join(pages_directory_path, str(i // 18))
@@ -379,27 +385,8 @@ class LibraryBuilder:
             column_data = []
             catalog = Catalog()
             for j, app in enumerate(json_file[i:i + 18]):
-                if app['github'] is not None:
-                    appimage_github = app['github'][0].get('url')
-                    is_github = 'github'
-                    left_card_description = 'Github'
-                else:
-                    appimage_github = ''  # FIXME:
-                    is_github = ''  # FIXME
-                    left_card_description = ''
                 column_data.append(
-                    CARD_TEMPLATE.format(
-                        appimage_name=app['name'],
-                        appimage_maintainer=app['maintainer'],
-                        image_src=app['image'],
-                        appimage_summary=app['summary'],
-                        appimage_categories=app['categories_html'],
-                        applink=app['name'].lower(),
-                        appimage_github=appimage_github,
-                        is_github=is_github,
-                        left_card_description=left_card_description,
-                        base_url=catalog.base_url
-                    )
+                    card_template.render(card=Card(app), catalog=catalog)
                 )
 
             next_page_link = "/p/{}".format(i // 18 + 1)

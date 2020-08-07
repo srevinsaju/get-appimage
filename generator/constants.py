@@ -35,44 +35,15 @@ CATEGORIES = ['Audio', 'Office', 'AudioVideo', 'Science', 'Development',
               'Settings', 'Education', 'System', 'Game', 'Utility',
               'Graphics', 'Video', 'Network']
 
-CARD_TEMPLATE = \
-    '<div class="grid__item"><div class="card appimage-card mb-medium">' \
-    '<div class="card-content">' \
-    '<div class="media">' \
-    '<div class="media-left">' \
-    '<figure class="image is-128x128">' \
-    '<img src="{image_src}" style="position:absolute; top:0; left:0; ' \
-    'width:100%;" alt="{appimage_name} logo" loading="lazy">' \
-    '</figure>' \
-    '</div>' \
-    '<div class="media-content">' \
-    '<p class="title is-4">{appimage_name}</p>' \
-    '<p class="subtitle is-6">{appimage_maintainer}</p>' \
-    '</div>' \
-    '</div>' \
-    '<div class="content">' \
-    '{appimage_summary}' \
-    '<br>' \
-    '{appimage_categories}' \
-    '</div>' \
-    '</div>' \
-    '<footer class="card-footer appimage-card-footer">' \
-    '<a href="https://github.com/{appimage_github}" class="card-footer-item"' \
-    'target="_blank rel="noreferrer">' \
-    '<i class="fa fa-{is_github} ss-i"></i>' \
-    '<span class="ss-card-footer-text">{left_card_description}</span>' \
-    '</a>' \
-    '<a href="{base_url}/{applink}" class="card-footer-item" target="_blank" '\
-    'rel="noreferrer">' \
-    '<i class="fa fa-external-link-alt ss-i"></i>' \
-    '<span class="ss-card-footer-text">Info</span>' \
-    '</a></footer></div></div>'
+with open('static/templates/card.html', 'r') as r:
+    CARD_TEMPLATE = r.read()
 
 DOWNLOAD_BUTTON_HTML = \
     '<a href="{url}" target="_blank"><button ' \
     'class="button appimage-store-button">' \
     '<span class="icon"><i class="fa fa-download"></i></span>' \
-    '<span>Download {name}</span>' \
+    '<span class="sr-only">Download</span>'\
+    '<span>{name}</span>' \
     '<span class="tag is-success" style="margin: 0 0 0 1em">{size}</span>' \
     '</button></a>'
 
@@ -87,7 +58,7 @@ TAG_HTML = \
     '<div class="control">' \
     '<div class="tags has-addons">' \
     '<span class="tag is-dark">{left}</span>' \
-    '<span class="tag is-info">{right}</span>' \
+    '<span class="tag is-{color}">{right}</span>' \
     '</div></div>'
 
 TAG_CATEGORY_HTML = \
@@ -105,3 +76,6 @@ TAGS_GROUP_HTML = \
 TAGS_GROUP_NO_MARGIN_HTML = \
     '<div class="field is-grouped is-grouped-multiline ' \
     'appimage-tags-group">{}</div>'
+
+GROUPED_BORDER_HTML = \
+    '''<div class="appimage-group-light-border">{}</div>'''

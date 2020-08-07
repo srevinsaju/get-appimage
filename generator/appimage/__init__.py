@@ -161,10 +161,20 @@ class AppImage:
 
     @property
     def links(self):
+        """
+        Returns the links to the appimage
+        :return:
+        :rtype:
+        """
         return self._links
 
     @property
     def icon(self):
+        """
+        Returns icon from feed.json
+        :return:
+        :rtype:
+        """
         if isinstance(self._icon, list):
             icon = self._icon[0]
             return 'https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master'\
@@ -182,31 +192,80 @@ class AppImage:
     # GitHub api management / data retrieval functions / methods below
     @property
     def github(self):
-        if not self.is_github():
-            return ''
+        """
+        Iterates through each release and then generate download button,
+        release assets etc. Get the latest continuous / stable / tagged
+        releases.
+        The iteration continues until any of the following happens
+        1. When a *.* tag reaches (inclusive)
+        2. When an *untagged* tag is reached (exclusive)
+        3. When a [0-9]+ tag is reached (inclusive)
+        When the endpoint is reached, the iteration is terminated and then
+        the final links are returned as HTML.
 
-        # check and parse github_information
-        github_info = self.github_info
-        if not github_info:
+        :return: Html string
+        :rtype:
+        """
+        html_data = list()
+        if not self.is_github() or not self.github_info:
+            # return empty string if its not a github compatible release
             return ''
+        for app in self.github_info:
+            if not isinstance(app, int):
+                continue
+            if 'untagged' in self.github_info[app].get('tag'):
+                break
+            github_links = \
+                self.github_generate_buttons_per_release(self.github_info[app])
+            html_data.append(github_links)
+            if '.' in self.github_info[app].get('tag') or \
+                    self.github_info[app].get('tag').isdigit():
+                break
 
+        # parse common tags
+        if self.github_info.get('source').get('type') == 'github':
+            source_code_tag = \
+                TAG_HTML.format(
+                    left="<i class='fab fa-github margin-right-halfem'></i> "
+                         "Github",
+                    right=self.github_info.get('source').get('url'),
+                    color="info"
+                )
+            source_code_tag = \
+                "<a href='{url}' style='margin-top: 1em; display: block' " \
+                "target='_blank'>{tag}</a>".format(
+                    url=self.github_info.get('source').get('url'),
+                    tag=source_code_tag
+                )
+        else:
+            source_code_tag = ''
+
+        return source_code_tag + ''.join(html_data)
+
+    @staticmethod
+    def github_generate_buttons_per_release(github_info):
         # a tag to show URL to github repository
-        github_url = \
-            TAG_HTML.format(left="<i class='fab fa-github'></i> Github",
-                            right=github_info.get("github_url"))
 
         # shows the latest stable release containing an appimage
         latest_tag = \
-            TAG_HTML.format(left="Latest",
-                            right=github_info.get("latest_release"))
+            TAG_HTML.format(left="Release",
+                            right=github_info.get("tag"),
+                            color="success")
+        published_at = github_info.get("published_at")
+        if published_at:
+            published_at = dateutil.parser.parse(published_at)\
+                .strftime("%b %d %Y %H:%M:%S")
+        else:
+            published_at = "Unknown"
 
-        # size of the appimage
-        size = \
-            TAG_HTML.format(left="Size", right=github_info.get("size"))
+        published_on_tag = \
+            TAG_HTML.format(left="Published",
+                            right=published_at,
+                            color="info")
 
         # a button link to the releases page
         releases_button_html = \
-            RELEASES_BUTTON_HTML.format(url=github_info.get("releases_url"))
+            RELEASES_BUTTON_HTML.format(url=github_info.get("url"))
 
         # download buttons for all appimages
         download_buttons = list()
@@ -220,12 +279,12 @@ class AppImage:
                 )
             download_buttons.append(download_button_html)
 
-        return ''.join((
-            TAGS_GROUP_NO_MARGIN_HTML.format(
-                '\n'.join((''.join(download_buttons), releases_button_html,))),
+        return GROUPED_BORDER_HTML.format(''.join((
             TAGS_GROUP_HTML.format(
-                '\n'.join((latest_tag, github_url, size)))
-        ))
+                '\n'.join((latest_tag, published_on_tag))),
+            TAGS_GROUP_NO_MARGIN_HTML.format(
+                '\n'.join((releases_button_html, ''.join(download_buttons))))
+        )))
 
     def is_github(self):
         """
@@ -286,34 +345,18 @@ class AppImage:
             with open(path_to_local_github_json, 'r') as r:
                 github_api_data = r.read()
             json_data = json.loads(github_api_data)
-            if isinstance(json_data, list):
-                try:
-                    return json_data[0]
-                except IndexError:
-                    print(json_data)
-                    return False
-            elif isinstance(json_data, dict):
-                return json_data
+            return json_data
 
         github_release_api = \
-            "https://api.github.com/repos/{path}/releases/latest".format(
+            "https://api.github.com/repos/{path}/releases".format(
                 path=self._links[0].get("url")
             )
 
         # get the request urllib response instance or bool
         request_url = self.get_github_release_from(github_release_api)
+        # check if request succeeded:
         if not request_url:
-            # The request has failed with 404 or some other random error
-            # Try again with the superset of releases
-            github_release_api = \
-                "https://api.github.com/repos/{path}/releases".format(
-                    path=self._links[0].get("url")
-                )
-            request_url = self.get_github_release_from(github_release_api)
-            if not request_url:
-                # the request still failed :sob:,
-                # return that it failed lol
-                return request_url
+            return False
 
         # read the data
         github_api_data = request_url.read().decode()  # noqa:
@@ -329,16 +372,7 @@ class AppImage:
 
         # load the data
         json_data = json.loads(github_api_data)
-        if isinstance(json_data, list):
-            try:
-                return json_data[0]
-            except IndexError:
-                print(json_data)
-                return False
-        elif isinstance(json_data, dict):
-            return json_data
-
-        return False  # nothing has worked :'(
+        return json_data
 
     def get_github_info(self):
         if not self.is_github():
@@ -361,37 +395,52 @@ class AppImage:
             # and not to stash the build
             return False
 
-        tag_name = data.get("tag_name")
-        appimages_assets = dict()
-        for i in data.get("assets"):
-            download_url = i.get('browser_download_url')
-            if download_url.lower().endswith('.appimage'):
-                # a valid appimage file found in release assets
-                appimages_assets[uuid.uuid4().hex] = {
-                    'name': i.get('name'),
-                    'download': download_url,
-                    'count': i.get('download_count'),
-                    'size': "{0:.2f} MB".format(i.get('size') / (1000 * 1000))
-                }
+        releases_api_json = dict()
+        for i, release in enumerate(data):
+            # iterate through the data
+            # and process each data
+            tag_name = release.get("tag_name")
+            appimages_assets = dict()
+            for asset in release.get("assets"):
+                download_url = asset.get('browser_download_url')
+                if download_url.lower().endswith('.appimage'):
+                    # a valid appimage file found in release assets
+                    appimages_assets[uuid.uuid4().hex] = {
+                        'name': asset.get('name'),
+                        'download': download_url,
+                        'count': asset.get('download_count'),
+                        'size': "{0:.2f} MB".format(
+                            asset.get('size') / (1000 * 1000))
+                    }
 
-        return {
-            'id': uuid.uuid4().hex,
-            'owner': owner,
-            'author': data.get('author').get('login'),
-            'releases_url': "https://github.com/{path}/releases/latest".format(
-                path=self._links[0].get("url")
-            ),
-            'github_url': "https://github.com/{path}".format(
-                path=self._links[0].get("url")
-            ),
-            'assets': appimages_assets,
-            'latest_release': tag_name
+            uid_appimage = hashlib.sha256(
+                "{}:{}".format(appimages_assets,
+                                  self._links[0].get("url")).encode()
+            ).hexdigest()
+
+            author_json = release.get('author')
+            author = None
+            if author_json is not None:
+                author = author_json.get('login')
+            releases_api_json[i] = {
+                'id': uid_appimage,
+                'author': author,
+                'releases': release.get('html_url'),
+                'assets': appimages_assets,
+                'tag': tag_name,
+                'published_at': release.get('published_at')
+            }
+        releases_api_json['owner'] = owner
+        releases_api_json['source'] = {
+            'type': 'github',
+            'url': "https://github.com/{path}".format(
+                    path=self._links[0].get("url"))
         }
+        return releases_api_json
 
     def get_app_metadata(self):
         if self.is_github():
-            return self.get_github_info()
-
+            return self.github_info
 
     def json_data(self):
         return {
