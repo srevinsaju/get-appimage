@@ -1,1 +1,1 @@
-false
+{"id": "3ab8a54ba4844a049d9c61881bf9454b", "owner": "BlocknetDX", "author": "blocknetdx-builds", "releases_url": "https://github.com/BlocknetDX/blockdx-ui/releases/latest", "github_url": "https://github.com/BlocknetDX/blockdx-ui", "assets": {"d291436cb4ff4921876c0225cf162fe1": {"name": "BLOCK-DX-1.8.0-linux.AppImage", "download": "https://github.com/blocknetdx/block-dx/releases/download/v1.8.0/BLOCK-DX-1.8.0-linux.AppImage", "count": 53, "size": "105.51 MB"}}, "latest_release": "v1.8.0"}

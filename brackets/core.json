@@ -1,1 +1,1 @@
-false
+{"id": "72b598d2c3a4467ba190fc070b72cef5", "owner": "zaggino", "author": "zaggino", "releases_url": "https://github.com/zaggino/brackets-electron/releases/latest", "github_url": "https://github.com/zaggino/brackets-electron", "assets": {"ce7737d9ddde4b1eb54c90b6671a5189": {"name": "brackets-electron-1.10.3-x86_64.AppImage", "download": "https://github.com/brackets-userland/brackets-electron/releases/download/v1.10.3/brackets-electron-1.10.3-x86_64.AppImage", "count": 3792, "size": "118.69 MB"}}, "latest_release": "v1.10.3"}
