@@ -362,6 +362,16 @@ pre {
   border-radius: 1em;
 }
 
+.appimage-group-light-border {
+    border-color: var(--background-color-3);
+    border: var(--background-color-3) 0.1rem solid;
+    padding: 1em 1em 2em 1em;
+    display: block;
+    border-radius: 1em;
+    /* background-color: red; */
+    margin-top: 1em;
+}
+
 /* media queries and animations */
 
 @media (max-width: 400px) {
