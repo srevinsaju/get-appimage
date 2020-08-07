@@ -216,7 +216,7 @@ Common
 
 .appimage-card {
   border-radius: 1em;
-  min-width: 300px;
+  width: 100%;
   background-color: var(--background-color-3);
   color: var(--foreground-color);
   transition: background-color 0.2s;
