@@ -1,1 +1,1 @@
-false
+{"id": "01628c1ee61e4e08a95f67a16077b4e1", "owner": "vuerd", "author": "dineug", "releases_url": "https://github.com/vuerd/vuerd-electron/releases/latest", "github_url": "https://github.com/vuerd/vuerd-electron", "assets": {"30468a9b643d4f67a08160981f68607a": {"name": "vuerd_1.0.2.AppImage", "download": "https://github.com/dineug/vuerd-electron/releases/download/v1.0.2/vuerd_1.0.2.AppImage", "count": 1048, "size": "52.88 MB"}}, "latest_release": "v1.0.2"}

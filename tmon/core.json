@@ -1,1 +1,1 @@
-false
+{"id": "84622fba3e7b48539f23bc2541cccfb4", "owner": "gmagno", "author": "gmagno", "releases_url": "https://github.com/gmagno/tmon/releases/latest", "github_url": "https://github.com/gmagno/tmon", "assets": {"f5618209d9dc47dab812cc67a164f3bb": {"name": "tmon-466ae00-x86_64.AppImage", "download": "https://github.com/gmagno/tmon/releases/download/v0.4.0/tmon-466ae00-x86_64.AppImage", "count": 359, "size": "28.07 MB"}}, "latest_release": "v0.4.0"}

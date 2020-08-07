@@ -1,1 +1,1 @@
-false
+{"id": "405add0337e049ef8fa4e749319ea534", "owner": "tdeo", "author": "tdeo", "releases_url": "https://github.com/tdeo/timer/releases/latest", "github_url": "https://github.com/tdeo/timer", "assets": {"ec3a2ee3ea014be3a0a8cd2affeb3880": {"name": "timer-1.0.1-x86_64.AppImage", "download": "https://github.com/tdeo/timer/releases/download/v1.0.1/timer-1.0.1-x86_64.AppImage", "count": 1306, "size": "49.25 MB"}}, "latest_release": "v1.0.1"}

@@ -1,1 +1,1 @@
-false
+{"id": "1df32574b7ff4a8abe54df43e8fba3dd", "owner": "xaizek", "author": "xaizek", "releases_url": "https://github.com/xaizek/uncov/releases/latest", "github_url": "https://github.com/xaizek/uncov", "assets": {"b962451049f34eaab69d8ef8666d3a73": {"name": "uncov-0.3-x86_64.AppImage", "download": "https://github.com/xaizek/uncov/releases/download/v0.3/uncov-0.3-x86_64.AppImage", "count": 977, "size": "17.51 MB"}}, "latest_release": "v0.3"}
