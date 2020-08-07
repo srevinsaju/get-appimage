@@ -85,8 +85,8 @@ class AppImage:
     @property
     def is_verified(self):
         if self.is_github() and self.github_info:
-            if (self.maintainer == self.github_info.get('author')) or \
-                    (self.maintainer == self.github_info.get('owner')):
+            if (self.maintainer == self.github_info[0].get('author')) or \
+                    (self.maintainer == self.github_info[0].get('owner')):
                 return True
         return False
 
