@@ -1,1 +1,1 @@
-false
+{"id": "db852f02cf5f4bc2b4cc67888ea4493d", "owner": "zilti", "author": "zilti", "releases_url": "https://github.com/zilti/code-oss.AppImage/releases/latest", "github_url": "https://github.com/zilti/code-oss.AppImage", "assets": {"ed188e24973043fbbaf616bf17f1017f": {"name": "Code_OSS-x86_64.AppImage", "download": "https://github.com/zilti/code-oss.AppImage/releases/download/continuous/Code_OSS-x86_64.AppImage", "count": 21, "size": "154.12 MB"}}, "latest_release": "continuous"}

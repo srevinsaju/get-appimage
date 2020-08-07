@@ -1,1 +1,1 @@
-false
+{"id": "992125eaab294bbc83e4e7d252f44655", "owner": "CREDITSCOM", "author": "SychevS", "releases_url": "https://github.com/CREDITSCOM/cscrypto/releases/latest", "github_url": "https://github.com/CREDITSCOM/cscrypto", "assets": {"2ac744af089c473ca89037b9826a8fb3": {"name": "Cscrypto_Qt-x86_64.AppImage", "download": "https://github.com/CREDITSCOM/cscrypto/releases/download/v0.3.0_gui/Cscrypto_Qt-x86_64.AppImage", "count": 934, "size": "23.76 MB"}}, "latest_release": "v0.3.0_gui"}
