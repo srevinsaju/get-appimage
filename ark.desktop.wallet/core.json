@@ -1,1 +1,1 @@
-false
+{"id": "772cb3e77c1745808bde5cfd002beb12", "owner": "ArkEcosystem", "author": "github-actions[bot]", "releases_url": "https://github.com/ArkEcosystem/desktop-wallet/releases/latest", "github_url": "https://github.com/ArkEcosystem/desktop-wallet", "assets": {"870dab6a38f24311b1119700ec2224b9": {"name": "ark-desktop-wallet-linux-x86_64-2.9.3.AppImage", "download": "https://github.com/ArkEcosystem/desktop-wallet/releases/download/2.9.3/ark-desktop-wallet-linux-x86_64-2.9.3.AppImage", "count": 45, "size": "99.43 MB"}}, "latest_release": "2.9.3"}

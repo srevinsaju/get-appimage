@@ -1,1 +1,1 @@
-false
+{"id": "f2fb8cc6c100446a8fb5a855f2d14e2e", "owner": "AdamSmasherDerby", "author": "AdamSmasherDerby", "releases_url": "https://github.com/AdamSmasherDerby/CRG-To-Statsbook/releases/latest", "github_url": "https://github.com/AdamSmasherDerby/CRG-To-Statsbook", "assets": {"f25a2394a8e44338bda853bf6d197caf": {"name": "crgdatatool-2.3.2-x86_64.AppImage", "download": "https://github.com/AdamSmasherDerby/CRG-To-Statsbook/releases/download/v2.3.2/crgdatatool-2.3.2-x86_64.AppImage", "count": 230, "size": "66.14 MB"}}, "latest_release": "v2.3.2"}

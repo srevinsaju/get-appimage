@@ -1,1 +1,1 @@
-false
+{"id": "b42510c3e95641d28633e319f02d48ca", "owner": "greymass", "author": "aaroncox", "releases_url": "https://github.com/greymass/anchor/releases/latest", "github_url": "https://github.com/greymass/anchor", "assets": {"8bc2cd8bd54e469081e71b081d6ded97": {"name": "linux-anchor-wallet-1.0.5-x86_64.AppImage", "download": "https://github.com/greymass/anchor/releases/download/v1.0.5/linux-anchor-wallet-1.0.5-x86_64.AppImage", "count": 127, "size": "92.01 MB"}}, "latest_release": "v1.0.5"}

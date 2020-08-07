@@ -1,1 +1,1 @@
-false
+{"id": "c50e9a8eb6434db488f3abbd490a8778", "owner": "CCI-Tools", "author": "forman", "releases_url": "https://github.com/CCI-Tools/cate-desktop/releases/latest", "github_url": "https://github.com/CCI-Tools/cate-desktop", "assets": {"a9dc16c25b074e1baae5fb8ebac139fc": {"name": "cate-desktop-2.0.0-x86_64.AppImage", "download": "https://github.com/CCI-Tools/cate-desktop/releases/download/v2.0.0/cate-desktop-2.0.0-x86_64.AppImage", "count": 153, "size": "84.71 MB"}}, "latest_release": "v2.0.0"}

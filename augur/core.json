@@ -1,1 +1,1 @@
-false
+{"id": "5d546f1b1f4a4dceb1941e68527d1f2c", "owner": "AugurProject", "author": "petong", "releases_url": "https://github.com/AugurProject/augur-app/releases/latest", "github_url": "https://github.com/AugurProject/augur-app", "assets": {"82852e3c9f2b4a5bb4565419a478031b": {"name": "linux-Augur-1.16.11.AppImage", "download": "https://github.com/AugurProject/augur-app/releases/download/v1.16.11/linux-Augur-1.16.11.AppImage", "count": 77, "size": "166.65 MB"}}, "latest_release": "v1.16.11"}
