@@ -73,41 +73,8 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
     <script src="{{ path_prefix }}/js/utils.js"></script>
     {% include 'light_dark_theme.html' %}
-
-    <script>
-      $(document).ready(function(){
-
-        var msnry = new Masonry( '.grid', {
-          itemSelector: 'none', // select no images on init
-          columnWidth: '.grid__col-sizer',
-          gutter: '.grid__gutter-sizer',
-          percentPosition: true,
-          stagger: 30,
-          fitWidth: true,
-          visibleStyle: {
-            transform: 'translateY(0)',
-            opacity: 1
-          },
-          hiddenStyle: {
-            transform: 'translateY(100px)',
-            opacity: 0,
-          }
-        });
-
-        imagesLoaded( '.grid', function() {
-          msnry.options.itemSelector = '.grid__item'; // select proper items
-          document.querySelector('.grid').classList.add('are-images-ready');
-          var items = document.querySelectorAll('.grid__item');
-          msnry.appended( items );
-        });
-
-      });
-    </script>
 
   </body>
   {% include 'footer.html' %}
