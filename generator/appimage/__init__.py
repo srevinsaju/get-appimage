@@ -118,6 +118,12 @@ class AppImage:
 
     @property
     def title_formatted(self):
+        """
+        Returns the title but replaces all the _ with ' ' and '-' with ' '
+        For un-formatted title (raw title), refer self.title
+        :return:
+        :rtype:
+        """
         return self._title.replace('_', ' ').replace('-', ' ')
 
     @property
