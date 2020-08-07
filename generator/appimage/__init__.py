@@ -137,6 +137,11 @@ class AppImage:
 
     @property
     def authors(self):
+        """
+        Returns a list of authors
+        :return:
+        :rtype:
+        """
         if isinstance(self._authors, str):
             return [self._authors]
         elif isinstance(self._authors, list):
