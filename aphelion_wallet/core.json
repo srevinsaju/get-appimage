@@ -1,1 +1,1 @@
-false
+{"id": "ee3ddaffa25d4573b0390430a72fc789", "owner": "aphtoken", "author": "apheliontoken", "releases_url": "https://github.com/aphtoken/aph-wallet-gui/releases/latest", "github_url": "https://github.com/aphtoken/aph-wallet-gui", "assets": {"4a2775ac34c746d982677ce39724a615": {"name": "Aphelion_Wallet-4.1.0-lin.AppImage", "download": "https://github.com/aphtoken/aph-wallet-gui/releases/download/4.1.0/Aphelion_Wallet-4.1.0-lin.AppImage", "count": 66, "size": "110.15 MB"}}, "latest_release": "4.1.0"}
