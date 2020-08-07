@@ -109,6 +109,11 @@ class AppImage:
 
     @property
     def title(self):
+        """
+        Returns the raw title without formatting, i.e refer title_formatted
+        :return:
+        :rtype:
+        """
         return self._title
 
     @property
