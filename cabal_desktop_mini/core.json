@@ -1,1 +1,1 @@
-false
+{"id": "27107acad5fd4adeb5301c74ea0d6211", "owner": "nikolaiwarner", "author": "nikolaiwarner", "releases_url": "https://github.com/nikolaiwarner/cabal-desktop-mini/releases/latest", "github_url": "https://github.com/nikolaiwarner/cabal-desktop-mini", "assets": {"f33e7c34559f47e3ad21cfe93f390b69": {"name": "cabal-desktop-mini-2.0.0-linux-x86_64.AppImage", "download": "https://github.com/cabal-club/cabal-desktop-mini/releases/download/v2.0.0/cabal-desktop-mini-2.0.0-linux-x86_64.AppImage", "count": 1130, "size": "95.96 MB"}}, "latest_release": "v2.0.0"}

@@ -1,1 +1,1 @@
-false
+{"id": "a06c14671ffe4f269ffaf439e8a582f2", "owner": "cpeditor", "author": "github-actions[bot]", "releases_url": "https://github.com/cpeditor/cpeditor/releases/latest", "github_url": "https://github.com/cpeditor/cpeditor", "assets": {"af5614fc803745b1a7461f340e1c0eb9": {"name": "cpeditor-6.5.4-x86_64.AppImage", "download": "https://github.com/cpeditor/cpeditor/releases/download/6.5.4/cpeditor-6.5.4-x86_64.AppImage", "count": 100, "size": "41.92 MB"}}, "latest_release": "6.5.4"}

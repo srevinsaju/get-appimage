@@ -1,1 +1,1 @@
-false
+{"id": "26be672872a84bc5983972a81e7af58c", "owner": "adobe", "author": "jcrowthe", "releases_url": "https://github.com/adobe/cryptr/releases/latest", "github_url": "https://github.com/adobe/cryptr", "assets": {"6677be41567f4233a61e553c9562f06a": {"name": "cryptr-0.3.0-x86_64.AppImage", "download": "https://github.com/adobe/cryptr/releases/download/v0.3.0/cryptr-0.3.0-x86_64.AppImage", "count": 804, "size": "85.30 MB"}}, "latest_release": "v0.3.0"}
