@@ -121,7 +121,15 @@ Utilities
   background-size: 2px 50px;
 }
 
+/*
+=============================
+Common
+=============================
+ */
 
+.margin-right-halfem {
+  margin-right: 0.5em;
+}
 
 /*
 =============================
