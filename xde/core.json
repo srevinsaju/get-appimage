@@ -1,1 +1,1 @@
-false
+{"id": "a130acfc848647edb3068e8ed52ac814", "owner": "expo", "author": "fson", "releases_url": "https://github.com/expo/xde/releases/latest", "github_url": "https://github.com/expo/xde", "assets": {"e2b3f2e2902d4c759127b17ec41f9df2": {"name": "xde-2.25.0-x86_64.AppImage", "download": "https://github.com/expo/xde/releases/download/v2.25.0/xde-2.25.0-x86_64.AppImage", "count": 2094, "size": "72.67 MB"}}, "latest_release": "v2.25.0"}

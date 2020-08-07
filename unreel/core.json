@@ -1,1 +1,1 @@
-false
+{"id": "08c5c0b87a914df5b26b5b06e0ec6ecc", "owner": "linux-man", "author": "linux-man", "releases_url": "https://github.com/linux-man/unreel/releases/latest", "github_url": "https://github.com/linux-man/unreel", "assets": {"e08f3c2c4fcd4fa1aff824299808775c": {"name": "unreel-1.4.0-x86_64.AppImage", "download": "https://github.com/linux-man/unreel/releases/download/v1.4.0/unreel-1.4.0-x86_64.AppImage", "count": 1638, "size": "65.73 MB"}}, "latest_release": "v1.4.0"}

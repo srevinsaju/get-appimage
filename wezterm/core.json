@@ -1,1 +1,1 @@
-false
+{"id": "9c310d9edced43798935740366458f0b", "owner": "wez", "author": "github-actions[bot]", "releases_url": "https://github.com/wez/wezterm/releases/latest", "github_url": "https://github.com/wez/wezterm", "assets": {"05b5ab6546fd44639e74afd32da7151f": {"name": "WezTerm-20200718-095447-d2315640-Ubuntu16.04.AppImage", "download": "https://github.com/wez/wezterm/releases/download/20200718-095447-d2315640/WezTerm-20200718-095447-d2315640-Ubuntu16.04.AppImage", "count": 58, "size": "10.55 MB"}}, "latest_release": "20200718-095447-d2315640"}

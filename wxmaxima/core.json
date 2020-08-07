@@ -1,1 +1,1 @@
-false
+{"id": "2b64e806bf1640ad949b6b35bc51d3c2", "owner": "wxMaxima-developers", "author": "gunterkoenigsmann", "releases_url": "https://github.com/wxMaxima-developers/docker-wxmaxima/releases/latest", "github_url": "https://github.com/wxMaxima-developers/docker-wxmaxima", "assets": {"dee5b80dc7204545b3aa12b382459db1": {"name": "wxmaxima-x86_64.AppImage", "download": "https://github.com/wxMaxima-developers/docker-wxmaxima/releases/download/wxMaxima-20.06.6.4/wxmaxima-x86_64.AppImage", "count": 219, "size": "75.52 MB"}}, "latest_release": "wxMaxima-20.06.6.4"}
