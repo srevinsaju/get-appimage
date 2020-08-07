@@ -422,9 +422,12 @@ pre {
 
   .appimage-tags-group {
     justify-content: center !important;
-    margin-top: 1em;
   }
 
+  .grid__item,
+  .grid__col-sizer {
+    width: 100% !important;
+  }
 
 }
 
@@ -506,32 +509,44 @@ pre {
   animation-direction: reverse;
 }
 
+/*
+Grid Isotope
+ */
+
 
 .grid {
-  margin: 0 auto;
+  max-width: 1200px;
 }
 
-.grid__col-sizer,
-.grid__item {
-  min-width: 400px;
-  width: 400px;
+/* reveal grid after images loaded */
+.grid.are-images-unloaded {
+  opacity: 0;
 }
 
-.grid__gutter-sizer { width: 3.33%; }
+.grid__item,
+.grid__col-sizer {
+  width: 32%;
+}
+
+
+.grid__gutter-sizer { width: 2%; }
+
+/* hide by default */
+.grid.are-images-unloaded .image-grid__item {
+  opacity: 0;
+}
 
 .grid__item {
+  margin-bottom: 20px;
   float: left;
-  margin-bottom: 30px;
-  visibility: hidden;; /*hidden by default*/
 }
 
-.grid.are-images-ready .grid__item { visibility: visible; }
-
-.grid__item img {
-  display: block;
-  max-width: 100%;
+.page-load-status {
+  display: none; /* hidden by default */
+  padding-top: 20px;
+  border-top: 1px solid #DDD;
+  text-align: center;
+  color: #777;
 }
 
-.scroll-status {
-  display: none;
-}
+/* loader ellips in separate pen CSS */
