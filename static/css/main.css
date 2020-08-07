@@ -291,11 +291,9 @@ pre {
  Footer section
 =============================
 */
-
 .footer {
   background-color: var(--background-color-2);
 }
-
 
 .ss-skill-img {
   background: linear-gradient(270deg, var(--accent-secondary), var(--accent-dark));
@@ -314,8 +312,6 @@ pre {
 .mb-medium {
   margin-bottom: 1.5rem
 }
-
-
 
 /*
 =============================
@@ -354,10 +350,7 @@ pre {
   display: inline-block;
 }
 
-
-
 /*  All list */
-
 .appimage-tags-group-all {
   margin-top: 1em;
 }
@@ -459,9 +452,6 @@ pre {
     opacity:1;
   }
 }
-
-
-
 
 /* loader-ellips
 ------------------------- */
