@@ -1,1 +1,1 @@
-false
+{"0": {"id": "6c3f8281b4edbd2713847d05f60e43d8a75d45d458cd6161af1349b888f85304", "author": "Abs62", "releases": "https://github.com/Abs62/goldendict/releases/tag/continuous", "assets": {"b928815f6cd1473784df1792040cdb8b": {"name": "GoldenDict-dda311c-x86_64.AppImage", "download": "https://github.com/Abs62/goldendict/releases/download/continuous/GoldenDict-dda311c-x86_64.AppImage", "count": 44, "size": "55.91 MB"}}, "tag": "continuous", "published_at": "2020-07-19T10:46:44Z"}, "owner": "Abs62", "source": {"type": "github", "url": "https://github.com/Abs62/goldendict"}}

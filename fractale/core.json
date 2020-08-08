@@ -1,1 +1,1 @@
-false
+{"0": {"id": "8bb4d8e7b8dd6fe560547f6dae0b78f9db25e2d30cc31eccf7aab8ba0a0d3765", "author": "PJK136", "releases": "https://github.com/PJK136/Fractale/releases/tag/continuous", "assets": {"d3c745c1ff5b4621b3074c95376e302c": {"name": "Fractale-cadfc6e-x86_64.AppImage", "download": "https://github.com/PJK136/Fractale/releases/download/continuous/Fractale-cadfc6e-x86_64.AppImage", "count": 824, "size": "22.82 MB"}}, "tag": "continuous", "published_at": "2019-09-28T10:04:30Z"}, "owner": "PJK136", "source": {"type": "github", "url": "https://github.com/PJK136/Fractale"}}
