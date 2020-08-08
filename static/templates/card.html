@@ -23,7 +23,7 @@
 		<footer class="card-footer appimage-card-footer">
 			<a href="{{ card.source_code_url }}" class="card-footer-item"
 				 target="_blank" rel="noreferrer">
-				<i class="fa fa-{is_github} ss-i"></i>
+				<i class="fa fa-{{ card.is_github }} ss-i"></i>
 				<span class="ss-card-footer-text">{{ card.left_description }}</span>
 			</a>
 			<a href="{{ catalog.base_url }}/{{ card.name_lower_case }}"
