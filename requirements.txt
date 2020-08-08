@@ -1,3 +1,4 @@
 jinja2
 colorama
 progressbar2
+python-dateutil
