@@ -1,1 +1,1 @@
-{"0": {"id": "c898dd4a00575dacaf4b44fbba6c39663f0d3c4537373b97d09e112d36e74f58", "author": "lettier", "releases": "https://github.com/lettier/gifcurry/releases/tag/6.0.0.0", "assets": {"db96219014fa4ada9fc11ec99f09905b": {"name": "gifcurry-6.0.0.0-x86_64.AppImage", "download": "https://github.com/lettier/gifcurry/releases/download/6.0.0.0/gifcurry-6.0.0.0-x86_64.AppImage", "count": 274, "size": "41.16 MB"}}, "tag": "6.0.0.0", "published_at": "2019-09-11T07:19:54Z"}, "owner": "lettier", "source": {"type": "github", "url": "https://github.com/lettier/gifcurry"}}
+false
