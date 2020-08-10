@@ -1,1 +1,1 @@
-false
+{"0": {"id": "9c4fea7b01fcba48b6194a1e64ecb34cd86ba99a19855506f15cc0f9bb02de89", "author": "joaomgcd", "releases": "https://github.com/joaomgcd/JoinDesktop/releases/tag/v0.4.0", "assets": {"b8722d674de44ad796c907d5d45ba5bd": {"name": "Join.Desktop-0.4.0.AppImage", "download": "https://github.com/joaomgcd/JoinDesktop/releases/download/v0.4.0/Join.Desktop-0.4.0.AppImage", "count": 17, "size": "75.90 MB"}}, "tag": "v0.4.0", "published_at": "2020-07-31T08:10:56Z"}, "owner": "joaomgcd", "source": {"type": "github", "url": "https://github.com/joaomgcd/JoinDesktop"}}

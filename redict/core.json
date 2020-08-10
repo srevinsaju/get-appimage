@@ -1,1 +1,1 @@
-false
+{"0": {"id": "5b0efeb330d3e53896f1c86ae1ea9f43c73fe72368d6d0ae713e9ed196c00958", "author": "rekols", "releases": "https://github.com/rekols/redict/releases/tag/continuous", "assets": {"822eca8899e14ba2b1cc6d999c6b7006": {"name": "Redict-525aac0-x86_64.AppImage", "download": "https://github.com/rekols/redict/releases/download/continuous/Redict-525aac0-x86_64.AppImage", "count": 1171, "size": "24.47 MB"}}, "tag": "continuous", "published_at": "2019-06-20T23:18:24Z"}, "owner": "rekols", "source": {"type": "github", "url": "https://github.com/rekols/redict"}}

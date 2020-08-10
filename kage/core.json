@@ -1,1 +1,1 @@
-false
+{"0": {"id": "f45ecc215f1555d744a379ae30937e917d834a8ac3efada00f01fcdbc0336a57", "author": "Zerx0r", "releases": "https://github.com/Zerx0r/Kage/releases/tag/v0.1.1-beta", "assets": {"c0177dd7e37c4bc2b294e9de023a27b4": {"name": "Kage.0.1.1-beta_linux.AppImage", "download": "https://github.com/Zerx0r/Kage/releases/download/v0.1.1-beta/Kage.0.1.1-beta_linux.AppImage", "count": 9739, "size": "53.09 MB"}}, "tag": "v0.1.1-beta", "published_at": "2019-02-23T19:11:30Z"}, "owner": "WayzDev", "source": {"type": "github", "url": "https://github.com/WayzDev/Kage"}}

@@ -1,1 +1,1 @@
-false
+{"0": {"id": "f689820047498675913fa204f80946b5a5c01541a34ddfa59aa51af44c2d85d6", "author": "jprctr", "releases": "https://github.com/PhinchApp/Phinch/releases/tag/v2.0.1", "assets": {"3964971ec82c45e7a0c8438fe4790900": {"name": "Linux.Phinch-2.0.1-x86_64.AppImage", "download": "https://github.com/PhinchApp/Phinch/releases/download/v2.0.1/Linux.Phinch-2.0.1-x86_64.AppImage", "count": 243, "size": "213.95 MB"}}, "tag": "v2.0.1", "published_at": "2019-05-09T18:43:47Z"}, "owner": "PhinchApp", "source": {"type": "github", "url": "https://github.com/PhinchApp/Phinch"}}
