@@ -1,1 +1,1 @@
-false
+{"0": {"id": "273834873579b04555624ff6920d77355b72f9a281cf34bb655e3243c8c9407b", "author": "hn-88", "releases": "https://github.com/hn-88/GL_warp2mp4/releases/tag/v1.10", "assets": {"cf1c94b89c4840a591fab0ebfd6bf4cc": {"name": "GL_warp2mp41.10-x86_64.AppImage", "download": "https://github.com/hn-88/GL_warp2mp4/releases/download/v1.10/GL_warp2mp41.10-x86_64.AppImage", "count": 165, "size": "50.25 MB"}}, "tag": "v1.10", "published_at": "2020-04-08T11:31:19Z"}, "owner": "hn-88", "source": {"type": "github", "url": "https://github.com/hn-88/GL_warp2mp4"}}
