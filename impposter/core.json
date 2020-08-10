@@ -1,1 +1,1 @@
-false
+{"0": {"id": "0db49bf3fe5309742bf0d438c8b76e5d532da638f76c1e646d849b5e39210521", "author": "imp-dance", "releases": "https://github.com/imp-dance/imp-poster/releases/tag/0.1.0", "assets": {"63e007a774d540c4af99465eb04682f3": {"name": "ImpPoster.0.1.0.AppImage", "download": "https://github.com/imp-dance/imp-poster/releases/download/0.1.0/ImpPoster.0.1.0.AppImage", "count": 1135, "size": "107.41 MB"}}, "tag": "0.1.0", "published_at": "2019-03-02T13:44:19Z"}, "owner": "imp-dance", "source": {"type": "github", "url": "https://github.com/imp-dance/imp-poster"}}
