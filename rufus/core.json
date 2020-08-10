@@ -1,1 +1,1 @@
-{"0": {"id": "ef006ffe2b20cb4060b705f1aff2571285b27cbb4bb6a9f1d1f5260ce57c291f", "author": "ukinoki", "releases": "https://github.com/ukinoki/Rufus/releases/tag/continuous", "assets": {"b557acdd80944fe9a0a5a622de15040e": {"name": "Rufus-be93cc9-x86_64.AppImage", "download": "https://github.com/ukinoki/Rufus/releases/download/continuous/Rufus-be93cc9-x86_64.AppImage", "count": 32, "size": "52.89 MB"}}, "tag": "continuous", "published_at": "2020-07-27T03:41:20Z"}, "owner": "ukinoki", "source": {"type": "github", "url": "https://github.com/ukinoki/Rufus"}}
+false
