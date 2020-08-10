@@ -1,1 +1,1 @@
-false
+{"0": {"id": "3ebb894bdc3fb8b24e9fcb0bf9841f4b46db1ba9cad1e54313af24536b1fa911", "author": "mhmiles", "releases": "https://github.com/mhmiles/QuickTwitch/releases/tag/0.9.0", "assets": {"ff6b66c19589462e8e462d62f76af8bf": {"name": "QuickTwitch-0.9.0-x86_64.AppImage", "download": "https://github.com/mhmiles/QuickTwitch/releases/download/0.9.0/QuickTwitch-0.9.0-x86_64.AppImage", "count": 1265, "size": "51.31 MB"}}, "tag": "0.9.0", "published_at": "2018-03-29T22:38:58Z"}, "owner": "mhmiles", "source": {"type": "github", "url": "https://github.com/mhmiles/QuickTwitch"}}

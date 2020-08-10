@@ -1,1 +1,1 @@
-false
+{"0": {"id": "232e77a9f4f3101e633533ba603ee9ade92b7d05c4f8c62856e8f965bbd22d57", "author": "AaronErhardt", "releases": "https://github.com/AaronErhardt/qfsm/releases/tag/0.55", "assets": {"18478bd181de410e831243e7b0ab6430": {"name": "Qfsm-0_55-x86_64.AppImage", "download": "https://github.com/AaronErhardt/qfsm/releases/download/0.55/Qfsm-0_55-x86_64.AppImage", "count": 17, "size": "10.67 MB"}}, "tag": "0.55", "published_at": "2020-04-02T16:36:21Z"}, "owner": "AaronErhardt", "source": {"type": "github", "url": "https://github.com/AaronErhardt/qfsm"}}
