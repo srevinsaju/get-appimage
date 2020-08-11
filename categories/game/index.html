@@ -279,7 +279,7 @@
           status: '.page-load-status',
           // do not set append
           // do not set outlayer
-        });
+        }).infiniteScroll('loadNextPage');
 
         // append items on load
         $grid.on( 'load.infiniteScroll', function( event, response, path ) {
