@@ -45,6 +45,10 @@ DOWNLOAD_BUTTON_HTML = \
     '<span class="sr-only">Download</span>'\
     '<span>{name}</span>' \
     '<span class="tag is-success" style="margin: 0 0 0 1em">{size}</span>' \
+    '<a href="zap://install?app={appname}&tag={tag}&id={uid}" ' \
+    'target="_blank"><span class="tag is-warning" ' \
+    'style="margin: 0 0 0 1em"><i aria-hidden="true" class="fa ' \
+    'fa-bolt"></i><span class="sr-only">Install with Zap</span></span></a>' \
     '</button></a>'
 
 RELEASES_BUTTON_HTML = \

@@ -30,6 +30,7 @@ import html
 import json
 import os
 import urllib.request
+import urllib.error
 import uuid
 
 import dateutil.parser
@@ -242,8 +243,7 @@ class AppImage:
 
         return source_code_tag + ''.join(html_data)
 
-    @staticmethod
-    def github_generate_buttons_per_release(github_info):
+    def github_generate_buttons_per_release(self, github_info):
         # a tag to show URL to github repository
 
         # shows the latest stable release containing an appimage
@@ -275,7 +275,10 @@ class AppImage:
                 DOWNLOAD_BUTTON_HTML.format(
                     url=assets[uid].get("download"),
                     name=assets[uid].get("name"),
-                    size=assets[uid].get('size')
+                    size=assets[uid].get('size'),
+                    appname=self.title_formatted,
+                    tag=github_info.get("tag"),
+                    uid=uid
                 )
             download_buttons.append(download_button_html)
 
@@ -389,7 +392,7 @@ class AppImage:
         # get api entry-point
         data = self.get_github_api_data()
 
-        if not data:
+        if not data or isinstance(data, bool):
             # the data we received is ill formatted or can't be processed
             # return False, because at this point, to not raise ValueError
             # and not to stash the build
@@ -415,7 +418,7 @@ class AppImage:
 
             uid_appimage = hashlib.sha256(
                 "{}:{}".format(appimages_assets,
-                                  self._links[0].get("url")).encode()
+                               self._links[0].get("url")).encode()
             ).hexdigest()
 
             author_json = release.get('author')
@@ -425,6 +428,7 @@ class AppImage:
             releases_api_json[i] = {
                 'id': uid_appimage,
                 'author': author,
+                'prerelease': release.get('prerelease'),
                 'releases': release.get('html_url'),
                 'assets': appimages_assets,
                 'tag': tag_name,

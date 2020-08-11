@@ -57,7 +57,7 @@ function addAppimageCard(i, item) {
     let appimage_github;
     let isGitHub;
     try {
-        appimage_github = item['github'][0]["url"];
+        appimage_github = `https://github.com/${item['github'][0]["url"]}`;
         isGitHub = 'github';
     } catch (err) {
         console.log(item['github']);
