@@ -1,1 +1,1 @@
-false
+{"0": {"id": "f9d0b564913b8b86522a24b5ffab3f1bf9490b31f16994f4f5a6c72ff2d608f6", "author": "jgaa", "prerelease": true, "releases": "https://github.com/jgaa/f-crm/releases/tag/v0.2.0-beta", "assets": {"4df6413df0684b6383115fc6fec6ed79": {"name": "f-crm-x86_64-0.2.0.AppImage", "download": "https://github.com/jgaa/f-crm/releases/download/v0.2.0-beta/f-crm-x86_64-0.2.0.AppImage", "count": 1165, "size": "25.20 MB"}}, "tag": "v0.2.0-beta", "published_at": "2019-01-22T07:12:49Z"}, "owner": "jgaa", "source": {"type": "github", "url": "https://github.com/jgaa/f-crm"}}
