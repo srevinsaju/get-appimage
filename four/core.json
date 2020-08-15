@@ -1,1 +1,1 @@
-false
+{"0": {"id": "d20eb68ab48c4c6724e9a28e2b886c185a2b0d5ceacdd3fb7e17dac6d7ddb3f8", "author": "FYDesktop", "prerelease": false, "releases": "https://github.com/FYDesktop/FOUR/releases/tag/1.0.0", "assets": {"bd2caecd312741c1bdfc11f73dc78dae": {"name": "four-1.0.0-x86_64.AppImage", "download": "https://github.com/FYDesktop/FOUR/releases/download/1.0.0/four-1.0.0-x86_64.AppImage", "count": 1562, "size": "70.40 MB"}}, "tag": "1.0.0", "published_at": "2018-10-10T22:48:41Z"}, "owner": "FYDesktop", "source": {"type": "github", "url": "https://github.com/FYDesktop/FOUR"}}

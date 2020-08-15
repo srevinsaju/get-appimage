@@ -1,1 +1,1 @@
-false
+{"0": {"id": "e64f62c6ece74ef8fd1555161c855a2a719d84b287b6c93f8f3fbf5c3533546e", "author": "jdm64", "prerelease": true, "releases": "https://github.com/jdm64/saphyr/releases/tag/continuous", "assets": {"be79947cbb5749f2b42a85daa51ad2a2": {"name": "saphyr-x86_64.AppImage", "download": "https://github.com/jdm64/saphyr/releases/download/continuous/saphyr-x86_64.AppImage", "count": 188, "size": "19.58 MB"}}, "tag": "continuous", "published_at": "2020-03-25T06:06:29Z"}, "owner": "jdm64", "source": {"type": "github", "url": "https://github.com/jdm64/saphyr"}}
