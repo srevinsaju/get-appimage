@@ -1,1 +1,1 @@
-false
+{"0": {"id": "23964841948ca26084ca790414717135d24bc7e8f590b0b8772ab9b7076d2b71", "author": "vicr123", "prerelease": true, "releases": "https://github.com/vicr123/theweb/releases/tag/continuous", "assets": {"d68d6b7d92d1465e91ff2caedcfc348e": {"name": "theWeb-linux.AppImage", "download": "https://github.com/vicr123/theweb/releases/download/continuous/theWeb-linux.AppImage", "count": 184, "size": "102.12 MB"}}, "tag": "continuous", "published_at": "2020-04-13T03:40:31Z"}, "owner": "vicr123", "source": {"type": "github", "url": "https://github.com/vicr123/theweb"}}
