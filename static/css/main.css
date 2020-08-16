@@ -25,7 +25,12 @@ SOFTWARE.
 This file is part of AppImage Catalog Generator
 */
 
-
+/* 
+=====================
+Root Specifications
+Tweak colors and fonts here
+=====================
+*/
 :root {
   --foreground-color: black;
   --foreground-color-2: #121212;
@@ -36,26 +41,48 @@ This file is part of AppImage Catalog Generator
   --accent-dark: #0051ff;
   --accent-secondary: #00158b;
   --cth: 255;
-
+  --font: 'Montserrat', sans-serif
 }
 
 html {
+  /* Enable smooth scrolling feature of HTML5 */
   scroll-behavior: smooth;
 }
 
 body {
+  /* Override background color and font color to match variables */
   background-color: var(--background-color);
   color: var(--foreground-color);
   transition: background-color 0.5s;
 }
 
-
-
+/* 
+=====================
+Heading specifications 
+Use AppImage's official font face -> Montserrat
+=====================
+*/
 h1 {
   font-size: 2em;
+  font-family: var(--font);
 }
 h2 {
   font-size: 2em;
+  font-family: var(--font);
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font);
+}
+
+.title {
+  color: var(--foreground-color);
+}
+
+.subtitle {
+  color: var(--foreground-color-2);
 }
 
 code {
@@ -67,25 +94,50 @@ strong {
   color: var(--foreground-color);
 }
 
-.ss-i {
-  margin-right: 0.5rem;
-}
-
-.title {
-  color: var(--foreground-color);
-}
-
-.subtitle {
+pre {
+  background-color: var(--background-color-2);
   color: var(--foreground-color-2);
+  transition: background-color 0.2s;
+  border-radius: 1em;
+}
+
+.highlight .bd-copy, .highlight .bd-expand {
+  background: 0 0;
+  border: none;
+  color: #4a4a4a;
+  cursor: pointer;
+  font-size: .625rem;
+  outline: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: absolute;
+  right: .25rem;
+  top: .25rem;
 }
 
 /*
-=============================
-Utilities
-=============================
+=====================
+Common utilities
+=====================
 */
+.ss-i {
+  /* To use with FontAwesome's icons which does not
+      margin over to the right */
+  margin-right: 0.5rem;
+}
+.margin-right-halfem {
+  margin-right: 0.5em;
+}
+.mb-medium {
+  margin-bottom: 1.5rem
+}
 
-
+/*
+=====================
+Animated hover link
+src: https://srevinsaju.github.io
+=====================
+*/
 .ss-fun-link {
   border-radius: 0.4rem;
   padding: 0.25rem;
@@ -102,7 +154,6 @@ Utilities
 .ss-fun-link:hover {
   background-size: 4px 50px;
 }
-
 
 .ss-fun-link-small {
   border-radius: 0.4rem;
@@ -122,18 +173,9 @@ Utilities
 }
 
 /*
-=============================
-Common
-=============================
- */
-
-.margin-right-halfem {
-  margin-right: 0.5em;
-}
-
-/*
-=============================
- hero section
+=====================
+Hero Header
+=====================
 */
 .hero-body .title {
   font-size: xx-large;
@@ -158,9 +200,9 @@ Common
 }
 
 /*
-=============================
- Navbar section
-=============================
+=====================
+Navigation bar specification
+=====================
 */
 
 .navbar {
@@ -171,49 +213,40 @@ Common
 .navbar-menu {
   background-color: var(--background-color-2);
 }
-
 .navbar-item {
   color: var(--foreground-color-2);
   background-color: var(--background-color-2);
   transition: color 0.2s
 }
-
 .navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
   color: var(--accent-dark);
   background-color: var(--background-color);
 }
-
 .navbar-link {
   background-color: var(--background-color-2);
   color: var(--foreground-color-2);
   transition: color 0.2s
 }
-
 .navbar-link:hover {
   color: var(--accent-dark);
 }
-
 .navbar-dropdown {
   background-color: var(--background-color-2);
 }
-
 .navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link {
   color: var(--accent-dark);
   background-color: var(--background-color);
 }
-
-
 .navbar-dropdown a.navbar-item:focus, .navbar-dropdown a.navbar-item:hover {
   color: var(--accent-dark);
   background-color: var(--background-color);
 }
 
 /*
-=============================
- Projects section
-=============================
+=====================
+AppImage Cards definition
+=====================
 */
-
 .appimage-card {
   border-radius: 1em;
   width: 100%;
@@ -251,45 +284,25 @@ Common
   margin-right: auto;
 }
 
+.appimage-card-image-hidden {
+  visibility: hidden;
+}
+
+
 /*
-=============================
- Store section
-=============================
- */
+=====================
+Store section buttons definition
+=====================
+*/
 
 .appimage-store-button {
   margin: 0.4em 0.4em 0 0;
 }
 
-.highlight .bd-copy, .highlight .bd-expand {
-    background: 0 0;
-    border: none;
-    color: #4a4a4a;
-    cursor: pointer;
-    font-size: .625rem;
-    outline: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-    position: absolute;
-    right: .25rem;
-    top: .25rem;
-}
-
-pre {
-  background-color: var(--background-color-2);
-  color: var(--foreground-color-2);
-  transition: background-color 0.2s;
-  border-radius: 1em;
-}
-
-.appimage-card-image-hidden {
-  visibility: hidden;
-}
-
 /*
-=============================
- Footer section
-=============================
+=====================
+Footer 
+=====================
 */
 .footer {
   background-color: var(--background-color-2);
@@ -309,9 +322,7 @@ pre {
   align-items:center;
 }
 
-.mb-medium {
-  margin-bottom: 1.5rem
-}
+
 
 /*
 =============================
@@ -350,7 +361,11 @@ pre {
   display: inline-block;
 }
 
-/*  All list */
+/*
+=====================
+AppImage App Pages
+=====================
+*/
 .appimage-tags-group-all {
   margin-top: 1em;
 }
@@ -372,7 +387,11 @@ pre {
     margin-top: 1em;
 }
 
-/* media queries and animations */
+/*
+=====================
+Responsiveness / Media Queries / Animations 
+=====================
+*/
 
 @media (max-width: 400px) {
 
@@ -404,8 +423,6 @@ pre {
   }
 
 }
-
-
 
 @media (max-width: 315px) {
 
@@ -441,7 +458,6 @@ pre {
 
 }
 
-
 @keyframes animationHighlight {
   0% {
     width: 0%;
@@ -466,8 +482,11 @@ pre {
   }
 }
 
-/* loader-ellips
-------------------------- */
+/*
+=====================
+Ellipsis Loader when new app pages are loading
+=====================
+*/
 
 .loader-ellips {
   font-size: 20px;
@@ -520,37 +539,30 @@ pre {
 }
 
 /*
-Grid Isotope
- */
-
-
+=====================
+Isotope Grid Framework
+=====================
+*/
 .grid {
   max-width: 1200px;
 }
-
 /* reveal grid after images loaded */
 .grid.are-images-unloaded {
   opacity: 0;
 }
-
 .grid__item,
 .grid__col-sizer {
   width: 32%;
 }
-
-
 .grid__gutter-sizer { width: 2%; }
-
 /* hide by default */
 .grid.are-images-unloaded .image-grid__item {
   opacity: 0;
 }
-
 .grid__item {
   margin-bottom: 20px;
   float: left;
 }
-
 .page-load-status {
   display: none; /* hidden by default */
   padding-top: 20px;
@@ -559,4 +571,3 @@ Grid Isotope
   color: #777;
 }
 
-/* loader ellips in separate pen CSS */

@@ -57,7 +57,7 @@ def read_parse_and_write_template(
     print("[STATIC] Reading template: {}".format(output_path_file_name))
     with open(html_template_path, 'r') as _buffer:
         html_template = Environment(loader=file_system_loader) \
-                        .from_string(_buffer.read())
+            .from_string(_buffer.read())
 
     print("[STATIC] Writing parsed template: {}".format(output_path_file_name))
     with open(html_output_path, 'w') as w:
@@ -147,5 +147,4 @@ def get_github_token(args):
                         'in environment variables) Enter => : ')
         os.environ['GH_TOKEN'] = token
         return token
-
 
