@@ -17,13 +17,9 @@
     <meta property="og:description" content="Collection of all AppImages in one website" />
     <meta property="og:site_name" content="Get AppImage" />
 
-    <!-- Get the official Montserrat font to match AppImage theme -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
-
     <!-- Scripts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/get-appimage/css/appimage.css">
     <link rel="stylesheet" href="/get-appimage/css/main.css">
-    <link rel="stylesheet" href="/get-appimage/css/bulma/bulma-switch.min.css">
     <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
 </head>
 
@@ -97,16 +93,18 @@
       <div class="hero-body">
         <div class="container">
           <div class="columns is-desktop">
-              <div class="column is-one-third-desktop has-text-centered has-text-right-desktop">
+              <div class="column is-one-third-desktop has-text-left has-text-right-desktop">
                 <img class="appimage-hero-img " src="https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master/database/Eplee/icons/128x128/eplee.png"
                      alt="Eplee logo">
               </div>
-              <div class="column has-text-centered has-text-left-desktop">                          
+              <div class="column has-text-left has-text-left-desktop">                          
                 <h1 class="title">
                     Eplee
                 </h1>
                 <h2 class="subtitle">
                   Janglee123
+                  
+                    <i class="fa fa-check-circle"></i>
                   
 
                 </h2>
@@ -116,7 +114,11 @@
                 <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin">
                   <div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><a class="tag is-link" href="../search?q=Utility">Utility</a><span class="tag is-dark">#</span></div></div></div>
                 </div>
-                
+                <a href='https://github.com/Janglee123/eplee' style='margin-top: 1em; display: block' target='_blank'><div class="control"><div class="tags has-addons"><span class="tag is-dark"><i class='fab fa-github margin-right-halfem'></i> Github</span><span class="tag is-info">https://github.com/Janglee123/eplee</span></div></div></a><div class="appimage-group-light-border"><div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><span class="tag is-dark">Release</span><span class="tag is-success">$(tagName)</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark">Published</span><span class="tag is-info">Oct 20 2019 07:20:42</span></div></div></div><div class="field is-grouped is-grouped-multiline appimage-tags-group"><a href="None" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-upload"></i></span><span>Releases</span></button></a>
+<a href="https://github.com/Janglee123/eplee/releases/download/%24%28tagName%29/eplee-x86_64-0.4.0.AppImage" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-download"></i></span><span class="sr-only">Download</span><span>eplee-x86_64-0.4.0.AppImage</span><span class="tag is-success" style="margin: 0 0 0 1em">86.27 MB</span><a href="zap://install?app=Eplee&tag=$(tagName)&id=6980b41427494fbbbad7058db4f22de6" target="_blank"><span class="tag is-warning" style="margin: 0 0 0 1em"><i aria-hidden="true" class="fa fa-bolt"></i><span class="sr-only">Install with Zap</span></span></a></button></a></div></div><div class="appimage-group-light-border"><div class="field is-grouped is-grouped-multiline appimage-tags-group appimage-left-top-margin"><div class="control"><div class="tags has-addons"><span class="tag is-dark">Release</span><span class="tag is-success">0.4</span></div></div>
+<div class="control"><div class="tags has-addons"><span class="tag is-dark">Published</span><span class="tag is-info">Jun 13 2019 09:54:10</span></div></div></div><div class="field is-grouped is-grouped-multiline appimage-tags-group"><a href="None" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-upload"></i></span><span>Releases</span></button></a>
+<a href="https://github.com/Janglee123/eplee/releases/download/0.4/eplee-x86_64-0.4.0.AppImage" target="_blank"><button class="button appimage-store-button"><span class="icon"><i class="fa fa-download"></i></span><span class="sr-only">Download</span><span>eplee-x86_64-0.4.0.AppImage</span><span class="tag is-success" style="margin: 0 0 0 1em">86.26 MB</span><a href="zap://install?app=Eplee&tag=0.4&id=5fb05bf7d1ce4b288c89918683f446fa" target="_blank"><span class="tag is-warning" style="margin: 0 0 0 1em"><i aria-hidden="true" class="fa fa-bolt"></i><span class="sr-only">Install with Zap</span></span></a></button></a></div></div>
 
               </div>
 
@@ -225,7 +227,7 @@
     rootSelector.style.setProperty("--foreground-color-2", "#121212");
     rootSelector.style.setProperty("--background-color", " #fafafa");
     rootSelector.style.setProperty("--background-color-2", " #ffffff");
-    rootSelector.style.setProperty("--background-color-3", " #ffffff");
+    rootSelector.style.setProperty("--background-color-3", " #dddddd");
     rootSelector.style.setProperty("--cth", "255");
     $("label[for='themeSwitch']").html('<i class="fa fa-sun"></i><span class="sr-only">Light Mode</span>')
     $('#themeSwitch').prop('checked', false);

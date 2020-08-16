@@ -36,12 +36,11 @@ Tweak colors and fonts here
   --foreground-color-2: #121212;
   --background-color: #fafafa;
   --background-color-2: #ffffff;
-  --background-color-3: #ffffff;
+  --background-color-3: #dddddd;
   --accent: #008cff;
   --accent-dark: #0051ff;
   --accent-secondary: #00158b;
   --cth: 255;
-  --font: 'Montserrat', sans-serif
 }
 
 html {
@@ -54,7 +53,6 @@ body {
   background-color: var(--background-color);
   color: var(--foreground-color);
   transition: background-color 0.5s;
-  font-family: var(--font);
 }
 
 /* 
@@ -65,17 +63,9 @@ Use AppImage's official font face -> Montserrat
 */
 h1 {
   font-size: 2em;
-  font-family: var(--font);
 }
 h2 {
   font-size: 2em;
-  font-family: var(--font);
-}
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font);
 }
 
 .title {
@@ -446,10 +436,6 @@ Responsiveness / Media Queries / Animations
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .appimage-tags-group {
-    justify-content: center !important;
   }
 
   .grid__item,
