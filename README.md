@@ -34,6 +34,28 @@ Copy the following code and then paste it in your README.md
 (https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
 ```
 
+### New Shields
+Based on the shields.io compatible entrypoints generated using AppImage Catalog generator v2, we know have shields!
+
+Check out this sample shield of [VSCodium](https://vscodium.com)
+
+[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json)](https://www.srevinsaju.me/get-appimage/vscodium/)
+
+```markdown
+[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json)](https://www.srevinsaju.me/get-appimage/vscodium/)
+```
+Replace `vscodium` with the name of your appimage and :tada:
+
+Or if you want some more styles:
+
+Plastic | Flat    | Flat Square | For the Badge 
+--------|---------|-------------|---------------
+[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=plastic)](https://www.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=flat)](https://www.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=flat-square)](https://www.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=for-the-badge)](https://www.srevinsaju.me/get-appimage/vscodium/)
+| `&style=plastic` | `&style=flat` | `&style=flat-square` | `&style=for-the-badge`
+
+> * Defaults to `flat`
+> * `%2F` is the escaped `/` character. 
+
 
 ## Build 
 ### Prerequisites
