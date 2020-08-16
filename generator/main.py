@@ -220,6 +220,9 @@ class LibraryBuilder:
             self.json.append(appimage.json_data())
             with open(os.path.join(path_to_appfolder, 'core.json'), 'w') as w:
                 json.dump(appimage.get_app_metadata(), w)
+            shields_badge = appimage.shields_badge()
+            with open(os.path.join(path_to_appfolder, 'shields.json'), 'w') as w:
+                json.dump(shields_badge, w)
 
         # write json file
         self.write_json_index()
