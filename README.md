@@ -1,6 +1,36 @@
-# get-appimage
+<h1 align="center">
+	<img src="static/img/logo.svg" alt="Get-AppImage logo" height=200 width=200 align="middle">
+	Get AppImage
+</h1>
+
 v2 of appimage.github.io
+This is the new repository for the AppImage.github.io catalog being redesigned using Bulma and Jquery (instead of Jekyll). 
+Catalog is generated on `cron '0 * * * *'`, so you might like to wait until the UTC clock hits 0, to get your changes being reflected
+on getappimage's website
+
+You may take a look at the new website [here](https://srevinsaju.github.io/get-appimage/)
+
 > NOTE: Documentation is still under construction. Code contains inline documentation, please refer to those for the time being
+
+## New Features
+### Get new badges for your repository
+Copy the following code and then paste it in your README.md 
+
+![Get Appimage](static/badges/get-appimage-branding-light.png)
+```markdown
+[![Get Appimage](static/badges/get-appimage-branding-light.png)](https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
+```
+
+![Get Appimage](static/badges/get-appimage-branding-dark.png)
+```markdown
+[![Get Appimage](static/badges/get-appimage-branding-dark.png)](https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
+```
+
+![Get Appimage](static/badges/get-appimage-branding-blue.png)
+```markdown
+[![Get Appimage](static/badges/get-appimage-branding-blue.png)](https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
+```
+
 
 ## Build 
 ### Prerequisites
