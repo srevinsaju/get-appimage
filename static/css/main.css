@@ -54,6 +54,7 @@ body {
   background-color: var(--background-color);
   color: var(--foreground-color);
   transition: background-color 0.5s;
+  font-family: var(--font);
 }
 
 /* 
