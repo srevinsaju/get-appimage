@@ -1,6 +1,7 @@
 # AppImage files
 catalog-compiled/
 api/
+get-appimage/
 
 # IDEs
 .idea/
