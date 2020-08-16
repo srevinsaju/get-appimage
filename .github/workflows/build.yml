@@ -8,6 +8,7 @@ on:
     paths:
       - '.github/workflows/build.yml'
 
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
