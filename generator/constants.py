@@ -75,11 +75,11 @@ TAG_CATEGORY_HTML = \
 
 TAGS_GROUP_HTML = \
     '<div class="field is-grouped is-grouped-multiline ' \
-    'appimage-tags-group appimage-left-top-margin">{}</div>'
+    ' appimage-left-top-margin">{}</div>'
 
 TAGS_GROUP_NO_MARGIN_HTML = \
-    '<div class="field is-grouped is-grouped-multiline ' \
-    'appimage-tags-group">{}</div>'
+    '<div class="field is-grouped is-grouped-multiline"' \
+    '>{}</div>'
 
 GROUPED_BORDER_HTML = \
     '''<div class="appimage-group-light-border">{}</div>'''
