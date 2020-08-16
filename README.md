@@ -18,17 +18,20 @@ Copy the following code and then paste it in your README.md
 
 ![Get Appimage](static/badges/get-appimage-branding-light.png)
 ```markdown
-[![Get Appimage](static/badges/get-appimage-branding-light.png)](https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
+[![Get Appimage](https://raw.githubusercontent.com/srevinsaju/get-appimage/master/static/badges/get-appimage-branding-blue.png)]
+(https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
 ```
 
 ![Get Appimage](static/badges/get-appimage-branding-dark.png)
 ```markdown
-[![Get Appimage](static/badges/get-appimage-branding-dark.png)](https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
+[![Get Appimage](https://raw.githubusercontent.com/srevinsaju/get-appimage/master/static/badges/get-appimage-branding-dark.png)]
+(https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
 ```
 
 ![Get Appimage](static/badges/get-appimage-branding-blue.png)
 ```markdown
-[![Get Appimage](static/badges/get-appimage-branding-blue.png)](https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
+[![Get Appimage](https://raw.githubusercontent.com/srevinsaju/get-appimage/master/static/badges/get-appimage-branding-blue.png)]
+(https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
 ```
 
 
