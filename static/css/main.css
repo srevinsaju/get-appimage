@@ -36,7 +36,8 @@ Tweak colors and fonts here
   --foreground-color-2: #121212;
   --background-color: #fafafa;
   --background-color-2: #ffffff;
-  --background-color-3: #dddddd;
+  --background-color-3: #ffffff;
+  --border-color: #dddddd;
   --accent: #008cff;
   --accent-dark: #0051ff;
   --accent-secondary: #00158b;
@@ -368,8 +369,7 @@ AppImage App Pages
 }
 
 .appimage-group-light-border {
-    border-color: var(--background-color-3);
-    border: var(--background-color-3) 0.1rem solid;
+    border: var(--border-color) 0.1rem solid;
     padding: 1em 1em 2em 1em;
     display: block;
     border-radius: 1em;
