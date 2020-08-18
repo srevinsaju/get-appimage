@@ -3,7 +3,8 @@
   <head>
     <title>Search | {{ catalog.title }}</title>
     {% include 'head.html' %}
-
+    <link rel="stylesheet" href="{{ catalog.base_url }}/css/search.css">
+  </head>
   <body>
     {% include 'navigation.html' %}
 
@@ -11,7 +12,7 @@
     <section style="margin-top: 3.25em;" class="hero is-primary">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title" style="margin-bottom: 0.5em;">
+          <h1 class="title">
             Search results
           </h1>
 
