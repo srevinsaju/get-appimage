@@ -133,6 +133,10 @@ function loadAllAppImageCards() {
       $.each(results, function(i, item) {
         addAppimageCard(i, item);
       });
+      console.log(results.length)
+      if (results.length == 0) {
+        $("#col-0").append("No results found")
+      } 
     });
   }
 }
