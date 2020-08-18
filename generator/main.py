@@ -234,7 +234,7 @@ class LibraryBuilder:
 
         print("[STATIC] Reading index.html template")
         index_html_path = os.path.abspath(
-            os.path.join('static', 'index.html'))
+            os.path.join('static', 'all', 'index.html'))
         with open(index_html_path, 'r') as index_html_buffer:
             index_html_template = \
                 Environment(loader=self.file_system_loader)\
@@ -323,7 +323,7 @@ class LibraryBuilder:
 
         print("[STATIC] Reading index.html template")
         index_html_path = os.path.abspath(
-            os.path.join('static', 'index.html'))
+            os.path.join('static', 'all', 'index.html'))
         with open(index_html_path, 'r') as index_html_buffer:
             index_html_template = \
                 Environment(loader=self.file_system_loader)\
