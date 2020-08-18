@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Get AppImage</title>
+    <title>All AppImages | Get AppImage</title>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,8 +21,7 @@
     <link rel="stylesheet" href="/get-appimage/css/appimage.css">
     <link rel="stylesheet" href="/get-appimage/css/main.css">
     <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
-</head>
-
+  </head>
   <body>
     <!-- Navbar -->
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -87,7 +86,6 @@
     </div>
   </div>
 </nav>
-
     <!-- Hero / Featured Header -->
     <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
       <div class="hero-body">
@@ -100,7 +98,7 @@
           <h2 class="subtitle">
             Collection of all AppImages in one website
           </h2>
-          <form id="appimage-search-container" action="./search/" method="GET">
+          <form id="appimage-search-container" action="/get-appimage/search/" method="GET">
             <div class="form-row">
               <input id="appimage-search-box"
                 class="input appimage-search-input"
@@ -110,11 +108,8 @@
               <button class="button is-success" type="submit" style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
                 <i class="fa fa-search"></i>
               </button>
-
             </div>
           </form>
-
-
         </div>
       </div>
     </section>
@@ -122,9 +117,9 @@
     <!-- All the other code comes here! -->
 
     <!-- Appimages card sections -->
-    <section id="apps" class="section" style="max-width: 1380px; margin: 0
+    <section id="apps" class="section" style="max-width: 1200px; margin: 0
     auto;">
-      <div class="grid">
+      <div class="grid are-images-unloaded">
         <div class="grid__col-sizer"></div>
         <div class="grid__gutter-sizer"></div>
         <div class="grid__item grid__item_one-third">
@@ -786,7 +781,7 @@
       </p>
       
 
-      <div class="scroll-status">
+      <div class="page-load-status">
         <div class="infinite-scroll-request">
           <div class="loader-ellips">
             <span class="loader-ellips__dot loader-ellips__dot--1"></span>
@@ -798,11 +793,42 @@
         <p class="infinite-scroll-error has-text-centered">No more pages to load</p>
         <p class="infinite-scroll-last has-text-centered">Last page loaded</p>
       </div>
+
     </section>
+    <footer class="footer">
+  <div class="content has-text-centered">
+  <p>
+    &copy; <a href="https://srevinsaju.github.io"
+              target="_blank"><strong>Srevin Saju</strong></a> and
+      <a href="https://appimage.org"
+         target="_blank"><strong>AppImage.org</strong></a> 2020.
+    <br>
+    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
+      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+    </a>
+    <br>
+    <a href="https://bulma.io">
+      <img id="bulma"
+           src="/get-appimage/img/made-with-bulma--black.png"
+           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
+    </a>
+    <br>
+    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
+    <br>
+
+  </p>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
+     target="_blank" rel="noreferrer"><img
+          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
+  </div>
+</footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="./../../../js/utils.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="/get-appimage/js/utils.js"></script>
     <script>
   function darkTheme() {
     let rootSelector = $(":root").get(0);
@@ -862,33 +888,55 @@
   });
 </script>
 
+    <script>
+      $(document).ready(function(){
+        //-------------------------------------//
+        // init Isotope
+
+        var $grid = $('.grid').isotope({
+          itemSelector: 'none', // select none at first
+          masonry: {
+            columnWidth: '.grid__col-sizer',
+            gutter: '.grid__gutter-sizer',
+          },
+          percentPosition: true,
+          stagger: 30,
+          // nicer reveal transition
+          visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+          hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+        });
+
+
+        // initial items reveal
+        $grid.imagesLoaded( function() {
+          $grid.removeClass('are-images-unloaded');
+          $grid.isotope( 'option', { itemSelector: '.grid__item' });
+          var $items = $grid.find('.grid__item');
+          $grid.isotope( 'appended', $items );
+        });
+
+        // init Infinte Scroll
+        // get Isotope instance
+        var iso = $grid.data('isotope');
+
+        $grid.infiniteScroll({
+          path: '.pagination__next',
+          status: '.page-load-status',
+          // do not set append
+          // do not set outlayer
+        }).infiniteScroll('loadNextPage');
+
+        // append items on load
+        $grid.on( 'load.infiniteScroll', function( event, response, path ) {
+          var $items = $( response ).find('.grid__item');
+          // append items after images loaded
+          $items.imagesLoaded( function() {
+            $grid.append( $items );
+            $grid.isotope( 'insert', $items );
+          });
+        });
+
+      });
+    </script>
   </body>
-  <footer class="footer">
-  <div class="content has-text-centered">
-  <p>
-    &copy; <a href="https://srevinsaju.github.io"
-              target="_blank"><strong>Srevin Saju</strong></a> and
-      <a href="https://appimage.org"
-         target="_blank"><strong>AppImage.org</strong></a> 2020.
-    <br>
-    This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" rel="noreferrer">
-      Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
-    </a>
-    <br>
-    <a href="https://bulma.io">
-      <img id="bulma"
-           src="/get-appimage/img/made-with-bulma--black.png"
-           alt="Made with Proudly built with Bulma" width="128" height="24" style="margin-bottom: 0;">
-    </a>
-    <br>
-    Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">FontAwesome</a>.
-    <br>
-
-  </p>
-  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0"
-     target="_blank" rel="noreferrer"><img
-          src="/get-appimage/img/by-nc-nd.svg" alt="CC-BY-NC-ND"></a>
-  </div>
-</footer>
-
 </html>
