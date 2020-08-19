@@ -1,1 +1,1 @@
-false
+{"0": {"id": "a3d195187e049c8432a9c3a49707aebe0505a753a6fa54d7ee1ed2c3c2834f4b", "author": "deep5050", "prerelease": false, "releases": "https://github.com/deep5050/qikQR/releases/tag/v1.0.0", "assets": {"08aba657dabc4135b4a047e0f163e5ef": {"name": "qikqr-1.0.0.AppImage", "download": "https://github.com/deep5050/qikQR/releases/download/v1.0.0/qikqr-1.0.0.AppImage", "count": 128, "size": "75.11 MB"}}, "tag": "v1.0.0", "published_at": "2020-05-08T19:52:36Z"}, "owner": "deep5050", "source": {"type": "github", "url": "https://github.com/deep5050/qikQR"}}
