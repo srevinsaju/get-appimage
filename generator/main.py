@@ -142,7 +142,7 @@ class LibraryBuilder:
         :rtype:
         """
 
-        for directory in ('css', 'img', 'js', 'search', 'badges'):
+        for directory in ('css', 'img', 'js', 'search', 'badges', 'favicon'):
             print("[STATIC] Copying {}".format(directory))
             directory_abspath = \
                 os.path.abspath(os.path.join('static', directory))
