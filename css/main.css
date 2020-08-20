@@ -124,45 +124,6 @@ Common utilities
   margin-bottom: 1.5rem
 }
 
-/*
-=====================
-Animated hover link
-src: https://srevinsaju.github.io
-=====================
-*/
-.ss-fun-link {
-  border-radius: 0.4rem;
-  padding: 0.25rem;
-  background:
-    linear-gradient(to bottom, var(--accent) 0%, var(--accent) 100%);
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 4px 4px;
-  color: var(--foreground-color);
-  text-decoration: none;
-  transition: background-size .2s;
-}
-
-.ss-fun-link:hover {
-  background-size: 4px 50px;
-}
-
-.ss-fun-link-small {
-  border-radius: 0.4rem;
-  padding: 0.25rem;
-  background:
-    linear-gradient(to bottom, var(--accent) 0%, var(--accent) 100%);
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 2px 2px;
-  color: var(--foreground-color);
-  text-decoration: none;
-  transition: background-size .2s;
-}
-
-.ss-fun-link-small:hover {
-  background-size: 2px 50px;
-}
 
 /*
 =====================
@@ -187,6 +148,7 @@ Hero Header
   background-color: var(--background-color);
   border-radius:50px;
   max-width:calc(600px - 75px);
+  width: calc(100% - 75px);
   min-height: 48px;
   transition: background-color ease-in 0.2s;
 }

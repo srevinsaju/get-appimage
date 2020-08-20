@@ -2,25 +2,36 @@
 <html lang="en">
   <head>
     <title>Get AppImage</title>
-        <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO -->
-    <meta name="description" content="Collection of all AppImages in one website">
-    <meta name="keywords" content="AppImage, Linux, Package">
-    <meta name="author" content="Srevin Saju">
+<!-- SEO -->
+<meta name="description" content="Collection of all AppImages in one website">
+<meta name="keywords" content="AppImage, Linux, Package">
+<meta name="author" content="Srevin Saju">
 
-    <!-- OG -->
-    <meta property="og:title" content="Get AppImage" />
-    <meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
-    <meta property="og:image" content="/get-appimage/img/logo.svg" />
-    <meta property="og:description" content="Collection of all AppImages in one website" />
-    <meta property="og:site_name" content="Get AppImage" />
+<!-- OG -->
+<meta property="og:title" content="Get AppImage" />
+<meta property="og:url" content="https://srevinsaju.github.io/appimage2" />
+<meta property="og:image" content="/get-appimage/img/logo.svg" />
+<meta property="og:description" content="Collection of all AppImages in one website" />
+<meta property="og:site_name" content="Get AppImage" />
 
-    <!-- Scripts -->
-    <link rel="stylesheet" href="/get-appimage/css/appimage.css">
-    <link rel="stylesheet" href="/get-appimage/css/main.css">
-    <script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="/get-appimage/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/get-appimage/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/get-appimage/favicon/favicon-16x16.png">
+<link rel="manifest" href="/get-appimage/favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#0065dc">
+<meta name="theme-color" content="#0065dc">
+
+<!-- Scripts -->
+<link rel="stylesheet" href="/get-appimage/css/appimage.css">
+<link rel="stylesheet" href="/get-appimage/css/main.css">
+<script src="https://kit.fontawesome.com/52ec62d041.js" crossorigin="anonymous" async></script>
+    <link rel="stylesheet" href="/get-appimage/css/landing.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <!-- Navbar -->
@@ -88,43 +99,223 @@
 </nav>
 
     <!-- Hero / Featured Header -->
-    <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered">
+    <section style="margin-top: 3.25em;" class="hero is-medium is-bold has-text-centered not-full-width">
       <div class="hero-body">
         <div class="container">
-          <img class="appimage-hero-img" src="./img/logo.svg"
-               alt="Appimage logo">
-          <h1 class="title">
-            Get AppImage
-          </h1>
-          <h2 class="subtitle">
-            Collection of all AppImages in one website
-          </h2>
-          <form id="appimage-search-container" action="./search/" method="GET">
-            <div class="form-row">
-              <input id="appimage-search-box"
-                class="input appimage-search-input"
-                placeholder="Search for AppImages!"
-                autofocus name="q"
-              />
-              <button class="button is-success" type="submit" style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
-                <i class="fa fa-search"></i>
-              </button>
-
+          <div class="columns is-desktop appimage-hero">
+            <div class="column has-text-left appimage-left-logo-col">
+              <img class="appimage-hero-img" src="/get-appimage/img/get-appimage.svg"
+              alt="Appimage logo">
             </div>
-          </form>
-
-
+            <div class="column has-text-left has-text-left-desktop">                          
+              <h1 class="title is-spaced appimage-title">Linux apps that run anywhere</h1>
+              <p class="subtitle">
+                Future of Linux app distribution. 
+              </p>
+              <p>
+                Get AppImages running on <a class="ss-fun-link-small" href="#compatibility">most mainstream</a> 
+                Linux distribution, a click away; 
+                without further installation. The only portable click-to-run 
+                implementation for Linux.  <a class="ss-fun-link-small" href="#build">Distribute</a> 
+                your desktop Linux application in the 
+                AppImage format, with seamless <a class="ss-fun-link-small" href="#updates">updates</a>, 
+                for all distributions.     
+              </p>
+              <br>
+              <div class="buttons">
+                <a href="/get-appimage/categories" class="button is-primary">
+                  <i class="fa fa-github ss-i"></i> Get AppImages
+                </a>
+                <a href="https://github.com/AppImage/AppImageKit" class="button is-primary is-outlined">
+                  <i class="fa fa-github ss-i"></i> Source Code
+                </a>
+                <a href="https://docs.appimage.org" class="button is-primary is-outlined">
+                  <i class="fa fa-book ss-i"></i> Documentation
+                </a>
+              </div>
+            </div>
         </div>
       </div>
     </section>
 
-    <!-- All the other code comes here! -->
+    <section class="section not-full-width" id="compatibility">
+      <!-- Compatiility / Linux Distro section -->
+      <h1 class="title is-spaced appimage-title">
+        Leading Linux distributions
+      </h1>
+      <h2 class="subtitle">
+        AppImages work out-of-the box!
+      </h2>
+      <p>
+        AppImages from the official catalog are tested on the oldest Ubuntu LTS release to ensure
+        compatibility and support, at the official 
+        <a class="ss-fun-link-small" href="/get-appimage/all">AppImage catalog</a>, the crowd-sourced AppImage 
+        Centre.
+      </p>
+      <br>
+      <div class="container appimage-linux-distros-icons-container">
+        <img class="ss-icons" src="/get-appimage/img/ubuntu.svg" alt="Ubuntu"/>
+        <img class="ss-icons" src="/get-appimage/img/fedora.svg" alt="Fedora"/>
+        <img class="ss-icons" src="/get-appimage/img/redhat.svg" alt="RedHat"/>
+        <img class="ss-icons" src="/get-appimage/img/debian.svg" alt="Debian" />
+        <img class="ss-icons" src="/get-appimage/img/archlinux.svg" alt="Arch Linux"/>
+        <img class="ss-icons" src="/get-appimage/img/opensuse.svg" alt="OpenSUSE"/>
+        <img class="ss-icons" src="/get-appimage/img/manjaro.svg" alt="Manajro"/>
+      </div>
 
+    </section>
+
+    <section class="section not-full-width" id="build">
+      <div class="carousel" data-flickity='{ "autoPlay": true }'>
+        <div class="carousel-cell">
+          <div class="bq">
+            <img class="img" src="https://appimage.org/images/linus-torvalds.jpg">
+            <p class="text">
+              &ldquo;This is just very cool&rdquo;
+            </p>
+            <p class="author">
+              Linus Torvalds
+            </p>
+            <p class="author-description">
+              Principal developer of the Linux Kernel
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="bq">
+            <img class="img" src="https://appimage.org/images/dirk-hohndel.jpg">
+            <p class="text">
+              &ldquo;The AppImage approach is really really useful.&rdquo;
+            </p>
+            <p class="author">
+              Dirk Hohndel
+            </p>
+            <p class="author-description">
+              VMware’s Chief Open Source Officer
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="bq">
+            <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mark_Shuttleworth_%282009%29.jpg/240px-Mark_Shuttleworth_%282009%29.jpg">
+            <p class="text">
+              &ldquo;AppImages are a pretty clean experience and I admire the work behind them.&rdquo;
+            </p>
+            <p class="author">
+              Mark Shuttleworth
+            </p>
+            <p class="author-description">
+              Founder and CEO of Canonical Ltd
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--section class="section not-full-width" id="build">
+      <h1 class="title is-spaced appimage-title">
+        Build AppImages amazingly fast
+      </h1>
+      <h2 class="subtitle">with these amazing tools. </h2>
+
+    </section-->
+
+    <section class="section not-full-width">
+      <h1 class="title is-spaced appimage-title">
+        Get AppImages now
+      </h1>
+      <p>
+        Search for over 1000 amazing AppImages on the official AppImage catalog! 
+      </p>
+      <br>
+      <form id="appimage-search-container" action="/get-appimage/search/" method="GET">
+        <div class="form-row">
+          <input id="appimage-search-box"
+            class="input appimage-search-input"
+            placeholder="Search for AppImages!"
+            name="q"
+          />
+          <button class="button is-success" type="submit" 
+            style="margin-left: 15px;width: 48px;height: 48px;border-radius:50%">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </section>
+    <section class="section not-full-width" id="support">
+      <h1 class="title is-spaced appimage-title">
+        Support
+      </h1>
+      <div class="buttons">
+        <a href="irc://irc.freenode.net/#AppImage" class="button is-primary is-outlined">
+          <i class="fa fa-hashtag ss-i"></i> IRC #AppImage:irc.freenode.net
+        </a>
+        <a href="https://github.com/AppImage" class="button is-primary is-outlined">
+          <i class="fab fa-github ss-i"></i> GitHub
+        </a>
+        <a href="https://github.com/AppImage" class="button is-primary is-outlined">
+          <i class="fab fa-discourse ss-i"></i> Discourse
+        </a>
+        <a href="https://www.reddit.com/domain/appimage.org/" class="button is-primary is-outlined">
+          <i class="fab fa-reddit ss-i"></i> Reddit
+        </a>
+        <a href="https://twitter.com/probonopd/" class="button is-primary is-outlined">
+          <i class="fab fa-twitter ss-i"></i> Twitter
+        </a>
+      </div>
+    </section>
+
+    <!--section class="section not-full-width" id="tools">
+      <div class="tools-carousel">
+        <div class="tools-carousel-cell">
+          <div class="card">
+            <img class="img" src="https://appimage.org/images/linus-torvalds.jpg">
+            <p class="text">
+              &ldquo;This is just very cool&rdquo;
+            </p>
+            <p class="author">
+              Linus Torvalds
+            </p>
+            <p class="author-description">
+              Principal developer of the Linux Kernel
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="bq">
+            <img class="img" src="https://appimage.org/images/dirk-hohndel.jpg">
+            <p class="text">
+              &ldquo;The AppImage approach is really really useful.&rdquo;
+            </p>
+            <p class="author">
+              Dirk Hohndel
+            </p>
+            <p class="author-description">
+              VMware’s Chief Open Source Officer
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="bq">
+            <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mark_Shuttleworth_%282009%29.jpg/240px-Mark_Shuttleworth_%282009%29.jpg">
+            <p class="text">
+              &ldquo;AppImages are a pretty clean experience and I admire the work behind them.&rdquo;
+            </p>
+            <p class="author">
+              Mark Shuttleworth
+            </p>
+            <p class="author-description">
+              Founder and CEO of Canonical Ltd
+            </p>
+          </div>
+        </div>
+      </div>
+    </section-->
     
-
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="./js/utils.js"></script>
+    <script src="/get-appimage/js/utils.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
   function darkTheme() {
     let rootSelector = $(":root").get(0);
@@ -183,7 +374,10 @@
     });
   });
 </script>
-
+    <script>
+      // enable flickity on tools section
+      $('.main-carousel').flickity(
+    </script>
   </body>
   <footer class="footer">
   <div class="content has-text-centered">
