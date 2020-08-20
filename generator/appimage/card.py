@@ -15,7 +15,7 @@ class Card:
         self.source_code_url = \
             "https://github.com/{}".format(self.app['github'][0].get('url'))
         self.is_github = 'github'
-        self.left_description = 'Github'
+        self.left_description = 'GitHub'
 
     def __getitem__(self, item):
         return self.app[item]
