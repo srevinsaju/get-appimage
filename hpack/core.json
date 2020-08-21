@@ -1,1 +1,1 @@
-false
+{"0": {"id": "85b4fce7f47a99b86b224be9462f7dc71da40e5350f6fc2bf78becb728cb3e8d", "author": "antony-jr", "prerelease": true, "releases": "https://github.com/antony-jr/hpack/releases/tag/continuous", "assets": {"8b5ede64f1434136b9320ab1be56aa16": {"name": "hpack.AppImage", "download": "https://github.com/antony-jr/hpack/releases/download/continuous/hpack.AppImage", "count": 908, "size": "0.20 MB"}}, "tag": "continuous", "published_at": "2019-08-04T10:09:40Z"}, "owner": "antony-jr", "source": {"type": "github", "url": "https://github.com/antony-jr/hpack"}}
