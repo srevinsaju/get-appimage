@@ -1,1 +1,1 @@
-false
+{"0": {"id": "0e218dd911cd45eafc7b1dc93b933fd4fedc915bf367841ce537477475cc7016", "author": "w3yden", "prerelease": false, "releases": "https://github.com/w3yden/ultrascreen/releases/tag/v1.0", "assets": {"f76606acff914b37be99c6cb49953494": {"name": "ultrascreen-v1.0.AppImage", "download": "https://github.com/w3yden/ultrascreen/releases/download/v1.0/ultrascreen-v1.0.AppImage", "count": 1218, "size": "82.52 MB"}}, "tag": "v1.0", "published_at": "2019-04-19T18:52:46Z"}, "owner": "w3yden", "source": {"type": "github", "url": "https://github.com/w3yden/ultrascreen"}}
