@@ -1,1 +1,1 @@
-false
+{"0": {"id": "c3e0831f7b6bef8a96f738bde379fcb779623115e7652f4da845940ae0a01696", "author": "nvpopov", "prerelease": true, "releases": "https://github.com/nvpopov/qppcad/releases/tag/continuous", "assets": {"21880fea1e264ba1aae8d94d792e297e": {"name": "qppcad-x86_64.AppImage", "download": "https://github.com/nvpopov/qppcad/releases/download/continuous/qppcad-x86_64.AppImage", "count": 1, "size": "67.78 MB"}}, "tag": "continuous", "published_at": "2020-08-18T12:28:59Z"}, "owner": "nvpopov", "source": {"type": "github", "url": "https://github.com/nvpopov/qppcad"}}
