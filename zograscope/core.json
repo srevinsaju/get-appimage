@@ -1,1 +1,1 @@
-false
+{"0": {"id": "2dc8c38d097549b6d8332176a1a62dd0827c932db62987386e72d59a3c37c2e7", "author": "xaizek", "prerelease": true, "releases": "https://github.com/xaizek/zograscope/releases/tag/app-image", "assets": {"0ccd295973f04d1b974d92033a4dd42a": {"name": "zs-x86_64.AppImage", "download": "https://github.com/xaizek/zograscope/releases/download/app-image/zs-x86_64.AppImage", "count": 180, "size": "3.60 MB"}}, "tag": "app-image", "published_at": "2019-05-17T21:43:33Z"}, "owner": "xaizek", "source": {"type": "github", "url": "https://github.com/xaizek/zograscope"}}
