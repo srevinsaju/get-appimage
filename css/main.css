@@ -333,10 +333,11 @@ AppImage App Pages
 .appimage-group-light-border {
     border: var(--border-color) 0.1rem solid;
     padding: 1em 1em 2em 1em;
-    display: block;
+    display: inline-block;
     border-radius: 1em;
     /* background-color: red; */
     margin-top: 1em;
+    margin-right: 1em;
 }
 
 /*
