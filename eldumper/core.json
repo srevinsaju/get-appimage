@@ -1,1 +1,1 @@
-false
+{"0": {"id": "e7cd1ddd55d0eac66ce5df37de67412bba17f8d54b534ec04e3aa195e9fb876a", "author": "rodri042", "prerelease": false, "releases": "https://github.com/rodri042/el-dumper/releases/tag/v1.0.0", "assets": {"13316e2f7cb349bb8870894d7c2eb2bb": {"name": "ElDumper.AppImage", "download": "https://github.com/rodri042/el-dumper/releases/download/v1.0.0/ElDumper.AppImage", "count": 1060, "size": "83.98 MB"}}, "tag": "v1.0.0", "published_at": "2019-05-12T09:04:00Z"}, "owner": "rodri042", "source": {"type": "github", "url": "https://github.com/rodri042/el-dumper"}}
