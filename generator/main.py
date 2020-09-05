@@ -109,10 +109,17 @@ class LibraryBuilder:
         print("[UPSTREAM] Fetching latest feed.json: {}".format(FEED_URL_JSON))
         with urllib.request.urlopen(FEED_URL_JSON) as url:
             data = json.loads(url.read().decode())
-        self.data = data
-        self.apps = data.get('items', dict())
+
+        get_appimage_feed_json = os.path.join('database', 'get_appimage.json')
+        if os.path.exists(get_appimage_feed_json):
+            with open(get_appimage_feed_json, 'r') as fp:
+                data2 = json.load(fp)
+        else:
+            data2 = dict()
+        self.data = {**data, **data2}
+        self.apps = self.data.get('items', dict())
         with open(os.path.join(self.output_directory, 'feed.json'), 'w') as w:
-            json.dump(self.data, w)
+            json.dump(data, w)
 
     @staticmethod
     def create_root_directory(output_directory):

@@ -311,12 +311,15 @@ class AppImage:
         request.add_header("Authorization", "token {}".format(self.token))
         try:
             request_url = urllib.request.urlopen(request)
-        except urllib.error.HTTPError:
+        except urllib.error.HTTPError as err:
             print(
                 Fore.RED +
-                "[STATIC][{}][GH] Request to {} failed with 404".format(
-                    self.title, github_release_api
+                "[STATIC][{}][GH] Request to {} failed with {}".format(
+                    self.title, github_release_api, err.code
                 ) + Fore.RESET)
+            if err.code == 403:
+                print("Quitting because of ratelimit")
+                sys.exit(1)
             return False
         status = request_url.status
         if status != 200:
