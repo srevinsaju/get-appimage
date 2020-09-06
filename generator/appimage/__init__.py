@@ -32,6 +32,7 @@ import os
 import urllib.request
 import urllib.error
 import uuid
+import sys
 
 import dateutil.parser
 from colorama import Fore
