@@ -412,7 +412,9 @@ class AppImage:
                 download_url = asset.get('browser_download_url')
                 if download_url.lower().endswith('.appimage'):
                     # a valid appimage file found in release assets
-                    appimages_assets[uuid.uuid4().hex] = {
+                    uid = hashlib.sha256((
+                        asset.get('name') + ":" + download_url).encode()).hexdigest()
+                    appimages_assets[uid] = {
                         'name': asset.get('name'),
                         'download': download_url,
                         'count': asset.get('download_count'),
@@ -421,8 +423,7 @@ class AppImage:
                     }
 
             uid_appimage = hashlib.sha256(
-                "{}:{}".format(appimages_assets,
-                               self._links[0].get("url")).encode()
+                "{}".format(self._links[0].get("url")).encode()
             ).hexdigest()
 
             author_json = release.get('author')
