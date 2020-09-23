@@ -242,6 +242,10 @@ AppImage Cards definition
   visibility: hidden;
 }
 
+.appimage-right-description-box {
+  max-width: 900px
+}
+
 
 /*
 =====================
