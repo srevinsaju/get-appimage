@@ -417,7 +417,6 @@ class AppImage:
                     appimages_assets[uid] = {
                         'name': asset.get('name'),
                         'download': download_url,
-                        'count': asset.get('download_count'),
                         'size': "{0:.2f} MB".format(
                             asset.get('size') / (1000 * 1000))
                     }
