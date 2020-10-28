@@ -69,7 +69,6 @@ class AppImage:
                'class="appimage-screenshot-image"></div>'\
             .format(self._screenshots[0])
 
-
     @property
     def maintainer(self):
         return self.authors[0]
@@ -220,8 +219,11 @@ class AppImage:
             github_links = \
                 self.github_generate_buttons_per_release(self.github_info[app])
             html_data.append(github_links)
-            if '.' in self.github_info[app].get('tag') or \
-                    self.github_info[app].get('tag').isdigit():
+            print(app)
+            if ('.' in self.github_info[app].get('tag') or
+                    self.github_info[app].get('tag').isdigit() or
+                    'rc' in self.github_info[app].get('tag')) and \
+                    self.github_info[app].get('tag', ' ')[0] == "r":
                 break
 
         # parse common tags
