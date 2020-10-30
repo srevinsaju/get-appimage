@@ -33,6 +33,8 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
+          GIT_CONFIG_NAME	: 'AppImage Boi'
+          GIT_CONFIG_EMAIL: 'appimageboi@srevinsaju.me'
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: catalog-compiled  # The folder the action should deploy.
