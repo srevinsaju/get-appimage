@@ -28,6 +28,7 @@ This file is part of AppImage Catalog Generator
 
 import sys
 import os
+import time
 import urllib.request
 import json
 from copy import copy
@@ -38,9 +39,9 @@ from progressbar import progressbar
 
 from generator.appimage.card import Card
 from .cli import parse_args, version
-from .constants import CARD_TEMPLATE, APPTEMPLATE, FEED_URL_JSON, CATEGORIES
+from .constants import CARD_TEMPLATE, APPTEMPLATE, FEED_URL_JSON, CATEGORIES, SITEMAP_URL, SITEMAP_HEADER
 from .utils import ask_to_remove, copytree, read_parse_and_write_template, \
-    get_github_token
+    get_github_token, check_progressbar
 from .appimage import AppImage
 from .catalog import Catalog
 
@@ -196,6 +197,8 @@ class LibraryBuilder:
         self.create_root_directory(self.output_directory)
         appimage_template = Environment(
             loader=self.file_system_loader).from_string(APPTEMPLATE)
+        sitemap_content = []
+        current_formatted_time = time.strftime('%Y-%m-%d')
 
         # iterate and generate app pages
         for app in progressbar(self.apps, redirect_stdout=True):
@@ -219,11 +222,16 @@ class LibraryBuilder:
                 w.write(
                     appimage_template.render(
                         appimage=appimage,
-                        library_issue_tracker="https://github.com/srevinsaju"
-                                              "/appimage2.github.io/",
                         catalog=Catalog()
                     )
                 )
+            _app_sitemap_local = SITEMAP_URL.format(
+                url=f"{Catalog().url}/{appimage.title_formatted}",
+                lastmod=current_formatted_time,
+                changefreq="weekly"
+            )
+            sitemap_content.append(_app_sitemap_local)
+
             self.json.append(appimage.json_data())
             with open(os.path.join(path_to_appfolder, 'core.json'), 'w') as w:
                 json.dump(appimage.get_app_metadata(), w)
@@ -233,6 +241,11 @@ class LibraryBuilder:
 
         # write json file
         self.write_json_index()
+
+        with open(os.path.join(self.output_directory, 'sitemap.xml'), 'w') as w:
+            w.write(SITEMAP_HEADER.format(content=''.join(sitemap_content)))
+        print("writing sitemap.xml completed successfully")
+
 
     def generate_categories_pages(self):
         print("Generating Categories list")
