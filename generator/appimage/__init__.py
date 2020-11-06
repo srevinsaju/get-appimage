@@ -223,7 +223,7 @@ class AppImage:
             if ('.' in self.github_info[app].get('tag') or
                     self.github_info[app].get('tag').isdigit() or
                     'rc' in self.github_info[app].get('tag')) and \
-                    self.github_info[app].get('tag', ' ')[0] == "r":
+                    self.github_info[app].get('tag', ' ')[0] != "p":
                 break
 
         # parse common tags
