@@ -383,7 +383,8 @@ class AppImage:
         return json_data
 
     def get_github_info(self):
-        if not self.is_github():
+        # if token is None, then quit
+        if not self.is_github() or self.token is None:
             # pre check if the appimage is from github, if not, exit
             return False
 

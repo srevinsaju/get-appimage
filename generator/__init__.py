@@ -26,4 +26,4 @@ SOFTWARE.
 This file is part of AppImage Catalog Generator
 """
 
-__version__ = "0.1.a1"
+__version__ = "0.2.a1"
