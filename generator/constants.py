@@ -29,6 +29,9 @@ This file is part of AppImage Catalog Generator
 with open('static/app/app.html', 'r') as r:
     APPTEMPLATE = r.read()
 
+with open('static/app/app.md', 'r') as r:
+    APPTEMPLATE_MD = r.read()
+
 FEED_URL_JSON = "https://appimage.github.io/feed.json"
 
 CATEGORIES = ['Audio', 'Office', 'AudioVideo', 'Science', 'Development',

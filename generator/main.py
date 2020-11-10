@@ -32,6 +32,8 @@ import time
 import urllib.request
 import json
 from copy import copy
+
+import mistune
 from jinja2 import Environment, FileSystemLoader
 from colorama import init as colorama_init
 from colorama import Fore
@@ -39,7 +41,8 @@ from progressbar import progressbar
 
 from generator.appimage.card import Card
 from .cli import parse_args, version
-from .constants import CARD_TEMPLATE, APPTEMPLATE, FEED_URL_JSON, CATEGORIES, SITEMAP_URL, SITEMAP_HEADER
+from .constants import CARD_TEMPLATE, APPTEMPLATE, FEED_URL_JSON, CATEGORIES, SITEMAP_URL, SITEMAP_HEADER, \
+    APPTEMPLATE_MD
 from .utils import ask_to_remove, copytree, read_parse_and_write_template, \
     get_github_token, check_progressbar
 from .appimage import AppImage
@@ -197,6 +200,8 @@ class LibraryBuilder:
         self.create_root_directory(self.output_directory)
         appimage_template = Environment(
             loader=self.file_system_loader).from_string(APPTEMPLATE)
+        appimage_data_template = Environment(
+            loader=self.file_system_loader).from_string(mistune.html(APPTEMPLATE_MD))
         sitemap_content = []
         current_formatted_time = time.strftime('%Y-%m-%d')
 
@@ -218,11 +223,13 @@ class LibraryBuilder:
             print(Fore.GREEN + "[STATIC][{}] Processing HTML files.".format(
                 appimage.title
             ) + Fore.RESET)
+
             with open(os.path.join(path_to_appfolder, 'index.html'), 'w') as w:
                 w.write(
                     appimage_template.render(
                         appimage=appimage,
-                        catalog=Catalog()
+                        catalog=Catalog(),
+                        content=appimage_data_template.render(appimage=appimage)
                     )
                 )
             _app_sitemap_local = SITEMAP_URL.format(

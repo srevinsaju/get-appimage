@@ -55,6 +55,9 @@ class AppImage:
         self._icon = app.get('icons')
         self._screenshots = app.get('screenshots')
         self.github_info = self.get_github_info()
+        self.gitlab_info = self.get_gitlab_info()
+        self.obs_info = self.get_obs_info()
+        self.static_info = self.get_static_info()
         self.catalog = Catalog()
 
     @property
@@ -190,6 +193,43 @@ class AppImage:
             icon = '{}/img/logo.svg'.format(self.catalog.base_url)
         return icon
 
+    def is_github(self):
+        """
+        Checks if the app-image has its source link from github
+        :return:
+        :rtype:
+        """
+        if not self.links:
+            return False
+
+        if not len(self._links) >= 1:
+            return False
+
+        if not self._links[0].get("type", '').lower() == "github":
+            return False
+
+        return True
+
+    def is_gitlab(self):
+        """
+        Checks if the app-image has its source link from gitlab
+        :return:
+        :rtype:
+        """
+        if not self.links:
+            return False
+
+        if not len(self._links) >= 1:
+            return False
+
+        if not self._links[0].get("type", '').lower() == "gitlab":
+            return False
+
+        return True
+
+    def is_obs(self):  # noqa:
+        return False
+
     # GitHub api management / data retrieval functions / methods below
     @property
     def github(self):
@@ -301,23 +341,6 @@ class AppImage:
             TAGS_GROUP_NO_MARGIN_HTML.format(
                 '\n'.join((releases_button_html, ''.join(download_buttons))))
         )))
-
-    def is_github(self):
-        """
-        Checks if the app-image has its source link from github
-        :return:
-        :rtype:
-        """
-        if not self.links:
-            return False
-
-        if not len(self._links) >= 1:
-            return False
-
-        if not self._links[0].get("type", '').lower() == "github":
-            return False
-
-        return True
 
     def get_github_release_from(self, github_release_api):
         request = urllib.request.Request(github_release_api)
@@ -462,9 +485,71 @@ class AppImage:
         }
         return releases_api_json
 
+    def get_gitlab_info(self):
+        if not self.is_gitlab():
+            # pre check if the appimage is from github, if not, exit
+            return False
+
+        print('[STATIC][{}][GL] Parsing information from GitLab'.format(
+            self.title
+        ))
+
+        # process github specific code
+        owner = self._links[0].get("url", '').split('/')[0]
+
+        releases_api_json = dict()
+        releases_api_json['owner'] = owner
+        releases_api_json['source'] = {
+            'type': 'gitlab',
+            'url': "https://gitlab.com/{path}".format(
+                    path=self._links[0].get("url"))
+        }
+        return releases_api_json
+
+    def get_obs_info(self):
+        if not self.is_obs():
+            # pre check if the appimage is from github, if not, exit
+            return False
+
+        print('[STATIC][{}][OBS] Parsing information from Open Build System'.format(
+            self.title
+        ))
+
+        # process obs specific code
+        owner = self._links[0].get("url", '').split('/')[0]
+
+        releases_api_json = dict()
+        releases_api_json['owner'] = owner
+        releases_api_json['source'] = {
+            'type': 'obs',
+            'url': "https://obs.com/{path}".format(
+                    path=self._links[0].get("url"))
+        }
+        return releases_api_json
+
+    def get_static_info(self):
+        releases_api_json = dict()
+        try:
+            owner = self._links[0].get("url", '').split('/')[0]
+            releases_api_json['owner'] = owner
+            releases_api_json['source'] = {
+                'type': 'static',
+                'url': self._links[0].get("url", '')
+            }
+        except (IndexError, KeyError, TypeError):
+            releases_api_json['owner'] = None
+            releases_api_json['source'] = dict()
+        return releases_api_json
+
     def get_app_metadata(self):
         if self.is_github():
             return self.github_info
+        elif self.is_gitlab():
+            return self.gitlab_info
+        elif self.is_obs():
+            return self.obs_info
+        else:
+            return self.static_info
 
     def json_data(self):
         return {
