@@ -142,9 +142,5 @@ def get_github_token(args):
     elif args.gh_token:
         return args.gh_token
     else:
-        # no token provided, ask for one!
-        token = getpass('Please provide a Github OAuth token (or set GH_TOKEN '
-                        'in environment variables) Enter => : ')
-        os.environ['GH_TOKEN'] = token
-        return token
+        return None
 

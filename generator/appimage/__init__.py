@@ -85,7 +85,7 @@ class AppImage:
 
     @property
     def is_verified(self):
-        if self.is_github() and self.github_info:
+        if self.is_github() and self.github_info and self.token:
             if (self.maintainer == self.github_info[0].get('author')) or \
                     (self.maintainer == self.github_info[0].get('owner')):
                 return True
@@ -211,6 +211,7 @@ class AppImage:
         if not self.is_github() or not self.github_info:
             # return empty string if its not a github compatible release
             return ''
+
         for app in self.github_info:
             if not isinstance(app, int):
                 continue
@@ -224,6 +225,16 @@ class AppImage:
                     'rc' in self.github_info[app].get('tag')) and \
                     self.github_info[app].get('tag', ' ')[0] != "p":
                 break
+
+        if self.token is None:
+            # no assets have been crawled
+            # we should only add a button that would lead to the latest release
+            releases_button_html = \
+                RELEASES_BUTTON_HTML.format(
+                    url="{}/releases/latest".format(self.github_info.get("source").get("url"))
+                )
+        else:
+            releases_button_html = ""
 
         # parse common tags
         if self.github_info.get('source').get('type') == 'github':
@@ -243,7 +254,7 @@ class AppImage:
         else:
             source_code_tag = ''
 
-        return source_code_tag + ''.join(html_data)
+        return source_code_tag + ''.join(html_data) + releases_button_html
 
     def github_generate_buttons_per_release(self, github_info):
         # a tag to show URL to github repository
@@ -383,8 +394,7 @@ class AppImage:
         return json_data
 
     def get_github_info(self):
-        # if token is None, then quit
-        if not self.is_github() or self.token is None:
+        if not self.is_github():
             # pre check if the appimage is from github, if not, exit
             return False
 
@@ -396,9 +406,12 @@ class AppImage:
         owner = self._links[0].get("url", '').split('/')[0]
 
         # get api entry-point
-        data = self.get_github_api_data()
+        if self.token is not None:
+            data = self.get_github_api_data()
+        else:
+            data = []
 
-        if not data or isinstance(data, bool):
+        if isinstance(data, bool):
             # the data we received is ill formatted or can't be processed
             # return False, because at this point, to not raise ValueError
             # and not to stash the build
@@ -415,7 +428,8 @@ class AppImage:
                 if download_url.lower().endswith('.appimage'):
                     # a valid appimage file found in release assets
                     uid = hashlib.sha256((
-                        asset.get('name') + ":" + download_url).encode()).hexdigest()
+                        asset.get('name') + ":" + download_url
+                    ).encode()).hexdigest()
                     appimages_assets[uid] = {
                         'name': asset.get('name'),
                         'download': download_url,
@@ -459,10 +473,18 @@ class AppImage:
             'image': self.icon,
             'maintainer': self.maintainer,
             'summary': self.description,
-            'github': self.links,
+            'links': self.links,
             'categories': self.categories,
             'categories_html': self.categories_html
         }
+
+    @property
+    def links_formatted(self):
+        if self.is_github:
+            return self.github
+        else:
+            # TODO: Add support for other instances here
+            return ""
 
     def shields_badge(self):
         return {

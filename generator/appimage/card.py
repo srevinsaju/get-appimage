@@ -8,12 +8,15 @@ class Card:
         self.right_description = 'Download'
 
         # if the appimage is hosted from GitHub
-        if app['github'] is not None:
+        app_links = app['links']
+        is_app_links_valid = app_links is not None
+
+        if is_app_links_valid and len(app_links) > 0 and app_links[0].get('type', None) == "GitHub":
             self.set_github_specific_attr()
 
     def set_github_specific_attr(self):
         self.source_code_url = \
-            "https://github.com/{}".format(self.app['github'][0].get('url'))
+            "https://github.com/{}".format(self.app['links'][0].get('url'))
         self.is_github = 'github'
         self.left_description = 'GitHub'
 
