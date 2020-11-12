@@ -44,7 +44,7 @@ from .cli import parse_args, version
 from .constants import CARD_TEMPLATE, APPTEMPLATE, FEED_URL_JSON, CATEGORIES, SITEMAP_URL, SITEMAP_HEADER, \
     APPTEMPLATE_MD
 from .utils import ask_to_remove, copytree, read_parse_and_write_template, \
-    get_github_token, check_progressbar
+    get_github_token
 from .appimage import AppImage
 from .catalog import Catalog
 
