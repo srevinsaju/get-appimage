@@ -3,12 +3,12 @@
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-$blue: #0065dc;
+$appimage-accent: #0065dc;
 
 // Update Bulma's global variables
 $family-sans-serif: "Montserrat", sans-serif;
-$primary: $blue;
-$link: $blue;
+$primary: $appimage-accent;
+$link: $appimage-accent;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
 $navbar-breakpoint: 575px;
