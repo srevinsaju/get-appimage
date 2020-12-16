@@ -1,6 +1,6 @@
 <h1 align="center">
 	<img src="static/img/logo.svg" alt="Get-AppImage logo" height=200 width=200 align="middle">
-	Get AppImage
+	Get AppImageX
 </h1>
 
 v2 of appimage.github.io
