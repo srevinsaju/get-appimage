@@ -351,7 +351,7 @@ class AppImage:
                 ) + Fore.RESET)
             if err.code == 403:
                 print("Quitting because of ratelimit")
-                sys.exit(1)
+                sys.exit(61)
             return False
         status = request_url.status
         if status != 200:
