@@ -31,8 +31,6 @@ import os
 
 from colorama import Fore
 
-from generator.constants import FEED_URL_JSON
-
 from . import __version__
 
 
@@ -98,6 +96,11 @@ def parse_args():
         '-p', '--pull-static-css-js-html',
         default='',
         help="Provide the path to js, css and index.html (default: ./static)"
+    )
+    parser.add_argument(
+        '--feed-json',
+        default='https://appimage.github.io/feed.json',
+        help="URL to get the feed.json"
     )
     parser.add_argument(
         '-O', '--gh-token',
