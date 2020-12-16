@@ -29,16 +29,16 @@ This file is part of AppImage Catalog Generator
 
 class Catalog:
     def __init__(self):
-        self.title = "Get AppImage"
-        self.description = "Collection of all AppImages in one website"
+        self.title = "Get AppImageX"
+        self.description = "Collection of maintained AppImagesX in one website"
         self.author = "Srevin Saju"
         self.root_url = "https://appimage.org"
-        self.url = "https://srevinsaju.me/get-appimage"
+        self.url = "https://srevinsaju.me/get-appimagex"
         self.image = "/img/logo.svg"
         self.issue_tracker = \
-            "https://github.com/srevinsaju/get-appimage/issues"
+            "https://github.com/srevinsaju/get-appimagex/issues"
         self._keywords = ["AppImage", "Linux", "Package"]
-        self.base_url = "/get-appimage"
+        self.base_url = "/get-appimagex"
 
 
     @property
