@@ -41,7 +41,7 @@ from progressbar import progressbar
 
 from generator.appimage.card import Card
 from .cli import parse_args, version
-from .constants import CARD_TEMPLATE, APPTEMPLATE, FEED_URL_JSON, CATEGORIES, SITEMAP_URL, SITEMAP_HEADER, \
+from .constants import CARD_TEMPLATE, APPTEMPLATE, CATEGORIES, SITEMAP_URL, SITEMAP_HEADER, \
     APPTEMPLATE_MD
 from .utils import ask_to_remove, copytree, read_parse_and_write_template, \
     get_github_token
@@ -92,7 +92,7 @@ class LibraryBuilder:
 
     def fetch_feed_json(self, force_refresh=False):
         """
-        Fetches information from FEED_URL_JSON and returns the json data
+        Fetches information from --feed-json and returns the json data
         as python dictionary
         :return:
         :rtype:
@@ -110,8 +110,8 @@ class LibraryBuilder:
                 self.apps = self.data.get('items', dict())
                 return
 
-        print("[UPSTREAM] Fetching latest feed.json: {}".format(FEED_URL_JSON))
-        with urllib.request.urlopen(FEED_URL_JSON) as url:
+        print("[UPSTREAM] Fetching latest feed.json: {}".format(args.feed_json))
+        with urllib.request.urlopen(args.feed_json) as url:
             data = json.loads(url.read().decode())
 
         get_appimage_feed_json = os.path.join('database', 'get_appimage.json')
