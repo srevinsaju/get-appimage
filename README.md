@@ -1,14 +1,17 @@
 <h1 align="center">
-	<img src="static/img/logo.svg" alt="Get-AppImage logo" height=200 width=200 align="middle">
+	<img src="static/img/logo.svg" alt="Get-AppImageX logo" height=200 width=200 align="middle">
 	Get AppImageX
 </h1>
 
-v2 of appimage.github.io
-This is the new repository for the AppImage.github.io catalog being redesigned using Bulma and Jquery (instead of Jekyll). 
-Catalog is generated on `cron '0 * * * *'`, so you might like to wait until the UTC clock hits 0, to get your changes being reflected
-on getappimage's website
+v1 of AppImageX Catalog
 
-You may take a look at the new website [here](https://srevinsaju.github.io/get-appimage/)
+Looking for _Get AppImage (v2 of appimage.github.io)?_ [Here](https://github.com/srevinsaju/get-appimage) it is.
+
+This is the repository for the AppImageX catalog being redesigned using Bulma and Jquery (instead of Jekyll). 
+Catalog is generated on `cron '0 * * * *'`, so you might like to wait until the UTC clock hits 0, to get your changes being reflected
+on getappimagex's website
+
+You may take a look at the new website [here](https://srevinsaju.github.io/get-appimagex/)
 
 > NOTE: Documentation is still under construction. Code contains inline documentation, please refer to those for the time being
 
@@ -18,44 +21,21 @@ Copy the following code and then paste it in your README.md
 
 ![Get Appimage](static/badges/get-appimage-branding-light.png)
 ```markdown
-[![Get Appimage](https://raw.githubusercontent.com/srevinsaju/get-appimage/master/static/badges/get-appimage-branding-blue.png)]
-(https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
+[![Get Appimage](https://raw.githubusercontent.com/srevinsaju/get-appimagex/appimagex/static/badges/get-appimage-branding-magenta.png)]
+(https://srevinsaju.me/get-appimagex/<name-of-the-appimage>)
 ```
 
 ![Get Appimage](static/badges/get-appimage-branding-dark.png)
 ```markdown
-[![Get Appimage](https://raw.githubusercontent.com/srevinsaju/get-appimage/master/static/badges/get-appimage-branding-dark.png)]
-(https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
+[![Get Appimage](https://raw.githubusercontent.com/srevinsaju/get-appimage/appimagex/static/badges/get-appimage-branding-dark.png)]
+(https://srevinsaju.me/get-appimagex/<name-of-the-appimage>)
 ```
 
-![Get Appimage](static/badges/get-appimage-branding-blue.png)
+![Get Appimage](static/badges/get-appimage-branding-magenta.png)
 ```markdown
-[![Get Appimage](https://raw.githubusercontent.com/srevinsaju/get-appimage/master/static/badges/get-appimage-branding-blue.png)]
-(https://srevinsaju.github.io/get-appimage/<name-of-the-appimage>)
+[![Get Appimage](https://raw.githubusercontent.com/srevinsaju/get-appimagex/appimagex/static/badges/get-appimage-branding-magenta.png)]
+(https://srevinsaju.me/get-appimagex/<name-of-the-appimage>)
 ```
-
-### New Shields
-Based on the shields.io compatible entrypoints generated using AppImage Catalog generator v2, we know have shields!
-
-Check out this sample shield of [VSCodium](https://vscodium.com)
-
-[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json)](https://www.srevinsaju.me/get-appimage/vscodium/)
-
-```markdown
-[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json)](https://www.srevinsaju.me/get-appimage/vscodium/)
-```
-Replace `vscodium` with the name of your appimage and :tada:
-
-Or if you want some more styles:
-
-Plastic | Flat    | Flat Square | For the Badge 
---------|---------|-------------|---------------
-[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=plastic)](https://www.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=flat)](https://www.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=flat-square)](https://www.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=for-the-badge)](https://www.srevinsaju.me/get-appimage/vscodium/)
-| `&style=plastic` | `&style=flat` | `&style=flat-square` | `&style=for-the-badge`
-
-> * Defaults to `flat`
-> * `%2F` is the escaped `/` character. 
-
 
 ## Build 
 ### Prerequisites
@@ -63,27 +43,27 @@ Plastic | Flat    | Flat Square | For the Badge
 * python 3.6+
 
 ### Installation
-AppImage catalog builder is a portable python software. To install dependencies
+AppImageX catalog builder is a portable python software. To install dependencies
 ```bash
 pip3 install -r requirements.txt
 ```
 
 ### Build Catalog
-The simple one liner command to build the AppImage catalog, is to
+The simple one liner command to build the AppImageX catalog, is to
 ```bash
 python3 -m generator --generate-app-pages --generate-app-list --copy-theme --gh-token=$GH_TOKEN
 ```
 
 ## Usage
 ```bash
-usage: AppImage Catalog Generator [-h] [-i INPUT_JSON] [-o OUTPUT_DIRECTORY]
+usage: AppImageX Catalog Generator [-h] [-i INPUT_JSON] [-o OUTPUT_DIRECTORY]
                                   [-t] [-j SET_JSON] [-g]
                                   [-C FORCE_REFRESH_FEED]
                                   [-x GENERATE_SITEMAP] [-v]
                                   [-p PULL_STATIC_CSS_JS_HTML] [-O GH_TOKEN]
                                   [-G] [-P] [-s] [-y] [-c] [--version]
 
-Generates static HTML files for the Appimage catalog
+Generates static HTML files for the AppimageX catalog
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -130,7 +110,7 @@ Some features are still under development, so :smile:
 To modify the logo, information displayed on the website, please edit
 
 `./generator/catalog/__init__.py` to add your own custom values.
-`./static/app.html` to edit the AppImage documentation
+`./static/app.html` to edit the AppImageX documentation
 
 ## Future plans
 * Add a single copy and paste to install appimage command. Example; `app install $APP` command on the app website, so that the appimage can be installed in one click
