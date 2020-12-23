@@ -33,7 +33,7 @@ class Catalog:
         self.description = "Collection of all AppImages in one website"
         self.author = "Srevin Saju"
         self.root_url = "https://appimage.org"
-        self.url = "https://srevinsaju.me/get-appimage"
+        self.url = "https://g.srevinsaju.me/get-appimage"
         self.image = "/img/logo.svg"
         self.issue_tracker = \
             "https://github.com/srevinsaju/get-appimage/issues"

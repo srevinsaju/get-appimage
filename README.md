@@ -39,10 +39,10 @@ Based on the shields.io compatible entrypoints generated using AppImage Catalog 
 
 Check out this sample shield of [VSCodium](https://vscodium.com)
 
-[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json)](https://www.srevinsaju.me/get-appimage/vscodium/)
+[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fg.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json)](https://g.srevinsaju.me/get-appimage/vscodium/)
 
 ```markdown
-[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json)](https://www.srevinsaju.me/get-appimage/vscodium/)
+[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fg.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json)](https://g.srevinsaju.me/get-appimage/vscodium/)
 ```
 Replace `vscodium` with the name of your appimage and :tada:
 
@@ -50,7 +50,7 @@ Or if you want some more styles:
 
 Plastic | Flat    | Flat Square | For the Badge 
 --------|---------|-------------|---------------
-[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=plastic)](https://www.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=flat)](https://www.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=flat-square)](https://www.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fwww.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=for-the-badge)](https://www.srevinsaju.me/get-appimage/vscodium/)
+[![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fg.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=plastic)](https://g.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fg.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=flat)](https://g.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fg.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=flat-square)](https://g.srevinsaju.me/get-appimage/vscodium/) | [![Get VSCodium AppImage](https://img.shields.io/endpoint?url=https%3A%2F%2Fg.srevinsaju.me%2Fget-appimage%2Fvscodium%2Fshields.json&style=for-the-badge)](https://g.srevinsaju.me/get-appimage/vscodium/)
 | `&style=plastic` | `&style=flat` | `&style=flat-square` | `&style=for-the-badge`
 
 > * Defaults to `flat`
