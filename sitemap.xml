@@ -2617,6 +2617,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/MuseScore</loc>
+  <lastmod>2021-02-13</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Museeks</loc>
   <lastmod>2021-02-13</lastmod>
   <changefreq>weekly</changefreq>
@@ -3452,6 +3458,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/Qt5Demo</loc>
+  <lastmod>2021-02-13</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/QtMips</loc>
   <lastmod>2021-02-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -4682,6 +4694,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/VidCutter</loc>
+  <lastmod>2021-02-13</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/Videomass</loc>
   <lastmod>2021-02-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -6488,6 +6506,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/uArmStudio</loc>
+  <lastmod>2021-02-13</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/ubpm</loc>
   <lastmod>2021-02-13</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
