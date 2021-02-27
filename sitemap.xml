@@ -5137,7 +5137,19 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/colorstatic bash</loc>
+  <lastmod>2021-02-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/cordlauncher</loc>
+  <lastmod>2021-02-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/cric</loc>
   <lastmod>2021-02-27</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -5738,6 +5750,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/mandelbulber2</loc>
+  <lastmod>2021-02-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/mapollage</loc>
   <lastmod>2021-02-27</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -6464,6 +6482,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/tnt</loc>
+  <lastmod>2021-02-27</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/trader</loc>
   <lastmod>2021-02-27</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
