@@ -325,6 +325,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Birds Kitchen</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/BitShares</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -2443,6 +2449,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/MMapper</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/MQTT Explorer</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -2702,6 +2714,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/MuPDF</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/MuWire</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -3403,6 +3421,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/ProcSpin</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Procyon</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -3938,6 +3962,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/Scatter</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/SchildiChat</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
