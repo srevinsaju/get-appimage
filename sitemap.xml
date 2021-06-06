@@ -181,6 +181,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Artisan</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/AsarUI</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -439,6 +445,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Bottles</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Brackets</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -452,6 +464,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/BrainWaves</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/BrickStore</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -542,6 +560,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/CRG Data Tool</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/CRIC</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -1411,6 +1435,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Flippy Qualitative Testbench</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Fluent Reader</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -1819,7 +1849,19 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/INSTEAD</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/ITUSB1 Manager</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/ITUSB2 Manager</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -2192,6 +2234,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/Ladha</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/Lagrange</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -3085,6 +3133,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Passky</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Patchwork</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -3607,6 +3661,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Quixel Bridge</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Qv2ray</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -3650,6 +3710,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/Radix Wallet</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/Rainbow Board</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -3950,6 +4016,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/SerialPort Assistant</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/Serial Studio</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -4657,6 +4729,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Trezor Suite</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Trinity Desktop</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -4861,6 +4939,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/WATCHED</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/WalletShell</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
@@ -4874,6 +4958,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/WatchFlower</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/WatchIt</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -5132,6 +5222,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/android messages desktop</loc>
+  <lastmod>2021-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/antimicroX</loc>
   <lastmod>2021-06-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
