@@ -1,9 +1,17 @@
-<h1 align="center">
-	<img src="static/img/logo.svg" alt="Get-AppImage logo" height=200 width=200 align="middle">
-	Get AppImage
-</h1>
+<p align="center">
+    <img src="static/img/logo.svg" alt="Get-AppImage logo" width=128 height=128>
 
-v2 of appimage.github.io
+<h2 align="center">Get AppImage</h2>
+
+  <p align="center">
+    The rewrite of the AppImageHub on appimage.github.io
+    <br>
+    <a href="https://github.com/srevinsaju/get-appimage/issues/new">Report bug</a>
+    ·
+    <a href="https://github.com/srevinsaju/get-appimage/issues/new">Request feature</a>
+  </p>
+</p>
+
 This is the new repository for the AppImage.github.io catalog being redesigned using Bulma and Jquery (instead of Jekyll). 
 Catalog is generated on `cron '0 * * * *'`, so you might like to wait until the UTC clock hits 0, to get your changes being reflected
 on getappimage's website
