@@ -30,13 +30,15 @@ import os
 import shutil
 import sys
 from getpass import getpass
+import random
 
 from jinja2 import Environment
 from progressbar import progressbar
 
 
 def read_parse_and_write_template(
-        file_system_loader, html_template_path, html_output_path, **kwargs):
+    file_system_loader, html_template_path, html_output_path, **kwargs
+):
     """
     Read HTML Template, parse the HTML template with jinja template
     renderer and write the formatted jinja template to html_output_path with
@@ -55,12 +57,13 @@ def read_parse_and_write_template(
     output_path_file_name = html_output_path.split(os.path.sep)[-1]
 
     print("[STATIC] Reading template: {}".format(output_path_file_name))
-    with open(html_template_path, 'r') as _buffer:
-        html_template = Environment(loader=file_system_loader) \
-            .from_string(_buffer.read())
+    with open(html_template_path, "r") as _buffer:
+        html_template = Environment(loader=file_system_loader).from_string(
+            _buffer.read()
+        )
 
     print("[STATIC] Writing parsed template: {}".format(output_path_file_name))
-    with open(html_output_path, 'w') as w:
+    with open(html_output_path, "w") as w:
         w.write(html_template.render(**kwargs))
 
 
@@ -77,10 +80,12 @@ def ask_to_remove(directory, noconfirm=False):
     if os.path.exists(directory):
         if not noconfirm:
             # ask user for confirmation before removing directory
-            proceed = input("The operation will remove {}. "
-                            "Are you sure you want to proceed? "
-                            "(Y/n) ".format(directory))
-            if proceed not in ('y', 'Y'):
+            proceed = input(
+                "The operation will remove {}. "
+                "Are you sure you want to proceed? "
+                "(Y/n) ".format(directory)
+            )
+            if proceed not in ("y", "Y"):
                 print("Terminated on user request.")
                 sys.exit(-1)
         shutil.rmtree(directory, ignore_errors=True)
@@ -137,10 +142,9 @@ def get_github_token(args):
     :return:
     :rtype:
     """
-    if os.getenv('GH_TOKEN'):
-        return os.getenv('GHTOKEN')
-    elif args.gh_token:
-        return args.gh_token
+    if args.gh_token:
+        return random.choice(args.gh_token)
+    elif os.getenv("GH_TOKEN"):
+        return os.getenv("GHTOKEN")
     else:
         return None
-

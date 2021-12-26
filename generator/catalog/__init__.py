@@ -35,11 +35,9 @@ class Catalog:
         self.root_url = "https://appimage.org"
         self.url = "https://g.srevinsaju.me/get-appimage"
         self.image = "/img/logo.svg"
-        self.issue_tracker = \
-            "https://github.com/srevinsaju/get-appimage/issues"
+        self.issue_tracker = "https://github.com/srevinsaju/get-appimage/issues"
         self._keywords = ["AppImage", "Linux", "Package"]
         self.base_url = "/get-appimage"
-
 
     @property
     def keywords(self):

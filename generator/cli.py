@@ -41,103 +41,110 @@ def parse_args():
     :rtype:
     """
     parser = argparse.ArgumentParser(
-        'AppImage Catalog Generator',
-        description='Generates static HTML files for the Appimage catalog'
+        "AppImage Catalog Generator",
+        description="Generates static HTML files for the Appimage catalog",
     )
     parser.add_argument(
-        '-i', '--input-directory',
+        "-i",
+        "--input-directory",
         default=os.getcwd(),
-        help='Provide the directory where `static` resides '
-             'HTML, (defaults to: {}) '.format(os.getcwd())
+        help="Provide the directory where `static` resides "
+        "HTML, (defaults to: {}) ".format(os.getcwd()),
     )
     parser.add_argument(
-        '-o', '--output-directory',
-        default=os.path.join(os.getcwd(), 'catalog-compiled'),
-        help='Provide the directory to output the parsed website for Appimage '
-             'catalog'
+        "-o",
+        "--output-directory",
+        default=os.path.join(os.getcwd(), "catalog-compiled"),
+        help="Provide the directory to output the parsed website for Appimage "
+        "catalog",
     )
     parser.add_argument(
-        '-t', '--copy-theme',
-        action='store_true',
-        help='Copy the files from static directory to output directory'
+        "-t",
+        "--copy-theme",
+        action="store_true",
+        help="Copy the files from static directory to output directory",
     )
     parser.add_argument(
-        '-j', '--set-json',
-        default='',
-        help='Sets an alternative json instead of parsed one '
+        "-j",
+        "--set-json",
+        default="",
+        help="Sets an alternative json instead of parsed one ",
     )
     parser.add_argument(
-        '-g', '--generate-app-pages',
-        action='store_true',
-        help='Start the process of HTML generation. '
+        "-g",
+        "--generate-app-pages",
+        action="store_true",
+        help="Start the process of HTML generation. ",
     )
     parser.add_argument(
-        '-C', '--generate-categories-pages',
-        action='store_true',
-        help='Generate app pages separated by categories'
+        "-C",
+        "--generate-categories-pages",
+        action="store_true",
+        help="Generate app pages separated by categories",
     )
     parser.add_argument(
-        '-F', '--force-refresh-feed',
-        default='',
-        help='Fetches feed.json again, and then parses content rather than '
-             'cached copy'
+        "-F",
+        "--force-refresh-feed",
+        default="",
+        help="Fetches feed.json again, and then parses content rather than "
+        "cached copy",
     )
     parser.add_argument(
-        '-x', '--generate-sitemap',
-        default='',
-        help='Generate a sitemap.xml file to the output directory'
+        "-x",
+        "--generate-sitemap",
+        default="",
+        help="Generate a sitemap.xml file to the output directory",
     )
     parser.add_argument(
-        '-v', '--verbose',
-        action='store_true',
-        help='More verbose logging'
+        "-v", "--verbose", action="store_true", help="More verbose logging"
     )
     parser.add_argument(
-        '-p', '--pull-static-css-js-html',
-        default='',
-        help="Provide the path to js, css and index.html (default: ./static)"
+        "-p",
+        "--pull-static-css-js-html",
+        default="",
+        help="Provide the path to js, css and index.html (default: ./static)",
     )
     parser.add_argument(
-        '--feed-json',
-        default='https://appimage.github.io/feed.json',
-        help="URL to get the feed.json"
+        "--feed-json",
+        default="https://appimage.github.io/feed.json",
+        help="URL to get the feed.json",
     )
     parser.add_argument(
-        '-O', '--gh-token',
-        default='',
-        help="Provide the GitHub OAuth token (defaults to: env GH_TOKEN)"
+        "-O",
+        "--gh-token",
+        action="append",
+        default=[],
+        help="Provide the GitHub OAuth token (defaults to: env GH_TOKEN)",
     )
     parser.add_argument(
-        '-G', '--generate-app-list',
-        action='store_true',
-        help="Parses app list"
+        "-G", "--generate-app-list", action="store_true", help="Parses app list"
     )
     parser.add_argument(
-        '-P', '--disable-progress-bar',
-        action='store_true',
-        help="Provides a unique icon name based on bundle id"
+        "-P",
+        "--disable-progress-bar",
+        action="store_true",
+        help="Provides a unique icon name based on bundle id",
     )
     parser.add_argument(
-        '-s', '--include-screenshots',
-        action='store_true',
+        "-s",
+        "--include-screenshots",
+        action="store_true",
         help="Includes screenshots of activity if its found as"
-             " <activity>/screenshots/*.png"
+        " <activity>/screenshots/*.png",
     )
     parser.add_argument(
-        '-y', '--noconfirm',
-        action='store_true',
-        help="Replace output directory (default: always ask)"
+        "-y",
+        "--noconfirm",
+        action="store_true",
+        help="Replace output directory (default: always ask)",
     )
     parser.add_argument(
-        '-c', '--no-colors',
-        action='store_true',
-        help="Suppress colors in terminal (default: env ANSI_COLORS_DISABLED)"
+        "-c",
+        "--no-colors",
+        action="store_true",
+        help="Suppress colors in terminal (default: env ANSI_COLORS_DISABLED)",
     )
-    parser.add_argument(
-        '--version',
-        action='store_true',
-        help="Show the version"
-    )
+    parser.add_argument("--version", action="store_true", help="Show the version")
     args = parser.parse_args()
     return args
 
@@ -151,4 +158,3 @@ def version():
     print(Fore.GREEN + "AppImageCatalog-2 Generator Tool" + Fore.RESET)
     print(__version__)
     print()
-
