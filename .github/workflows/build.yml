@@ -31,7 +31,8 @@ jobs:
           echo $(realpath .)
           pip3 install -r requirements.txt
           curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" https://api.github.com/rate_limit
-          python -m generator --generate-app-pages --generate-app-list --generate-categories-pages --copy-theme --noconfirm --gh-token=${{ secrets.GITHUB_TOKEN }}
+          curl -H "Authorization: token ${{ secrets.GH_TOKEN_2 }}" https://api.github.com/rate_limit
+          python -m generator --generate-app-pages --generate-app-list --generate-categories-pages --copy-theme --noconfirm --gh-token=${{ secrets.GH_TOKEN }} --gh-token=${{ secrets.GH_TOKEN_2 }}
 
 
       - name: Deploy 🚀
