@@ -2767,6 +2767,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Minecraft Pi Reborn Client</loc>
+  <lastmod>2022-03-26</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Minetest</loc>
   <lastmod>2022-03-26</lastmod>
   <changefreq>weekly</changefreq>
