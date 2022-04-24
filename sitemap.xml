@@ -2893,6 +2893,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/MusE</loc>
+  <lastmod>2022-04-24</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/MuseScore</loc>
   <lastmod>2022-04-24</lastmod>
   <changefreq>weekly</changefreq>
