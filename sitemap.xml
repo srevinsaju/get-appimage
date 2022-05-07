@@ -169,6 +169,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Arduino IDE</loc>
+  <lastmod>2022-05-07</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Ark.Desktop.Wallet</loc>
   <lastmod>2022-05-07</lastmod>
   <changefreq>weekly</changefreq>
@@ -1669,6 +1675,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Gaia Sky</loc>
+  <lastmod>2022-05-07</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Galacteek</loc>
   <lastmod>2022-05-07</lastmod>
   <changefreq>weekly</changefreq>
@@ -2744,6 +2756,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/MeshLab</loc>
+  <lastmod>2022-05-07</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/Meshmill</loc>
   <lastmod>2022-05-07</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
