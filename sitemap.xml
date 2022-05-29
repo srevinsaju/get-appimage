@@ -2497,6 +2497,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/LibreWolf</loc>
+  <lastmod>2022-05-29</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Lightning</loc>
   <lastmod>2022-05-29</lastmod>
   <changefreq>weekly</changefreq>
