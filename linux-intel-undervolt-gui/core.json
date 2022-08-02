@@ -1,1 +1,1 @@
-false
+{"0": {"id": "5b6487b04cc2c3808031e0cd23469558098af582b9ff352887c038e9ab3a17a5", "author": "lukechadwick", "prerelease": false, "releases": "https://github.com/lukechadwick/linux-intel-undervolt-gui/releases/tag/1.1.0", "assets": {}, "tag": "1.1.0", "published_at": "2019-02-11T07:51:18Z"}, "owner": "lukechadwick", "source": {"type": "github", "url": "https://github.com/lukechadwick/linux-intel-undervolt-gui"}}
