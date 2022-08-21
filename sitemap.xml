@@ -1633,6 +1633,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/FreeCAD asm3</loc>
+  <lastmod>2022-08-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/FreeCAD2</loc>
   <lastmod>2022-08-21</lastmod>
   <changefreq>weekly</changefreq>
