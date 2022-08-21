@@ -121,6 +121,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Apache NetBeans</loc>
+  <lastmod>2022-08-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Aphelion Wallet</loc>
   <lastmod>2022-08-21</lastmod>
   <changefreq>weekly</changefreq>
