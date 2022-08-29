@@ -2107,6 +2107,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Infra</loc>
+  <lastmod>2022-08-29</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Inkscape</loc>
   <lastmod>2022-08-29</lastmod>
   <changefreq>weekly</changefreq>
@@ -5683,6 +5689,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/acreom</loc>
+  <lastmod>2022-08-29</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/admin tools</loc>
   <lastmod>2022-08-29</lastmod>
   <changefreq>weekly</changefreq>
@@ -7514,6 +7526,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/youtube music</loc>
+  <lastmod>2022-08-29</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/ytDownloader</loc>
   <lastmod>2022-08-29</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
