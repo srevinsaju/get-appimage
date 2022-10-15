@@ -1579,6 +1579,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/FlightGear</loc>
+  <lastmod>2022-10-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Flippy Qualitative Testbench</loc>
   <lastmod>2022-10-15</lastmod>
   <changefreq>weekly</changefreq>
@@ -6782,6 +6788,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/noteshrink qt</loc>
+  <lastmod>2022-10-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/nvtop</loc>
   <lastmod>2022-10-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
