@@ -1417,6 +1417,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://g.srevinsaju.me/get-appimage/Espanso</loc>
+  <lastmod>2022-10-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://g.srevinsaju.me/get-appimage/Etcher</loc>
   <lastmod>2022-10-15</lastmod>
   <changefreq>weekly</changefreq>
@@ -5612,6 +5618,12 @@
 </url>
 <url>
   <loc>https://g.srevinsaju.me/get-appimage/XChat</loc>
+  <lastmod>2022-10-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://g.srevinsaju.me/get-appimage/XClicker</loc>
   <lastmod>2022-10-15</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
