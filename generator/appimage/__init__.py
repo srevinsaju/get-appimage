@@ -74,8 +74,7 @@ class AppImage:
             '<div style="margin: 0 auto; display: block"><img '
             'style="margin: 0 auto; '
             'display: block;" '
-            'src="https://gitcdn.xyz/cdn/AppImage/'
-            'appimage.github.io/master/database/{}" '
+            'src="https://appimage.github.io/database/{}" '
             'class="appimage-screenshot-image"></div>'.format(self._screenshots[0])
         )
 
@@ -187,13 +186,13 @@ class AppImage:
         if isinstance(self._icon, list):
             icon = self._icon[0]
             return (
-                "https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master"
+                "https://appimage.github.io"
                 "/database/{}".format(icon)
             )
         elif isinstance(self._icon, str):
             icon = self._icon
             return (
-                "https://gitcdn.xyz/cdn/AppImage/appimage.github.io/master"
+                "https://appimage.github.io"
                 "/database/{}".format(icon)
             )
         elif self._icon is None:
