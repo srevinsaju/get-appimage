@@ -145,6 +145,6 @@ def get_github_token(args):
     if args.gh_token:
         return random.choice(args.gh_token)
     elif os.getenv("GH_TOKEN"):
-        return os.getenv("GHTOKEN")
+        return os.getenv("GH_TOKEN")
     else:
         return None

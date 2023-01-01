@@ -354,7 +354,7 @@ class AppImage:
 
     def get_github_release_from(self, github_release_api):
         request = urllib.request.Request(github_release_api)
-        request.add_header("Authorization", "token {}".format(self.token))
+        request.add_header("Authorization", "Bearer {}".format(self.token))
         try:
             request_url = urllib.request.urlopen(request)
         except urllib.error.HTTPError as err:
