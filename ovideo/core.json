@@ -1,1 +1,1 @@
-false
+{"0": {"id": "c2af3503d39ef39a044a7937f3a87cca6bbc2e803fa1b0e4c22f4da5e67160bf", "author": "colin-i", "prerelease": false, "releases": "https://github.com/colin-i/ostream/releases/tag/1-188", "assets": {"6939ba13955d58a97d1edece4cc8d5865d465b60919abd793b3d9eaec5d25e09": {"name": "ovideo.amd64.AppImage", "download": "https://github.com/colin-i/ostream/releases/download/1-188/ovideo.amd64.AppImage", "size": "150.14 MB"}}, "tag": "1-188", "published_at": "2023-07-30T09:17:36Z"}, "owner": "colin-i", "source": {"type": "github", "url": "https://github.com/colin-i/ostream"}}
