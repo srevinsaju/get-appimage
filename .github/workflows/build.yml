@@ -9,7 +9,8 @@ on:
     paths:
       - '.github/workflows/build.yml'
 
-
+permissions:
+  contents: write  
 
 jobs:
   build-and-deploy:
@@ -39,6 +40,6 @@ jobs:
         with:
           GIT_CONFIG_NAME	: 'AppImage Boi'
           GIT_CONFIG_EMAIL: 'appimageboi@srevinsaju.me'
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: catalog-compiled  # The folder the action should deploy.
